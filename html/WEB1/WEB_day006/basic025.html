@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> layer practice</title>
+ 
+    <style>
+    *{padding:0; margin:0;}
+    body{
+        font-family: "Malgun Gothic", dotum, sans-serif;
+    }
+
+    /* ------------------ 아이디 속성 --------------------------- */
+    #wrapper{
+
+    }
+    #header{
+        height: 100px;
+        background-color: #ffcc66;
+        
+    }
+    #visual{
+        height: 400px;
+        background-color : #ff9966;
+    }
+    #main{
+        height: 500px;
+        background-color: #ff6666;
+    }
+    #footer{
+        height: 100px;
+        background-color: #ff3366;
+    }
+ 
+    #footer .container{
+        background-color: #660066;
+    }
+
+    /* ------------------ 클래스 속성 --------------------------- */
+    .container{
+        width:  980px; 
+        height : 100%;
+        background-color: #660066;
+        margin: 0 auto;
+        display: ;
+    }
+    .row{
+        height: 50%;
+    }
+    .col-2, .col-3{
+        width : 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .col-2:nth-child(1){
+        
+        background-color: #ff9999;
+    }
+    .col-2:nth-child(2){
+        
+        background-color: #ff3399;
+    }
+    .col-3:nth-child(1){
+        width : 33.33333%;
+        background-color: #66cccc;
+    }
+    .col-3:nth-child(2){
+        width : 33.33333%;
+        background-color :#66ccff;
+    }
+    .col-3:nth-child(3){
+        width : 33.33333%;
+        background-color: #99ccff;
+    }
+ 
+    </style>
+</head>
+ 
+    <body>
+        <div id="wrapper">
+
+            <div id="header"></div> <!-- end header -->
+            <div id="visual"></div> <!-- end visual -->
+            <div id="main"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                    </div>
+                </div> <!-- end container -->
+            </div> <!-- end main -->
+
+            <div id="footer">
+                <div class="container">
+
+                </div>
+            </div> <!-- end footer -->
+             
+ 
+ 
+        </div> <!-- end wrapper -->
+ 
+    </body>
+ 
+</html>

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+ /*  BORDER-RADIUS        */
+/* Q1.  .br   100*100   상하좌우바깥쪽여백 10px  
+                좋아하는 배경, 글자색,  문자 정중앙배치
+*/
+h4, dl{  margin:20px 0; } 
+dt{  border-left:5px solid #ddd; 
+    font-weight: bold;   text-indent:1em;
+    margin:10px 0;
+}
+.br{ width: 100px; height:100px;  margin:10px;
+    background-color:crimson; color:white; 
+    font-weight: bold;  text-align: center;
+    line-height: 100px;
+}
+.b1{ border-radius: 10px;}
+.b2{ border-radius: 10px 30px 50px 70px;}
+.b3{ border-radius: 50%;}
+
+
+/*    SHADOW  */
+.shadow{ width: 100px; height:100px;  margin:10px;
+    border:1px solid #ddd; 
+    font-weight: bold;  text-align: center;
+    line-height: 100px;
+}
+.box{ box-shadow: 0px 0px 14px rgba(0,0,0,0.1);}
+.text {
+    color: #ddd;
+    text-shadow: 0px 0px 0px #999, 
+                 0px 3px 1px #111, 
+                 0px 6px 1px #333;
+}
+/*    transion  */
+.transion{ width: 100px; height:100px;  margin:10px;
+    border:1px solid #ddd; 
+    font-weight: bold;  text-align: center;
+    line-height: 100px;
+    transition:all  0.4s  ease-in-out  0.1s;
+    /*  모든속성을 0.4s  처음과끝을천천히 0.1s 뒤에   */
+}
+.transion:hover{ background-color:#0099cc; color:white; } 
+
+.transion.ts a {   display:block; color: #333; }
+.transion.ts:hover   { border-radius: 50%;  background-color:#333;   } 
+.transion.ts a:hover , 
+.transion.ts a:focus { 
+        background-color: #333;
+        border-radius: 50%;
+        color: white;
+        transition:all  0.4s  ease-in-out  0.1s;
+}
+
+
+/*    transform  */
+.transform{ width: 100px; height:100px;  margin:10px;
+    border:1px solid #ddd; 
+    font-weight: bold;  text-align: center;
+    line-height: 100px;
+    transition:all  0.4s  ease-in-out  0.1s; 
+}
+.f1:hover{   transform: scale(1.2 , 0.5); 
+            background-color:#0099cc; 
+            color:white;
+}
+.f2:hover{ transform:rotate(-10deg); 
+    background-color:#00cc66; 
+    color:white;
+    border:5px solid dotted;
+}
+.f3:hover{
+    transform:translate(100px ,0); 
+    background-color:#6600cc; 
+    color:white;
+} 
+/*   multibackground   */  
+.multi{ width:500px; height:300px; font-weight: bold;
+    text-indent:1em;  font-size:35px;
+}
+.m1{  
+    color:#6600cc; 
+    background:url(../images/background01.jpg)  no-repeat 0  0 ,
+               url(../images/boat.png)  no-repeat  center; 
+ /*   background-size: cover  100px;  contain   ,  가로 세로 */
+    transition:all  0.3s;
+}
+.m1:hover{
+    color:aqua;
+    background-position: 280px 0 ,  left;  
+} 
+
+
+/*   gradient   */ 
+.gradient {  width:200px; height:80px; padding:30px;
+    text-align:center; line-height:80px; 
+    background:#ddd;  color:white;
+}
+.g1{ background-image:linear-gradient(0deg , red, black);  }
+.g2{ background-image:linear-gradient(45deg , red, black);  }
+.g3{ 
+    background-image:linear-gradient(
+        45deg, red 0%, orange 20% , black 100%); 
+}
+.g4{
+    background: linear-gradient(135deg, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+
+/*   animation   */ 
+/*   animation   */ 
+.animation{ padding:30px;   font-size:20px; width:115px;
+}
+.a1{  color:white; background-color:darkturquoise; 
+    /* animation: ani1  5s  infinite;   */
+        animation: ani1  5s  1;  
+}
+@keyframes ani1{ 
+    0%{ width:150px; background-color:darkturquoise; 
+        transform:rotate(360deg); 
+        margin-left:200px;
+    } 
+    50%{width:115px; background-color:steelblue; 
+        transform:rotateX(180deg);
+        margin-left:500px;
+    } 
+    100%{ width:115px; background-color:#b68d4c; 
+        transform:rotateY(180deg);
+        margin-left:0px;} 
+}
+/*                      */
+/*                      */
+
+.a2{  height:50px; width:95%;   background-color:white;  }
+.myani {
+    position: relative; 
+    width:95%; height:50px; overflow:hidden; 
+}
+.myani li{   width:100px;    position:absolute;  }
+.myani li:nth-child(1){  left:0;      animation:ani2 1s   1; }
+.myani li:nth-child(2){  left:100px;  animation:ani2 1.5s 1; }
+.myani li:nth-child(3){  left:200px;  animation:ani2 2s   1; }
+.myani li:nth-child(4){  left:300px;  animation:ani2 2.5s 1; }
+.myani li:nth-child(5){  left:400px;  animation:ani2 3s   1; }
+.myani li:nth-child(6){  left:500px;  animation:ani2 3.5s 1; }
+.myani li:nth-child(7){  left:600px;  animation:ani2 4s   1; }
+.myani li:nth-child(8){  left:700px;  animation:ani2 4.5s 1; }
+
+@keyframes ani2{  0%{top:-50px}   50%{top:50px} 100%{top:0px}}
+ 
+/* Q1. .myani 영역에서만 li들이 움직이게 처리  - position:relative;
+        overflow:hidden  안보이게 숨기기
+*/
+/* Q2. li  width:100px    position:absolute      */ 
+/* Q3. li  nth-child 이용해서  왼쪽에서 100px씩 배치    */ 
+/* Q4. @keyframes ani2  0% 일때 위쪽  -50px    
+                    50% 일때 위쪽  50px  
+                    100% 일때 위쪽  0px  
+*/ 
+/* Q5. li  nth-child    ani2 시간각격조절해서 적용   */ 
+ 

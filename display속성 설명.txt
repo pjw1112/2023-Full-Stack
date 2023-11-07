@@ -1,0 +1,14 @@
+display : 속성을 바꾸는 기술
+	정의 : 요소의 성격을 바꾸는 성질
+	종류 : block , inline, inline-block, none
+	가. display: block
+		특징 ; [인라인]성격을 [블록]성격으로
+		사용 ; 줄바꿈 / 링크영역확대
+	나. display: inline
+		특징 ; [블록]성격을 [인라인] 성격으로 / 반각이 생김 / 정렬은 부모요소에
+		사용 ; width가 필요없는 가로방향 배치시
+	다. display: none
+		특징 ; 화면상에 안보이게 숨기기 / 주의사항 : h태그에 사용하지 말기
+	라. display: inline-block
+		특징 ; [인라인]속성을 유지하되 [블록]의 특징사용가능
+		사용 ; 줄바꿈은 안되고 width, height, padding, margin 등의 사용이 가능함

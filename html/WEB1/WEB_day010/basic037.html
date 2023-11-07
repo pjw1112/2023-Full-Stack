@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <title>스타일싯 연습</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                font-family: "Pretendard","Helvetica Neue",Helvetica,Arial,sans-serif;
+            }
+
+            .displayEx {
+                width: 100px;
+                height: 80px;
+                display: block;
+                background-color: gold;
+                text-align: center;
+            }
+
+            .displayEx a {
+                font-size: 12px;
+                text-decoration: none;
+                display: inline-block;
+                background-color: red;
+                line-height: 20px;
+                margin-top: 20px;
+                width: 100px;
+            }
+
+            .displayEx a span {
+                display: block;
+                background-color: gold;
+            }
+
+            .displayEx a:link,
+            .displayEx a:visited {
+                color: white;
+                background-color: red;
+            }
+
+            .displayEx a:hover,
+            .displayEx a:focus {
+                color: white;
+                text-decoration: underline;
+                background-color: pink;
+            }
+
+            .displayEx a:hover span,
+            .displayEx a:focus span {
+                background-color: pink;
+            }
+
+            .displayEx::after {
+                clear: both;
+            }
+
+            .ex2 {
+                width: auto;
+            }
+
+            .ex2 ul li {
+                display: inline;
+                width: 120px;
+                background-color: red;
+            }
+
+            /* Q3-1. inline_test 220*32 */
+            /* Q3-2.  inline_test li 가로방향으로 배치 */
+            /* Q3-3. inline_test li a 링크영역확대 */
+
+            .inline_test {
+                margin: 32px;
+                width: 218px;
+                height: 32px;
+                font-size: 12px;
+
+                background-color: white;
+                border-radius: 16px;
+            }
+
+            .inline_test li {
+                margin-left: 3px;
+                margin-top: 8px;
+                display: inline-block;
+
+            }
+
+            .inline_test li a {
+                background-color: #eee;
+                padding: 3px 15px;
+                border: 1px solid #eee;
+                margin-right: 2px;
+                border-radius: 16px;
+                text-decoration: none;
+                
+            }
+
+            .inline_test li:nth-child(1) a {
+                display: block;
+                background-color: white;
+                border: 1px solid white;
+                font-weight: bold;
+                box-shadow: 0 3px 6px rgb(233, 230, 230);
+            }
+
+
+           
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <dl>
+                <dt>DISddLAY</dt>
+                <dd> 정의 : 요소의 [성질을 바꾸는 기술]</dd>
+                <dd> 사용1 : 줄바꿈</dd>
+                <dd> 사용2 : 링크영역 확대</dd>
+                <dd class="displayEX ex1">
+                    <a href="#" title="#">
+                        GOO:D
+                        <SPAN>MORNING</SPAN>
+
+                    </a>
+
+
+                </dd>
+            </dl>
+            
+            <dl>
+                <dt>display:inline</dt>
+                <dd>특징 : 블록속성을 인라인 속성으로</dd>
+                <dd>반각생김</dd>
+                <dd>정렬은 부모요소에</dd>
+                <dd>사용 : 가로 사이즈에 상관없이 옆으로</dd>
+                <dd class="displayEx ex2">
+                    <ul>
+                        <li>APPLE</li>
+                        <li>BANANA</li>
+                        <li>COCONUT</li>
+
+                    </ul>
+
+                </dd>
+            </dl>
+
+            <button onclick="">버튼^_^</button>
+            <p></p>
+
+
+
+            <ul class="inline_test">
+                <li><a href="#" title="#">개인</a></li><!-- 
+             -->
+                <li><a href="#" title="#">기업</a></li><!--
+             -->
+                <li><a href="#" title="#">소상공인</a></li>
+
+
+            </ul>
+
+
+
+
+
+        </div>
+
+    </body>
+
+    </html>

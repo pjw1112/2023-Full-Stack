@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic">
+        <h3>함수(function), 메서드</h3>
+        <pre>
+    함수?
+    - 함수이름만 부르면 실행되는 코드 블록
+    
+    가) 명시적 함수
+    - step1) 정의 step2) 실행
+    function 함수이름(){}
+    함수이름();
+
+    나) 익명적 함수
+    let fn = function(){};
+    fn();
+
+        </pre>
+        <input type="button" value="btn1" name="btn1" id="btn1">
+        <input type="button" value="btn2" name="btn2" id="btn2">
+        <input type="button" value="btn3" name="btn3" id="btn3">
+        <br><br>
+        <input type="button" value="+" id="btn4" class="btn4 calc" />
+        <input type="button" value="-" id="btn5" class="btn4 calc" />
+        <input type="button" value="*" id="btn6" class="btn4 calc" />
+        <input type="button" value="/" id="btn7" class="btn4 calc" />
+        <br><br>
+        <input type="button" value="아이유" class="youtube yt1" />
+        <input type="button" value="김연자" class="youtube yt2" />
+        <input type="button" value="뉴진스" class="youtube yt3" />
+        <div class="result">
+            <script>
+                let btn1 = document.getElementById('btn1');
+                btn1.addEventListener("click", btn1fn);
+                function btn1fn() {
+                    this.style.backgroundColor = "red";
+                    this.style.color = "white";
+                };
+
+                let btn2 = document.querySelector("#btn2");
+                btn2.addEventListener("click", btn2fn);
+                function btn2fn() {
+                    this.value = "Tag";
+                }
+
+                let btn3 = document.querySelector("#btn3");
+                btn3.addEventListener("click", btn3fn);
+                function btn3fn() {
+                    alert("park jin woo");
+                }
+
+                let calc = document.querySelectorAll(".calc");
+
+                calc.forEach(item => {
+                    item.addEventListener("click", function () {
+                        let num1 = prompt("첫번째 숫자 입력");
+                        let num2 = prompt("두번째 숫자 입력");
+                        let str = num1 + item.value + num2;
+                        alert(eval(str));
+
+                    })
+
+                });
+
+                let youtub = document.querySelectorAll(".youtube");
+                let www = [
+             "https://youtu.be/0-q1KafFCLU?si=qAOQR8BRu_CpdRGl",
+             "https://youtu.be/Pbl1g8V04KE?si=HG0ArbXX4atwTSIV",
+             "https://youtu.be/ArmDp-zijuc?si=ya388BiEu1iFpPmc"
+            ];
+                youtub.forEach((item, index) => {
+                    item.addEventListener("click", function () {
+                        window.open(`${www[index]}`);
+
+                    })
+
+                });
+
+
+
+
+            </script>
+        </div>
+
+</body>
+
+</html>

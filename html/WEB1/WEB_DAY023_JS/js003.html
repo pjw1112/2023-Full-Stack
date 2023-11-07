@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <script>
+            //Q1
+            var apple = 1000;
+            document.write("사과 가격은" + apple + "입니다");
+
+            //Q2
+            // var 7gram=10;
+            // document.write(7gram); //Uncaught SyntaxError: Invalid or unexpected token
+            var gram7 = 10;
+            document.write("<br>" + gram7);
+
+            //Q3
+            var foodstore = "GREEN FOOD";
+            var friend1 = 1000;
+            var friend2 = 300;
+            var sum = friend1 + friend2;
+            document.write("<br>" + foodstore + " 음식점 값 : " + sum);
+
+            //Q4
+            var a = 100, b = 100, c = 99;
+            var sum = a + b + c;
+            var avg = sum / 3;
+            var abc;
+            var winorlose;
+
+            if (avg >= 90) {
+                abc = "A";
+            } else if (avg >= 80) {
+                abc = "B";
+            } else if (avg >= 70) {
+                abc = "C";
+            } else {
+                abc = "D";
+            }
+            if (avg >= 70) winorlose = "합격";
+
+
+            mynum = avg / 10;
+
+            document.write("<BR><BR><h4>******* green it score **********</h4><BR>");
+            document.write("이름 : 박진우<BR>");
+            document.write("나이 : 37세<BR>");
+            document.write("반 : 501<BR>");
+            document.write("국어 : " + a + "<BR>");
+            document.write("영어 : " + b + "<BR>");
+            document.write("수학 : " + c + "<BR>");
+            document.write("총점 : " + sum + "<BR>");
+            document.write("평균 : " + avg.toFixed(2) + "<BR>");
+            document.write("등급 : " + abc + "<BR>");
+            document.write("합격여부 : " + winorlose + "<BR>");
+
+
+
+
+        </script>
+
+        <div>
+            <h3>변수/ 자료형</h3>
+            <h4> Step2 </h4>
+            <p>var / let / const</p>
+            <pre>
+1. var data=123;
+2. 메모리
+10000번지 [123] <- data
+
+변수명 (식별자 : data)
+메모리 (주소 : 1000번지)
+값     (저장값 : 123)
+
+3. 변수 선언 = 선언(공간만 할당) -> 초기화
+4. 런타임보다 먼저 실행됨 hoisting
+5. var, function, class,,, 키워드 선언
+5. var 의scope(사용할 수 있는 유효 범위) 는 전역변수
+
+
+            </pre>
+
+            <pre>
+1. let, const 선언한 변수는 지역 스코프
+2. let 변수명
+   - 변수 중복 선언 불가
+   - 재할당 가능
+
+3. const 변수명
+   - 선언과 초기화 동시에
+   - 상수             
+
+
+            </pre>
+
+            <script>
+                // 1. 중복 선언시 덮어씀
+                var data; //선언 (무조건 undefined 로 초기화 됨)
+            var global = 10; console.log(global);
+            var global = 20; console.log(global);
+           
+
+            // 2. 중복 선언 자체가 불가
+            let local1 = 1;
+            // let local1 = 2; 
+            console.log(local1);
+            local1 = 10;
+            console.log(local1);
+
+            // 3. const
+            const local2="hi";   
+            document.write(local2);
+            console.log(local2); 
+            
+            document.write(local2+100);
+            console.log(local2+100);
+
+            </script>
+
+        </div>
+
+
+<pre>
+1. 전역 : var 변수명;
+2. 지역 : let 변수명;
+3. 자료형 확인 - typeof
+</pre>
+<script>
+let data1;   console.log(data1);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+data1 =10;   console.log(data1);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+data1 = 3.14;   console.log(data1);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+data1 = "abc";   console.log(data1);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+data1 = true;   console.log(data1);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+data1 = ["sally", 3, "7.8kg"];   console.log(data);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+data1 = {};   console.log(data1);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+data1 = function(){};   console.log(data1);     document.write(data1+" //타입 : "+typeof(data1)+"<br>");
+
+</script>
+
+
+<br>
+<br>
+<h4>
+    STEP4 연산자
+</h4>
+<pre>
+먼저 값 비교조건 대입
+1. 이항 연산자 : + - * / %
+2. 논리 연산자 : && ||
+    
+</pre>
+
+
+    </div>
+
+</body>
+
+</html>

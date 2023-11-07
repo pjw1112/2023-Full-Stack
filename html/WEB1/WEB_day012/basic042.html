@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>POSITION</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        a:link,
+        a:visited {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: #f00;
+            text-decoration: underline;
+        }
+
+        basic {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            border-top: 5px solid #ddd;
+        }
+
+        dl {
+            margin: 5%;
+        }
+
+        .positionEX {
+            width: 200px;
+            height: 350px;
+            background-color: #ffcc66;
+            margin: 10px;
+        }
+
+        .positionEx p {
+            width: 100px;
+            height: 80px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+        }
+
+        .ex1 .green{
+            position: static; 
+            top: 100px;
+            left : 50px;
+        }
+
+        .ex2 .green{
+            position: relative; 
+            top: 100px;
+            left : 50px;
+        }
+
+        .ex3 .green{
+            position: absolute; 
+            top:0;
+            left: 0;
+        }
+
+        .not_static{
+            position: relative;
+        }
+
+        .div_fix{
+            position: fixed;
+            top : 20px;
+            right : 20px;
+            
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+    </style>
+     
+</head>
+
+<body>
+    <div class="basic">
+        <div class="div_fix">
+            이건 항상 고정
+        </div>
+        <h3>position</h3>
+        <p>정의 : 박스를 원하는 위치에 배치하는 방법</p>
+        <p>종류 : static, relative, absolute, fixed</p>
+
+        <dl>
+            <dt>position : static</dt>
+            <dd>원래 그대로의 상태, 움직이거나 겹칠 수 없다.</dd>
+            <dd> top, right, bottom, left 사용안됨.</dd>
+            <dd>
+            <dt>position:relative</dt>
+            <dd>원하는 위치에 배치, 박스 자리가 유지됨</dd>
+            <dd>기준점 : 현재 위치</dd>
+            <dd>
+                <div class="positionEX ex1">
+                    <p class="red">RED</p>
+                    <p class="green">GREEN</p>
+                    <p class="blue">BLUE</p>
+                </div>
+            </dd>
+            
+        </dl>
+
+
+        <dl>
+            <dt>position : relative</dt>
+            <dd>원래 그대로의 상태, 움직이거나 겹칠 수 없다.</dd>
+            <dd> top, right, bottom, left 사용안됨.</dd>
+            <dd>
+            <dt>position:relative</dt>
+            <dd>원하는 위치에 배치, 박스 자리가 유지됨</dd>
+            <dd>기준점 : 현재 위치</dd>
+            <dd>
+                <div class="positionEX ex2">
+                    <p class="red">RED</p>
+                    <p class="green">GREEN</p>
+                    <p class="blue">BLUE</p>
+                </div>
+            </dd>
+            
+        </dl>
+
+        <dl class="not_static">
+            <dt>position : absolute</dt>
+            <dd>원래 그대로의 상태, 움직이거나 겹칠 수 없다.</dd>
+            <dd> top, right, bottom, left 사용안됨.</dd>
+            <dd>
+            <dt>position:relative</dt>
+            <dd>원하는 위치에 배치, 박스 자리가 유지됨</dd>
+            <dd>기준점 : 현재 위치</dd>
+            <dd>
+                <div class="positionEX ex3">
+                    <p class="red">RED</p>
+                    <p class="green">GREEN</p>
+                    <p class="blue">BLUE</p>
+                </div>
+            </dd>
+            
+        </dl>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js 실습</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .mydiv {
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            float: left;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+            //Q1    
+            function checkScore() {
+                let inputElement = document.getElementById("myinput");
+                let inputValue = parseFloat(inputElement.value);
+
+                if (!isNaN(inputValue) && inputValue >= 80) {
+
+                    document.getElementById("myoutput").textContent = "합격";
+                } else if( 0 <= inputValue && inputValue <= 80){
+                    document.getElementById("myoutput").textContent = "불합격";
+                } else{
+                    document.getElementById("myoutput").textContent = "";
+                }
+            }
+            let inputcheck = document.getElementById("myinput");
+            inputcheck.addEventListener("input", checkScore);
+
+
+            //Q2
+            function checkScore2() {
+                let inputElement = document.getElementById("myinput2");
+
+
+                if (inputElement.value == "apple") {
+
+                    document.getElementById("myoutput2").textContent = "OK";
+                } else if(inputElement.value != "" && inputElement.value != "apple") {
+                    document.getElementById("myoutput2").textContent = "NOT OK";
+                }else{
+                    document.getElementById("myoutput2").textContent = "";
+                }
+            }
+
+            let inputcheck2 = document.getElementById("myinput2");
+            inputcheck2.addEventListener("input", checkScore2);
+
+
+            //Q3
+            function checkScore3() {
+                let inputElement = document.getElementById("myinput3");
+
+
+                if ( (inputElement.value == "apple" || inputElement.value == "APPLE")) {
+
+                    document.getElementById("myoutput3").textContent = "OK";
+                } else if( inputElement.value != "" && inputElement.value != "apple" && inputElement.value != "APPLE"){
+                    document.getElementById("myoutput3").textContent = "NOT OK";
+                }else{
+                    document.getElementById("myoutput3").textContent = "";
+                }
+            }
+
+            let inputcheck3 = document.getElementById("myinput3");
+            inputcheck3.addEventListener("input", checkScore3);
+
+
+            //Q4
+            function checkScore4() {
+                let inputElement = document.getElementById("myinput4");
+                let inputValue = parseFloat(inputElement.value);
+
+                if (!isNaN(inputValue) && 0 <= inputValue && inputValue <=5) {
+
+                    document.getElementById("myoutput4").textContent = "어린이의 나이는"+inputElement.value+"세입니다.";
+                } else if(!isNaN(inputValue) && (0 > inputValue || inputValue >5)){
+                    document.getElementById("myoutput4").textContent = "0~5세 사이만 입력하세요";
+                } else{
+                    document.getElementById("myoutput4").textContent = "";
+                }
+            }
+
+            let inputcheck4 = document.getElementById("myinput4");
+            inputcheck4.addEventListener("input", checkScore4);
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h3>제어문1(if/switch)</h3>
+        <pre>
+1.사용법
+    if(조건){조건이 true}
+    else    {조건이 false}
+
+</pre>
+    </div>
+
+    <div class="mydiv mydiv1">Q1 . 평균을 입력하세요
+        <input type="text" id="myinput">
+        <div class="hap" id="myoutput"></div>
+    </div>
+    <div class="mydiv mydiv2">Q2 . 사과 스펠링을 입력하세요.
+        <input type="text" id="myinput2">
+        <div class="hap2" id="myoutput2"></div>
+    </div>
+    <div class="mydiv mydiv3">Q3 . 사과 스펠링을 적으세요.
+        <input type="text" id="myinput3">
+        <div class="hap3" id="myoutput3"></div>
+    </div>
+    <div class="mydiv mydiv4">Q4 . 어린이의 나이를 입력하세요.
+        <input type="text" id="myinput4">
+        <div class="hap4" id="myoutput4"></div>
+
+    </div>
+    <div class="mydiv mydiv5">Q5</div>
+
+</body>
+
+</html>

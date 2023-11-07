@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>position:fixed</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .basic {
+            width: 80%;
+            height: 2000px;
+            margin: auto;
+            position: relative;
+        }
+
+        .ex1 {
+            border: 1px solid red;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 80px;
+            height: 200px;
+
+           
+
+        }
+
+        .ex2 {
+            border: 1px solid red;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 80px;
+            height: 200px;
+
+            display: inline-block;
+
+        }
+
+        .basic .ex1 img{
+            float: left;
+            
+            border: 1px solid blue;
+        }
+        .quick{
+            /* 100*80 중간 정렬
+                박스 그림자 x,y 0,3px blur 15px 색상(1,1,1,0,09)
+            */
+            width: 100px;
+            height : 80px;
+            border: 1px solid #e6e6e6;
+            text-align: center;
+            line-height: 80px;
+            box-shadow: 0 3px 15px rgba(1,1,1,0,0.9);
+            border-radius: 20px;
+            position: fixed;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic">
+        <h3>POSITION:relative</h3>
+        <div class="ex1"><img src="images/logo.png" alt="">POSITION:RELATIVE - 원하는 자리 배치</div>
+        <h3>POSITION:fixed</h3>
+
+        <h3>POSITION:fixed</h3>
+        <p class="ex2">POSITION:FIXED - 브라우저 고정</p>
+
+        <h3>POSITION-test</h3>
+        <div class="quick">
+            <h5>quick menu</h5>
+        </div>
+        </div>
+
+</body>
+
+</html>

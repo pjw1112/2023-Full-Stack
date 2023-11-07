@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>템플릿 엔진 예제</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <div id="output">
+        Hello, {{name}}!
+    </div>
+
+    <script>
+        const data = { name: 'Alice' };
+        const template = document.getElementById('output').innerHTML;
+        const rendered = Mustache.render(template, data);
+        document.getElementById('output').innerHTML = rendered;
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+        .wrapper{
+            min-width : 1000px;
+        }
+        .top{
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 40px;
+            font-weight: bold;
+            height: 110px;
+            text-align: center;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+        .menu{
+            font-size: 17px;
+            height: 40px;
+            border-top: 2px solid rgb(223, 220, 220);
+            border-bottom: 2px solid rgb(223, 220, 220);
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu:hover{
+            cursor: pointer;
+        }
+        .menu div:nth-child(odd){
+            /* border: 1px solid red; */
+            width : 150px;
+            line-height: 38px;
+        }
+        .menu ul{
+            display: flex;
+        }
+        .menu ul li{
+            width : 120px;
+            line-height: 38px;
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+        .slide{
+            background-color: rgb(58, 58, 58);
+            opacity: 0.9;
+            display: flex;
+            justify-content: space-between;
+            height: 230px;
+
+        }
+        .slide:hover{
+            cursor: pointer;
+
+        }
+        .slide div:nth-child(odd){
+            /* border: 1px solid red; */
+            width : 150px;
+            
+        }
+
+
+        .slide ul{
+            display: flex;
+        }
+        
+        .slide ul li ul{
+            display: flex;
+            flex-direction:column;
+            /* border: 1px solid blue; */
+            width : 120px;
+            text-align: center;
+            
+           
+        }
+        .slide ul li ul li{
+            line-height: 35px;
+            color : white;
+            
+        }
+        .slide ul li ul li:hover{
+            
+            
+        }
+        .slide ul li ul li:nth-child(1){
+            font-size: 30px;
+            line-height: 80px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top"><p>THE STEAK HOUSE</p></div>
+        <div class="menu">
+            <div>KOR | ENG</div>
+            <div>
+                <ul>
+                    <li>브랜드</li>
+                    <li>메뉴 안내</li>
+                    <li>매장 안내</li>
+                    <li>고객 센터</li>
+                </ul>
+            </div>
+            <div>로그인 | 회원가입</div>
+        </div>
+        <div class="slide">
+            <div></div>
+            <div>
+            <ul>
+                <li>
+                    <ul>
+                        <li>01</li>
+                        <li>브랜드소개</li>
+                        <li>제품안내</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>02</li>
+                        <li>메인메뉴</li>
+                        <li>사이드메뉴</li>
+                        <li>코스메뉴</li>
+                        <li>신메뉴</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>03</li>
+                        <li>매장찾기</li>
+                        <li>창업안내</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>04</li>
+                        <li>이벤트</li>
+                        <li>문의사항</li>
+                        <li>공지사항</li>
+                        <li>제휴혜택</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div></div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

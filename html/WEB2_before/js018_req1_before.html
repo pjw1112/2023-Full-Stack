@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+	<div class="basic">
+		<h3>001. BASIC START</h3>
+		<h4>1. javascript core</h4>
+		<ol>
+			<li>document.wirte / console.log☆ </li>
+			<li>변수/자료형</li>
+			<li>이벤트</li>
+			<li>제어문1(if/switch) </li>
+			<li>제어문2(for/while/do while)</li>
+			<li>배열(Array)/객체(Object)</li>
+			<li>함수(function), 메서드</li>
+		</ol>
+
+		<h4>2. javascript oop</h4>
+		<ol>
+			<li>JS object - 내장객체 </li>
+			<li>DOM</li>
+			<li><mark>BOM</mark></li>
+		</ol>
+
+		<h4>3. javascript using ★</h4>
+		<ol>
+			<li>JQUERY</li>
+			<li>AJAX </li>
+			<li>PLUGIN</li>
+		</ol>
+	</div>
+
+	<!--            -->
+	<!--            -->
+	<div class="basic">
+		<h3>STEP1. BOM - window</h3>
+		<pre>                   window
+        navigator | history | location | screen | document
+        
+        document  : 문서객체# - form , cookie, images
+        location  : url 주소에 대한 정보
+        screen    :  스크린(모니터) 정보  -  운영체제 화면
+        navigator : 웹페이지를 실행하고 있는 브라우저에 대한정보
+        history   :  뒤로, 앞으로 -- 방문기록에 대한정보
+
+     1. window     - front
+    #2. location 
+     3. screen     - front 
+     4. navigator  - front 
+    #5. history
+    </pre>
+	</div>
+
+	<!--            -->
+	<!--            -->
+	<div class="basic">
+		<h3>정규식</h3>
+
+		<pre>
+	예문1) /Hi/ 
+	<mark>#해석- Hi  라는 문자열확인</mark>
+	1-1. 문자열이 있니?  
+	1-2. Hi! Sally    
+	1-2. Alpha HHi!			
+		</pre>
+		<p><input type="button" class="btn btn-info" value="reg1" id="reg1" /></p>
+		<div class="well r1"></div>
+		<script>
+			$("#reg1").on("click", function () {
+				let leg1 = /Hi/gm;
+				if (leg1.test("Hi, sally")) {
+
+					$(".r1").text("hi");
+
+				}
+			});
+		</script>
+	</div><!-- end basic-->
+
+	<div class="basic">
+		<h3> EX2 </h3>
+		<pre>
+			예문2) a.b  
+			=> 아래의  단어의 TRUE, FALSE인지 결과를 적으시오.
+			2-1  aab   		 
+			2-2  a0b  		 
+			2-3  abc		 
+			2-4  aDOGCATbc	 	
+		</pre>
+		<p><input type="button" class="btn btn-info" value="reg2" id="reg2" /></p>
+		<div class="well r2"></div>
+		<script>
+			let str = /a.b/;
+
+			$("#reg2").on("click", function () {
+				$(".r2").append("/a.b/ 정규식으로 \"aab\"검사 > " + str.test("aab") + "<br>");
+				$(".r2").append("/a.b/ 정규식으로 \"a0b\"검사 > " + str.test("a0b") + "<br>");
+				$(".r2").append("/a.b/ 정규식으로 \"abc\"검사 > " + str.test("abc") + "<br>");
+				$(".r2").append("/a.b/ 정규식으로 \"aDOGCATbc\"검사 > " + str.test("aDOGCATbc") + "<br>");
+			});
+
+
+
+		</script>
+	</div><!-- end basic-->
+
+
+	<div class="basic">
+		<h3> EX3 </h3>
+		<pre>
+		예문3)  a[.]b 
+		3-1   a0b    
+		3-2   abc   
+		3-3   a.b    
+		
+		a[.,*]b    
+		a0b    
+		abc     
+		a.b     /
+		a,b     
+		a*b     
+		a**b    	
+		</pre>
+		<div class="well r3"></div>
+		<script>
+			let str2 = /a[.]b/;
+
+
+			$(".r3").append("/a[.]b/ 정규식으로 \"a0b\"검사 > " + str2.test("a0b") + "<br>");
+			$(".r3").append("/a[.]b/ 정규식으로 \"abc\"검사 > " + str2.test("abc") + "<br>");
+			$(".r3").append("/a[.]b/ 정규식으로 \"a.b\"검사 > " + str2.test("a.b") + "<br><br>");
+			str2 = /a[.,*]b/;
+			$(".r3").append("/a[.,*]b/ 정규식으로 \"a0b\"검사 > " + str2.test("a0b") + "<br>");
+			$(".r3").append("/a[.,*]b/ 정규식으로 \"abc\"검사 > " + str2.test("abc") + "<br>");
+			$(".r3").append("/a[.,*]b/ 정규식으로 \"a.b\"검사 > " + str2.test("a.b") + "<br>");
+			$(".r3").append("/a[.,*]b/ 정규식으로 \"a,b\"검사 > " + str2.test("a,b") + "<br>");
+			$(".r3").append("/a[.,*]b/ 정규식으로 \"a*b\"검사 > " + str2.test("a*b") + "<br>");
+			$(".r3").append("/a[.,*]b/ 정규식으로 \"a**b\"검사 > " + str2.test("a**b") + "<br>");
+
+
+
+
+
+		</script>
+	</div><!-- end basic-->
+
+	<div class="basic">
+		<h3> EX4 </h3>
+		<pre>
+	예문3) ca*t
+		
+	4-1 cat      
+	4-2 caaat    
+	4-3 cabct   
+		</pre>
+		<div class="text1"></div>
+		<script>
+		$(".text1").append(`정규식 /ca*t/ 으로 cat 검사 = ${/ca*t/.test("ca t")}<br>`);
+		$(".text1").append(`정규식 /ca*t/ 으로 caaat 검사 = ${/ca*t/.test("caaat")}<br>`);
+		$(".text1").append(`정규식 /ca*t/ 으로 cabct 검사 = ${/ca*t/.test("cabct")}<br>`);
+		$(".text1").append("c와 t사이에 오직 a 문자만 0번 이상 올 수 있음");
+		</script>
+	</div><!-- end basic-->
+
+	<div class="basic">
+		<h3> EX5 </h3>
+		<pre>
+	예문5) ca+t 
+		
+	5-1 cat     
+	5-2 caaat   
+	5-3 cabct   
+		</pre>
+		<div class="text2"></div>
+		<script>
+		$(".text2").append(`정규식 /ca+t/ 으로 cat 검사 = ${/ca+t/.test("cat")}<br>`);
+		$(".text2").append(`정규식 /ca+t/ 으로 caaat 검사 = ${/ca+t/.test("caaat")}<br>`);
+		$(".text2").append(`정규식 /ca+t/ 으로 cabct 검사 = ${/ca+t/.test("cabct")}<br>`);
+		$(".text2").append("c와 t사이에 오직 a 문자만 1번 이상 올 수 있음");
+		</script>
+	</div><!-- end basic-->
+
+
+	<div class="basic">
+		<h3> EX6 </h3>
+		<pre>
+		 예문6) ca{2}t 
+		6-1 cat   
+		6-2 caat    
+		6-3 caaat     
+		</pre>
+		<div class="text3"></div>
+		<script>
+		$(".text3").append(`정규식 /ca{2}t/ 으로 cat 검사 = ${/ca{2}t/.test("cat")}<br>`);
+		$(".text3").append(`정규식 /ca{2}t/ 으로 caat 검사 = ${/ca{2}t/.test("caat")}<br>`);
+		$(".text3").append(`정규식 /ca{2}t/ 으로 caaat 검사 = ${/ca{2}t/.test("caaat")}<br>`);
+		$(".text3").append("c와 t사이에 오직 a 문자만 2번 있는 caat만 가능");
+		</script>
+	</div><!-- end basic-->
+
+
+	<div class="basic">
+		<h3> EX7 </h3>
+		<pre>
+		 예문7) ca{2,4}t 
+		7-1 cat        
+		7-2 caat       
+		7-3 caaat      
+		7-4 caaaat      
+		7-5 caaaaat   
+		</pre>
+		<div class="text4"></div>
+		<script>
+		$(".text4").append(`정규식 /ca{2,4}t/ 으로 cat 검사 = ${/ca{2,4}t/.test("cat")}<br>`);
+		$(".text4").append(`정규식 /ca{2,4}t/ 으로 caat 검사 = ${/ca{2,4}t/.test("caat")}<br>`);
+		$(".text4").append(`정규식 /ca{2,4}t/ 으로 caaat 검사 = ${/ca{2,4}t/.test("caaat")}<br>`);
+		$(".text4").append(`정규식 /ca{2,4}t/ 으로 caaaat 검사 = ${/ca{2,4}t/.test("caaaat")}<br>`);
+		$(".text4").append(`정규식 /ca{2,4}t/ 으로 caaaaat 검사 = ${/ca{2,4}t/.test("caaaaat")}<br>`);
+		$(".text4").append("c와 t사이에 오직 a 문자만 2~4번 있는 문자열만 가능");
+		</script>
+	</div><!-- end basic-->
+
+	<div class="basic">
+		<h3> EX8 </h3>
+		<pre>
+		 예문8) ab?c 
+		8-1 ac     
+		8-2 abc     
+		8-3 abbc   
+		</pre>
+		<div class="text5"></div>
+		<script>
+		$(".text5").append(`정규식 /ab?c/ 으로 ac 검사 = ${/ab?c/.test("ac")}<br>`);
+		$(".text5").append(`정규식 /ab?c/ 으로 abc 검사 = ${/ab?c/.test("abc")}<br>`);
+		$(".text5").append(`정규식 /ab?c/ 으로 abbc 검사 = ${/ab?c/.test("abbc")}<br>`);
+		
+		$(".text5").append("a와 c 사이에 b가 0번 또는 1번 있는 문자 = ac, abc 두개만 일치");
+		</script>
+	</div><!-- end basic-->
+
+	<div class="basic">
+		<h3> EX9 </h3>
+		<pre>
+		 예문9)  a|c 
+		9-1 ac    
+		9-2 abc      
+		9-3 abbc    
+		</pre>
+		<div class="text6"></div>
+		<script>
+		$(".text6").append(`정규식 /a|c/ 으로 ac 검사 = ${/a|c/.test("ac")}<br>`);
+		$(".text6").append(`정규식 /a|c/ 으로 abc 검사 = ${/a|c/.test("abc")}<br>`);
+		$(".text6").append(`정규식 /a|c/ 으로 abbc 검사 = ${/a|c/.test("abbc")}<br>`);
+		
+		$(".text6").append("a또는 c 둘 중의 하나만 있으면 true");
+		</script>
+	</div><!-- end basic-->
+
+
+
+	<div class="basic">
+		<h3> EX10 </h3>
+		<pre>
+	예문10)  ^My 
+
+	10-1 My Cat   		 o  My(#)   
+	10-2 is so cute      x
+		</pre>
+		<div class="text7"></div>
+		<script>
+		$(".text7").append(`정규식 /^My/ 으로 My Cat 검사 = ${/^My/.test("My Cat")}<br>`);
+		$(".text7").append(`정규식 /^My/ 으로 is so cute 검사 = ${/^My/.test("is so cute")}<br>`);
+		$(".text7").append(`정규식 /^My/ 으로 hi My name is jin 검사 = ${/^My/.test("hi My name is jin")}<br>`);
+		
+		$(".text7").append("문자열이 My로 시작하면 true");
+		</script>
+	</div><!-- end basic-->
+
+	<div class="basic">
+		<h3> EX11 </h3>
+		<pre>
+	예문11)  cute$  
+
+	11-1 My Cat   		  
+	11-2 is so cute 
+		</pre>
+		<div class="text8"></div>
+		<script>
+		$(".text8").append(`정규식 /cute$/ 으로 My Cat 검사 = ${/cute$/.test("My Cat")}<br>`);
+		$(".text8").append(`정규식 /cute$/ 으로 is so cute 검사 = ${/cute$/.test("is so cute")}<br>`);
+		$(".text8").append(`정규식 /cute$/ 으로 hi cute catty! 검사 = ${/cute$/.test("hi cute catty!")}<br>`);
+		
+		$(".text8").append("문자열이 cute 로 끝나야 함");
+		</script>
+	</div><!-- end basic-->
+
+
+
+	<div class="basic">
+		<h3> EX12 </h3>
+		<pre>
+		 예문12)  (ABC)+  
+		12-1 ABCABCABC		  
+ 		12-2 ABCABCABCABCABCABC   
+ 
+		</pre>
+				
+		<script>
+			let num = 9; //복사할때마다 +1
+			let regex = /(ABC)+/;
+			let newdiv = 
+			document.createElement("div");
+			newdiv.setAttribute("class",`text${num}`)
+			$(".basic")[$(".basic").length-1].appendChild(newdiv);
+		$(`.text${num}`).append(`정규식 ${regex} 으로 ABCABCABC 검사 = ${regex.test("ABCABCABC")}<br>`);
+		$(`.text${num}`).append(`정규식 ${regex} 으로 ABCABCABCABCABCABC 검사 = ${regex.test("ABCABCABCABCABCABC")}<br>`);
+		$(`.text${num}`).append(`정규식 ${regex} 으로 hi cute catty! 검사 = ${regex.test("hi cute catty!")}<br>`);
+		
+		$(`.text${num}`).append("문자열이 cute 로 끝나야 함");
+		</script>
+	</div><!-- end basic-->
+
+
+	<div class="basic">
+		<h3> EX13 </h3>
+		<pre>
+예문13) \d\d\
+13-1 sally03915@gmail.com 
+		</pre>
+	</div><!-- end basic-->
+
+
+
+	<div class="basic">
+		<h3> EX14 </h3>
+		<pre>
+예문14) \d{3}
+14-1 sally03915@gmail.com 
+14-2 sally[039]15@gmail.com
+		</pre>
+	</div><!-- end basic-->
+
+
+
+	<div class="basic">
+		<h3> EX15 </h3>
+		<pre>
+예문15) i\w+n
+15-1 internationalization    
+15-2 ian       
+15-3 i12345n   
+15-4 iAn       
+15-5 in       
+15-6 i++++++++++++++++n   
+		</pre>
+	</div><!-- end basic-->
+
+
+
+	<div class="basic">
+		<h3> EX16 </h3>
+		<pre>
+예문16) i\w+?n 
+16-1 internationalization
+		</pre>
+	</div><!-- end basic-->
+
+
+	<div class="basic">
+		<h3> EX17 </h3>
+		<pre>
+예문17)   .+: 
+17-1   http://google.com 
+		</pre>
+	</div><!-- end basic-->
+
+
+	<div class="basic">
+		<h3> EX18 </h3>
+		<pre>
+예문18) .+(?=:)   
+18-1 http://google.com
+18-2 https://google.com
+		</pre>
+	</div><!-- end basic-->
+
+	<div class="basic">
+		<h3> EX19 </h3>
+		<pre>
+예문19)  \d+(?=원) 
+19-1 1000원   
+19-2 123엔  
+		</pre>
+	</div><!-- end basic-->
+<script>
+	for(let i = 14;i<21;i++){
+	let exNumber = document.querySelectorAll(".basic")[i].querySelector("h3").innerText.substring(2,4);
+	let textall = document.querySelectorAll(".basic")[i].querySelector("pre").innerText;
+	let text1 = textall.substring(0,textall.indexOf("\n")); 
+	let regex = "/"+text1.substring(5).trim()+"/";
+	let newdiv = document.createElement("div");
+		newdiv.setAttribute("class",`text${exNumber}`);
+		document.querySelectorAll(".basic")[i].appendChild(newdiv);
+
+		newdiv.innerText+=`정규식 ${regex} 으로 `;
+		
+
+
+
+
+	console.log(
+		textall.substring(textall.indexOf("\n"))
+	);
+
+}
+
+
+
+function countN(inputString, targetChar) {
+  let count = 0;
+  for (let i = 0; i < inputString.length; i++) {
+    if (inputString[i] === targetChar) {
+      count++;
+    }
+  }
+  return count;
+}
+</script>
+</body>
+
+</html>

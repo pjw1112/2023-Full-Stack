@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+strong {
+    color: rgb(245, 129, 129);
+}
+
+.myform {
+    width: 1100px;
+    /* margin: auto; */
+    border: 1px solid blue;
+    text-align: left;
+}
+
+.myform h3 {
+    display: block;
+    margin:auto;
+    width : 60%;
+    margin-top: 10px;
+    font-size: 35px;
+    color: #413E4C;
+    letter-spacing: 7px;
+
+}
+
+.myform p {
+    margin: 20px 0;
+    color: gray;
+}
+
+.post_number{
+    text-align: center;
+}
+
+
+fieldset {
+
+    
+    padding: 5px;
+    border: 1px solid yellow;
+
+}
+
+.floor {
+    /* border: 1px solid red; */
+    margin: 12px 5px;
+    text-align: left;
+    height: 40px;
+}
+
+.floor_in {
+    border: 1px solid red;
+    width: 49%;
+    height: 40px;
+    float: left;
+}
+
+.row_1 {
+    padding-left: 10px;
+    text-align: left;
+    line-height: 40px;
+    width: 150px;
+    border: 1px solid blue;
+}
+
+.row_2 {
+    line-height: 40px;
+    width : 270px;
+    border: 1px solid red;
+    
+
+}
+.row_2 div{
+    float: right;
+    margin-right: 3px;
+}
+
+.row_2 input {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #C7BDBF;
+    background-color: #EFECE7;
+    vertical-align: center;
+
+}
+.row_3{
+    line-height : 40px;
+}
+.row_3 input {
+    width: 250px;
+    height: 30px;
+    
+    vertical-align: bottom;
+
+}
+.floor3 .row_1{
+    text-align: right;
+}
+.floor4 .row_1{
+
+    padding-left: 200px;
+    
+}
+.floor4 .row_2{
+    border: 1px solid green;
+    width : 300px;
+    
+}
+.floor4 .row_1 input[type="submit"],
+input[type="button"]{
+    
+    text-align: center;
+    border : 1px solid #123456;
+    width : 200px;
+    height : 36px;
+    background-color: #123456;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 3px;
+}
+
+
+.floor4 .row_2 a{
+    display: inline-block;
+    text-align: center;
+    border : 1px solid #123456;
+    width : 200px;
+    line-height : 35px;
+    background-color: #123456;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    vertical-align: bottom;
+    
+}
+.floor4 .row_1 input[type="submit"]:hover,
+.floor4 .row_1 input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus{
+    border-color:  rgb(161, 159, 159);;
+    background-color: #eee; color : #3a638d;
+    transition: all 0.2s ease-in-out 0.2s;
+}
+.floor4 .row_2 a:hover,
+.floor4 .row_2 a:focus{
+    border-color:  rgb(161, 159, 159);;
+    background-color: #eee; color : #3a638d;
+    transition: all 0.2s ease-in-out 0.2s;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>basic027 -a</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #eee;
+        }
+
+        .basic {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 3px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .basic h3 {
+            border-left: 10px solid crimson;
+            padding-left: 10px;
+        }
+
+        .basic p {
+            margin: 10px auto;
+            /* padding-left: 20px; */
+        }
+
+        .b1 p {
+            width: 200px;
+            text-align: center;
+            background-color: #333;
+            height: 80px;
+        }
+
+        .b1 p a {
+            color: white;
+            line-height: 80px;
+            display: block;
+        }
+
+        a:link {
+            color: yellow;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: blue
+        }
+
+        a:focus {
+            background-color: gold;
+        }
+
+        a:active {
+            background-color: #ff6666;
+        }
+
+        /*
+    a:link      방문한적이 없는 일반링크
+    a:visited   방문한적이 있는 일반링크
+    a:hover     마우스를 올릴때 링크
+    a:focus     focus
+    a:active    링크연결중
+
+    */
+
+        .ex p {
+            display: block;
+            width: 150px;
+            height: 150px;
+
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            float: left;
+            margin: 20px 10px;
+
+        }
+
+        .ex {
+            height: 250px;
+        }
+
+        .ex p span {
+            background-color: gold;
+            display: block;
+
+
+        }
+
+        .ex p a {
+            text-decoration: none;
+            display: block;
+            width: 150px;
+            height: 100px;
+            background-color: black;
+            padding-top: 50px;
+        }
+
+        .ex p a:link {
+            color: white;
+        }
+
+        .ex p a:visited {
+            color: white;
+            background-color: gold;
+
+        }
+
+        .ex p a:visited span {
+
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic b1">
+        <h3> LINK - 기본 사용법(1)</h3>
+        <p><a href="http://www.naver.com" title="네이버포털사이트로 바로가기">네이버</a></p>
+
+        <p><a href="http://www.daum.net" title="다음 새창 열기" target="_blank">다음</a></p>
+        <p><a href="http://www.google.com" title="구글 새창 열기" target="_blank">구글</a></p>
+
+    </div>
+
+    <div class="basic">
+        <h3> LINK - 연습문제 </h3>
+        <P> 이미지 그림클릭시 네이버 사이트로 새창 열림 바로기ㅏ기</P>
+        <p><a href="http://www.naver.com" target="_blank"><img src="images/basic027.gif" alt="">블랭크</a></p>
+        <p><a href="http://www.naver.com" target="_parent"><img src="images/basic027.gif" alt="">페어런츠</a></p>
+        <p><a href="http://www.naver.com" target="_self"><img src="images/basic027.gif" alt="">셀프</a></p>
+        <p><a href="http://www.naver.com" target="_top"><img src="images/basic027.gif" alt="">탑</a></p>
+
+    </div>
+
+    <div class="basic ex">
+        <h3> Link 연습문제</h3>
+        <p>
+            <a href="https://www.naver.com" title="네이버포탈로 링크" target="_blank">
+                <span>NAVER</span>BAND
+            </a>
+
+        </p>
+
+        <p>
+            <a href="https://www.joongang.co.kr/" title="중앙일보 링크" target="_blank">
+                <span>중앙일보</span>CENTRAL
+            </a>
+
+        </p>
+
+        <p>
+            <a href="https://imagecolorpicker.com/" title="YOUTUBE" target="_blank">
+                <span>컬러픽커</span>사이트
+            </a>
+
+        </p>
+
+    </div>
+
+</body>
+
+</html>

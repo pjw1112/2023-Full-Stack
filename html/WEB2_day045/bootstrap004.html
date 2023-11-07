@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>INDEX</h3>
+        <pre>
+            1. GRID-Layout
+            2. 기본 사용법
+            3. 유용한 CSS
+            4. 유용한 js/jquery
+        </pre>
+    </div>
+    <!--  -->
+    <!--  -->
+
+    <div class="container panel panel-success">
+        <h3 class="panel-heading">기본 사용법</h3>
+        <div class="panel-body">
+            <pre>
+            1. class="기본css 색상"
+            class = "btn btn-default"
+
+            2. 크기
+            .btn-lg , sm, xs
+
+            3. block (box - width 0 / 줄바꿈 0) vs inline (box - width X / 줄바꿈 X)
+            .btn-block
+
+            4. active(활성화) / disabled(비활성화)
+        </pre>
+
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-default btn-lg">Default</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Primary</button>
+            <button type="button" class="btn btn-success btn-sm btn-inline">Success</button>
+            <button type="button" class="btn btn-info btn-sm">Info</button>
+            <button type="button" class="btn btn-warning btn-xs jin">Warning</button>
+            <button type="button" class="btn btn-danger btn-xs disabled">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+
+        <script>
+            $(function(){
+
+            $(".jin").on("click", function () {
+                
+                    console.log("hi");
+               
+            });
+        });
+        </script>
+    </div>
+    <!--  -->
+    <!--  -->
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+  /*  base.css  */    
+body{  font-family:"Malgun Gothic" , dotum , sans-serif; font-size:90%;
+    background-color:#eee; color:#000;}
+a:link, a:visited{  color:#000;   text-decoration:none; }
+a:hover, a:focus{  color:#f00;   text-decoration:underline; }
+
+ol, ul, dl{  margin:20px 0; }
+pre , .desc{ border-radius:20px;  background-color:#efefef;
+  padding:10px; margin:10px 0; 
+}
+
+.basic h3, .basic h4, .basic h4{
+  border-left:10px solid crimson;
+  text-indent:1em;
+  margin: 10px 0;
+}
+.basic h4 {
+  border-color: antiquewhite;
+}
+.basic h5 {
+  border-color: antiquewhite;
+}
+.basic img{width:100%; }
+.basic .logo{width:200px;}
+
+.basic input[type="button"] , .basic input[type="submit"]{ 
+    background-color: #2196F3;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 7px 18px;
+    color:white;
+    border:0 none;
+    cursor:pointer;
+} 
+.basic fieldset {  border:0 none;}
+.basic label {
+  display: inline-block;
+  width: 10%;
+}
+.basic input   {
+background-color: #fff;
+border: 1px solid #ced4da;
+border-radius: 4px;
+box-sizing: border-box;
+margin: 6px 0;
+padding: 7px 18px;
+}

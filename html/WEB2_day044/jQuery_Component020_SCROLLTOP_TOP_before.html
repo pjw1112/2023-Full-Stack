@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<title> new document </title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			font-family: "Malgun Gothic", sans-serif;
+			background-color: #eee;
+			height : 2000px;
+		}
+
+		.basic {
+			width: 600px;
+			height: 100%;
+			margin: 50px auto;
+			background-color: white;
+			color: #333;
+			border-top: 5px solid #123;
+			padding: 50px;
+		}
+
+		.top {
+			width: 60px;
+			height: 60px;
+			position: fixed;
+			right: 10%;
+			bottom: 100px;
+		}
+
+		.top img {
+			transform: rotate(90deg);
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div class="basic">
+
+		<div class="top">
+			<a href="#" id="top"><img src="images/prev.png" alt="위로가기버튼 링크" /></a>
+		</div>
+		
+	</div>
+	<script>
+
+		// 1. #top 화면상에 안보이게 숨기기
+			//    패턴 :   대상(#top)   효과(숨기기:hide)
+			$(".top a img").hide();
+		// 2. 스크롤을 내리면 #top가 서서히 나타난다
+			//    패턴 :   이벤트대상: window     이벤트:  스크롤을 내리면       이벤트핸들러 : #top가 서서히 나타난다
+		$(window).on("scroll", function () {
+			if($(this).scrollTop()>=900){
+				$(".top a img").stop().fadeIn();
+			}else{
+				$(".top a img").stop().fadeOut();
+			}
+		});
+			// 3. #top을 클릭하면 서서히 위로 올라간다.
+			//    패턴 :   이벤트대상: #top(a)  이벤트: click  =>  return false  이벤트핸들러 :  body가 서서히 위로 올라간다.
+			$(".top a").on("click", function (e) {
+				e.preventDefault();
+				$("html, body").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+	
+	
+	
+	</script>
+</body>
+
+</html>

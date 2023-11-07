@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<title> new document </title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "Malgun Gothic", sans-serif;
+			background-color: #eee;
+		}
+
+		.basic {
+			color: #333;
+			width: 600px;
+			margin: 50px auto;
+			background-color: white;
+			border-top: 5px solid #123;
+			padding: 50px;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		.gnb>li>a {
+			color: white;
+			background-color: #90eefa;
+			line-height: 35px;
+			display: inline-block;
+			border-top: 3px solid rgb(80, 163, 25);
+			border-bottom: 3px solid rgb(80, 163, 25);
+			width: 100px;
+			text-align: center;
+			transition: all ease-in-out 0.4s;
+
+		}
+		.gnb>li>a:hover {
+			background-color: #40e1f7;
+		}
+
+		.gnb a {
+			color: white;
+			background-color: #90eefa;
+			line-height: 35px;
+			display: inline-block;
+
+			width: 100px;
+			text-align: center;
+
+		}
+
+		.gnb {
+			/* border : 1px solid red; */
+			width: 300px;
+			height: 150px;
+			display: flex;
+			margin: 10px;
+		}
+
+		.gnb>* {
+			/* margin: 5px; //각 자식 요소의 좌우 간격을 5px로 설정 */
+		}
+
+		.sub {
+			display: flex;
+			/* 하위 메뉴 항목을 가로로 나란히 표시 */
+			flex-direction: column;
+			justify-content: space-between;
+			/* 가로 정렬을 수행 */
+			padding: 0;
+			/* 기본 패딩 제거 (선택 사항) */
+			list-style: none;
+			/* 리스트 스타일 제거 (선택 사항) */
+		}
+
+		.gnb li ul.sub {
+			display: none;
+		}
+	</style>
+	<!-- jQuery library -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/jquery.color.js"></script>
+
+
+</head>
+
+<body>
+	<div class="basic">
+		<h3> GNB1</h3>
+		<ul class="gnb  g1">
+			<li>
+				<a href="#">COMPANY</a>
+				<ul class="sub s1">
+					<li><a href="#">COMPANY1</a></li>
+					<li><a href="#">COMPANY2</a></li>
+					<li><a href="#">COMPANY3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">SERVICE</a>
+				<ul class="sub s2">
+					<li><a href="#">SERVICE1</a></li>
+					<li><a href="#">SERVICE2</a></li>
+					<li><a href="#">SERVICE3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">CONTACT</a>
+				<ul class="sub s3">
+					<li><a href="#">CONTACT1</a></li>
+					<li><a href="#">CONTACT2</a></li>
+					<li><a href="#">CONTACT3</a></li>
+				</ul>
+			</li><!-- LI END -->
+		</ul>
+		<script>
+		</script>
+
+		<!-- //////////////////////////////////////////// GNB1 -->
+		<h3> GNB2</h3>
+		<ul class="gnb  g2">
+			<li>
+				<a href="#">COMPANY</a>
+				<ul class="sub s1">
+					<li><a href="#">COMPANY1</a></li>
+					<li><a href="#">COMPANY2</a></li>
+					<li><a href="#">COMPANY3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">SERVICE</a>
+				<ul class="sub s2">
+					<li><a href="#">SERVICE1</a></li>
+					<li><a href="#">SERVICE2</a></li>
+					<li><a href="#">SERVICE3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">CONTACT</a>
+				<ul class="sub s3">
+					<li><a href="#">CONTACT1</a></li>
+					<li><a href="#">CONTACT2</a></li>
+					<li><a href="#">CONTACT3</a></li>
+				</ul>
+			</li><!-- LI END -->
+		</ul>
+		<script>
+		</script>
+
+		<!-- //////////////////////////////////////////// GNB2 -->
+
+		<h3> GNB3</h3>
+		<ul class="gnb  g3">
+			<li>
+				<a href="#">COMPANY</a>
+				<ul class="sub s1">
+					<li><a href="#">COMPANY1</a></li>
+					<li><a href="#">COMPANY2</a></li>
+					<li><a href="#">COMPANY3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">SERVICE</a>
+				<ul class="sub s2">
+					<li><a href="#">SERVICE1</a></li>
+					<li><a href="#">SERVICE2</a></li>
+					<li><a href="#">SERVICE3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">CONTACT</a>
+				<ul class="sub s3">
+					<li><a href="#">CONTACT1</a></li>
+					<li><a href="#">CONTACT2</a></li>
+					<li><a href="#">CONTACT3</a></li>
+				</ul>
+			</li><!-- LI END -->
+		</ul>
+		<script>
+			 /// 전체 GNB2 
+		</script>
+
+		<!-- //////////////////////////////////////////// GNB3 -->
+
+		<h3> GNB4</h3>
+		<ul class="gnb  g4">
+			<li>
+				<a href="#">COMPANY</a>
+				<ul class="sub s1">
+					<li><a href="#">COMPANY1</a></li>
+					<li><a href="#">COMPANY2</a></li>
+					<li><a href="#">COMPANY3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">SERVICE</a>
+				<ul class="sub s2">
+					<li><a href="#">SERVICE1</a></li>
+					<li><a href="#">SERVICE2</a></li>
+					<li><a href="#">SERVICE3</a></li>
+				</ul>
+			</li><!-- LI END -->
+			<li>
+				<a href="#">CONTACT</a>
+				<ul class="sub s3">
+					<li><a href="#">CONTACT1</a></li>
+					<li><a href="#">CONTACT2</a></li>
+					<li><a href="#">CONTACT3</a></li>
+				</ul>
+			</li><!-- LI END -->
+		</ul>
+		<script>
+			// $(".gnb>li>ul.sub").slideUp();
+			$(".gnb li").on("mouseenter", function () {
+				$(this).find(".sub").stop().slideDown();
+			}).on("mouseleave", function () {
+				$(this).find(".sub").stop().slideUp();
+			});
+
+			// $("ul.sub li a").on("mouseover", function () {
+			// 	$(this).css({
+			// 		"backgroundColor": "#43e2f7"
+			// 	});
+			// }).on("mouseout", function () {
+			// 	$(this).css({
+			// 		"backgroundColor": "#90eefa"
+			// 	});
+			// });
+
+
+			 /// 전체 GNB2 
+		</script>
+		<!-- //////////////////////////////////////////// GNB4 -->
+	</div>
+
+</body>
+
+</html>

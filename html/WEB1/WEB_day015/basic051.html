@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BACK-GROUND</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+            background-image: url("images/bg_attach.jpg");
+            background-repeat: no-repeat;
+            background-color: gray;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+
+        .basic {
+            width: 74%;
+            height: 2000px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 3%;
+            border-top: 5px solid #ddd;
+            position: relative;
+        }
+
+        .mybg {
+            width: 50%;
+            height: 100px;
+            border: 1px solid red;
+            margin: 20px 0;
+        }
+
+        .b1 {
+            background-color: pink; 
+            background-position: ce;
+
+        }
+
+        .b2 {
+            background-image: url("images/bg_logo.png");
+            background-repeat: no-repeat;
+            background-color: #eee;
+            padding-left: 90px;
+
+        }
+
+        .b3 {
+            background: url("https://ssl.pstatic.net/melona/libs/1462/1462529/7a392f58bb51f0cf5f6a_20230914162409061.jpg") bottom no-repeat local;
+            background-size: 60%;
+            /*background-siz 제외하고 전부 합칠 수 있음*/
+
+        }
+
+        .b5 {
+            overflow: hidden;
+        }
+
+        .b5 .back_test {
+            color: white;
+            text-align: center;
+            height: 100%;
+            background-image: url("images/bg_attach.jpg");
+        }
+
+        .b5 .back_test p {
+            line-height: 70px;
+            
+        }
+
+        .b5 .back_test:hover {
+            background-position: bottom right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic">
+        <div class="mybg b1">
+            <h3>BACKGROUND 기본</h3>
+            <p>배경색 : <mark>background - color</mark></p>
+        </div>
+
+        <div class="mybg b2">
+            <h3>BACKGROUND 기본</h3>
+            <p>배경 이미지 : <mark>background - image</mark></p>
+            <p>배경 반복 여부 : <mark>background - repeat 체크</mark></p>
+        </div>
+
+        <div class="mybg b3">
+            <h3>BACKGROUND 기본</h3>
+            <p>배경 이미지 : <mark>background - image</mark></p>
+            <p>배경 반복 여부 : <mark>배경 반복 안되게</mark></p>
+        </div>
+
+        <div class="mybg b4">
+            <h3>BACKGROUND TEST1 - 배경 고정</h3>
+
+        </div>
+
+        <div class="mybg b5">
+            <h3>BACKGROUND TEST2 </h3>
+            <div class="back_test">
+                <P><a href="#" title="#">TEST2</a></P>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>basic062</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        table,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        table {
+            margin: 20px 0;
+
+        }
+
+        td {
+            width: 170px;
+            height: 50px;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* //테이블 셀 간격 없애기 */
+        .mytable {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 0px;
+        }
+
+        .mytable tr td {
+            border-left: 0;
+            border-right: 0;
+
+        }
+        .mytable caption{
+            display: none;
+        }
+
+        /* caption은 스크린 리더기는 읽게 하고 화면상에서는 안 나오게 처리 */
+        /* th, td 간격 넓히기
+        th 폰트 꾸미기
+        테이블 위에 선 */
+    </style>
+
+    <script>
+
+        function myFunction() {
+            var myelement = document.getElementById("td3");
+            myelement.style.backgroundColor ="red";
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <div>
+
+        <div class="class">
+            <h3>TABLE BASIC-01</h3>
+        </div>
+        <pre>
+            table   테이블 - 표
+            tr      줄
+            td      칸
+        </pre>
+        <table>
+            <tr>
+                <td>1-1</td>
+                <td>1-2</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+            </tr>
+
+        </table>
+
+        <h3>TABLE BASIC-1 ex</h3>
+        <table>
+            <tr>
+                <td colspan="2">1</td>
+                <td onmouseover="myFunction()" id="td3">3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td>
+                <td colspan="2">5</td>
+
+            </tr>
+            <tr>
+
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+
+        <h3>TABLE BASIC -3 웹접근성 맞추기</h3>
+        <pre>
+            1. summary : 테이블에 대한 설명
+            2. caption : 테이블 제목
+            3. thead (th) / tbody / tfoot
+            4. th scope="col"   /   "row"
+
+        </pre>
+        <table>
+            <caption> 2023 학생명단</caption>
+            <thead>
+                <TR>
+                    <th>No</th>
+                    <th>NAME</th>
+                    <th>SEX</th>
+                </TR>
+            </thead>
+            <TBOdy>
+                <tr>
+                    <td>1</td>
+                    <td>마동석</td>
+                    <td>남</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>김혜수</td>
+                    <td>여</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>마동석</td>
+                    <td>남</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>김혜수</td>
+                    <td>여</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>마동석</td>
+                    <td>남</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>김혜수</td>
+                    <td>여</td>
+                </tr>
+            </TBOdy>
+
+            <tfoot>
+                <TR>
+                    <th scope="row">인원</th>
+                    <th colspan="2">6</th>
+
+                </TR>
+
+            </tfoot>
+
+        </table>
+
+
+        <h3>TABLE BASIC-3 웹접근성 맞추기 -EX</h3>
+
+        <table class="mytable" title="2019,2020,2021년도의 자산총계표 입니다.">
+           <caption>2019,2020,2021년도의 자산총계표 입니다.</caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>2019</th>
+                    <th>2020</th>
+                    <th>2021</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>유동자산</td>
+                <td>4,266</td>
+                <td>4,557</td>
+                <td>3,775</td>
+            </tr>
+            <tr>
+                <td>비유동자산</td>
+                <td>1,663</td>
+                <td>1,595</td>
+                <td>1,856</td>
+            </tr>
+            <tr>
+                <td><b>자산총계</b></td>
+                <td><b>5,926</b></td>
+                <td><b>6,152</b></td>
+                <td><b>5,631</b></td>
+            </tr>
+        </table>
+
+        
+        <h3>TABLE BASIC-4 웹접근성 검사도구</h3>
+        <ol>
+            <li>OPEN -WAX (chrome.google.com/webstore)</li>
+            <li>Live server</li>
+            <li></li>
+        </ol>
+    </div>
+
+
+
+</body>
+
+</html>

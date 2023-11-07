@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS3</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        /*  q1.     .br     100*100 상하좌우바깥쪽여백 10px
+                            좋아하는 배경, 글자색, 문자 정중앙배치
+        */
+        .br {
+            width: 100px;
+            line-height: 100px;
+            margin: 10px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        dt {
+            border-left: 3px solid red;
+            font-weight: bold;
+            text-indent: 1em;
+        }
+
+        .b1 {
+            border-radius: 10px;
+        }
+
+        .b2 {
+            border-radius: 10px 50px;
+        }
+
+        .b3 {
+            border-radius: 50%;
+        }
+
+        .shadow {
+            width: 100px;
+            line-height: 100px;
+            margin: 10px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+        }
+
+        .box {
+            box-shadow: 10px 10px 4px rgba(160, 184, 28, 0.8);
+        }
+
+        .text {
+            text-shadow: 0px 5px 5px blue, 0 10px 5px black, 0 15px 2px gold;
+        }
+
+        .transition {
+            width: 100px;
+            line-height: 100px;
+            margin: 10px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            transition: all 0.4s ease-in-out 0.1s;
+            font-weight: bold;
+
+        }
+
+        .transition:hover {
+            background-color: blue;
+            font-size: 30px;
+
+        }
+
+        /* //정리 test : 마우스를 올리거나, 탭키를 누르면 네모에서 완벽한 동그라미로,
+                배경색 #333으로 바꾸기, 글자색 white */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .mya {
+            display: block;
+            width: 100px;
+            line-height: 100px;
+            margin: 10px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            transition: all 0.4s ease-in-out 0.1s;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+        .mya:hover,
+        .mya:focus {
+            background-color: red;
+            font-size: 150px;
+            border-radius: 50%;
+            width: 100px;
+            line-height: 100px;
+            overflow: hidden;
+        }
+
+        .f1{
+            display: block;
+            width: 100px;
+            line-height: 100px;
+            margin: 10px;
+            background-color: greenyellow;
+            color: white;
+            text-align: center;
+            transition: all 0.4s ease-in-out 0.1s;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .f1:hover{
+            transform: scale(10 , 10);
+            background-color : red;
+            color : white;
+        }
+
+
+        .f2{
+            display: block;
+            width: 100px;
+            line-height: 100px;
+            margin: 10px;
+            background-color: rgb(74, 200, 238);
+            color: white;
+            text-align: center;
+            transition: all 0.4s ease-in-out 0.1s;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .f2:hover{
+            transform: rotate(-90deg);
+            background-color : red;
+            color : white;
+            border: 5px dotted blue;
+        }
+        .f3{
+            display: block;
+            width: 100px;
+            line-height: 100px;
+            margin: 10px;
+            background-color: pink;
+            color: white;
+            text-align: center;
+            transition: all 0.4s ease-in-out 0.1s;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .f3:hover{
+            transform: translate(100px,0);
+            background-color : red;
+            color : white;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="basic">
+        <h3>CSS3-BASIC1</h3>
+        <h4>[1] border - radius</h4>
+        <p>상하좌우 모서리를 둥글게</p>
+        <dl>
+            <dt>border-radius : 10px</dt>
+            <dd class="br b1">TEST1</dd>
+            <dt>border-radius : 10px 30px 50px 70px</dt>
+            <dd class="br b2">TEST2</dd>
+            <dt>연습문제 : </dt>
+            <dd class="br b3">TEST3</dd>
+        </dl>
+
+
+
+        <h4>[2] box-shadow / text-shadow</h4>
+        <p>그림자 효과</p>
+        <dl>
+            <dt>box-shadow</dt>
+            <dd class="shadow box">SHADOW1</dd>
+
+            <dt>box-shadow</dt>
+            <dd class="shadow text">SHADOW2</dd>
+
+        </dl>
+
+        <hr>
+        <h4>[3] transition</h4>
+        <p>장면전환, 변화하는 과정이 보임</p>
+        <dl>
+            <dt>transition : 바꿀 속성 몇 초동안 어떤 모양으로 몇 초 뒤에</dt>
+            <dd class="transition">TEST</dd>
+            <dt>정리 test : 마우스를 올리거나, 탭키를 누르면 네모에서 완벽한 동그라미로,
+                배경색 #333으로 바꾸기, 글자색 white
+            </dt>
+            <dd class="transition_ts"><a class="mya" href="#" title="#"">TEST</a></dd>
+
+        </dl>
+
+        <hr>
+        <h4>[4] transform</h4>
+        <p>변환 -  사이즈 변환, 각도 기울이기, 움직이기</p>
+        <dl>
+            <dt>transform:scale (가로사이즈, 세로사이즈)</dt>
+            <dd class=" transform f1">SCALE</dd>
+            <dt>transform:rotate (각도)</dt>
+            <dd class="transform f2">ROTATE</dd>
+            <dt>transform:translate (가로방향위치, 세로방향위치)</dt>
+            <dd class="transform f3">translate</dd>
+        </dl>
+    </div>
+
+</body>
+
+</html>

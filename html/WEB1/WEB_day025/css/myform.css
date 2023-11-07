@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* myform.css */  
+.myform input[type="submit"]{  cursor:pointer;  }  
+    
+.myform{  width:100%;  }
+.myform  h3{  color:#47444b;  font-size: 180%; 
+    letter-spacing: 0.2em; text-align: center;
+    margin:100px 0 20px 0;
+}
+.myform  p , 
+.myform  div{ 
+    text-align: center;   margin:20px 0 13px 0;
+    line-height:22px
+}
+.myform .required {color:crimson}
+
+.myform  fieldset{  border:0 none; }
+.myform label{  display:inline-block;  width:20%; 
+                text-transform: uppercase;
+}
+.myform input , 
+.mybtn{  display:inline-block;  width:25%; 
+    padding:3px 8px;  background-color:#efece7;
+    border:1px solid #a19197;  line-height: 20px;
+} 
+input[type="submit"] , 
+.mybtn{
+    background-color:#123456; color:#eee; 
+    border:1px solid #123456;
+    vertical-align: bottom;
+}
+a.mybtn {  color: #eee;  }
+input[type="submit"]:hover , 
+input[type="submit"]:focus,
+a.mybtn:hover ,a.mybtn:focus {
+    background-color:#eee; color:#123456; 
+    text-decoration:none;
+    /* transition: 바꿀속성  몇초동안 어떤모양으로 몇초뒤에 */
+    transition:all  0.4s  ease-in 0.1s;
+}
+
+/*     이용약관            */
+/*
+Q1. 이용약관 legend   
+    #333  11px  위쪽여백 50px 아래쪽여백10px  
+    아래쪽선 : 1px solid #666
+    굵게
+Q2. textarea 
+    선 1px solid #ccc  가로사이즈 80%*200px 가운데배치
+    안쪽여백 20px  #8f8f8f  11px  행간 150%
+*/
+.using  legend{
+    color:#333; font-size:20px;  border-bottom:1px solid #666;
+    padding-top:50px;  margin-bottom:10px; 
+    font-weight: bold;  width:100%;
+}
+.myform textarea {
+    border:1px solid #ccc;  
+    width:80%; height:200px;     margin: 20px 10%;
+    padding:20px;  color:#8f8f8f;  line-height:150%;
+}

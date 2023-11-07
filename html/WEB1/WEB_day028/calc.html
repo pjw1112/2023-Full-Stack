@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .grid-container {
+            display: grid;
+            flex-wrap: wrap;
+            width: 200px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .grid_item {
+            flex: 1;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: 3px;
+            background-color: #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .grid_item:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        .grid_item:active {
+            background-color: white;
+        }
+
+        .result {
+            margin-left: 3px;
+            margin-bottom: 5px;
+            width: 208px;
+            height: 45px;
+            line-height: 45px;
+            background-color: #ccc;
+            padding: 5px;
+        }
+
+        .result1 {
+            padding: 0px;
+            /* outline: 1px solid red; */
+            width: 200px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 13px;
+            text-align: left;
+        }
+
+        .result2 {
+            /* outline: 1px solid red; */
+            width: 200px;
+            height: 25px;
+            line-height: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .border {
+            margin: 30px;
+            padding: 3px;
+            padding-top: 10px;
+            width: 225px;
+            border: 1px solid rgb(116, 114, 114);
+        }
+
+        .n20 {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border">
+        <div class="result">
+            <div class="result1"></div>
+            <div class="result2"></div>
+
+        </div>
+        <div class="grid-container">
+            <div class="grid_item n1"></div>
+            <div class="grid_item n2"></div>
+            <div class="grid_item n3"></div>
+            <div class="grid_item n4">/</div>
+            <div class="grid_item n5">7</div>
+            <div class="grid_item n6">8</div>
+            <div class="grid_item n7">9</div>
+            <div class="grid_item n8">*</div>
+            <div class="grid_item n9">4</div>
+            <div class="grid_item n10">5</div>
+            <div class="grid_item n11">6</div>
+            <div class="grid_item n12">-</div>
+            <div class="grid_item n13">1</div>
+            <div class="grid_item n14">2</div>
+            <div class="grid_item n15">3</div>
+            <div class="grid_item n16">+</div>
+            <div class="grid_item n17">0</div>
+            <div class="grid_item n18"></div>
+            <div class="grid_item n19">reset</div>
+            <div class="grid_item n20">=</div>
+
+
+
+
+        </div>
+    </div>
+
+    <script>
+        let str = "";
+        let items = document.querySelectorAll(".grid_item");
+
+        items.forEach(item => {
+            item.addEventListener("click", function () {
+
+                str += item.innerText;
+                let result1 = document.querySelector(".result1");
+
+                result1.innerHTML = str;
+
+
+            })
+
+        });
+
+        document.querySelector(".n20").addEventListener("click", result)
+
+        function result() {
+            let result2 = document.querySelector(".result2");
+
+            result2.innerHTML = eval(str.slice(0, -1));
+
+        }
+
+        document.querySelector(".n19").addEventListener("click", reset)
+
+        function reset() {
+            let result1 = document.querySelector(".result1");
+            let result2 = document.querySelector(".result2");
+
+            result1.innerHTML="";
+            result2.innerHTML="";
+            str="";
+            
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

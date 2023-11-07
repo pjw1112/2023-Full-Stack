@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*  style.css  */   
+.basic{   width:80%; margin:50px auto;  padding:50px; 
+    background-color:white;  border-top:5px solid #ddd; }
+.myhidden{  
+    position:absolute;  left:-9999%; 
+    width:1px; height:1px;  overflow:hidden;
+    font-size: 0;   line-height: 0;
+}
+
+/*  table.css  */   
+table , td {  border:1px solid #ccc;  text-align: center; }
+table{    margin:20px 0;  width:60%;    }
+
+
+/*   reset.css 옮기기   */
+/* 1. table 셀간격 없애기  */
+.mytbborder{ 
+    border-collapse: collapse;   border:0 none;
+    border-top: 5px solid #ddd;
+    border-bottom: 3px solid #ddd;
+}
+.mytbborder tr{  
+    border-top: 1px solid #ddd;
+}
+/* 2. caption 은 스크린리더기는 읽게 하고 화면상에서는 안나오게 처리  */
+/* 3. th, td 간격 넓히기  */
+/* 4. th  폰트 꾸미기  */
+/* 5. 테이블 위에 선   */
+
+.park{
+    display: inline-block;
+   
+    left : 200px;
+   
+}

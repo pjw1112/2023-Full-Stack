@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .animation {
+            padding: 30px;
+            color: white;
+            font-size: 20px;
+
+            width: 115px;
+        }
+
+        .a1 {
+            animation: ani1 5s infinite;
+        }
+
+        @keyframes ani1 {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: rgb(25, 59, 253);
+                transition: ;
+                margin-left: 500px;
+            }
+
+            100% {
+                background-color: rgb(255, 251, 0);
+                transform: rotateY(180deg);
+                margin-left: 0;
+            }
+        }
+
+        .a2 {
+            color: black;
+        }
+
+        .a2 ul li {
+            float: left;
+            margin: 0 30px;
+            font-size: 50px;
+            font-weight: bold;
+
+        }
+
+        @keyframes ani2{
+            0% {
+                top: -50px;
+            }
+
+            50% {
+                top: 50px;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
+
+        .a2 ul {
+            width: 1000px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .myani2 {
+            overflow: hidden;
+        }
+
+        .a2 ul li:nth-child(1) {
+            animation: ani2 1s 1;
+        }
+
+        .a2 ul li:nth-child(2) {
+            animation: ani2 1.5s 1;
+        }
+
+        .a2 ul li:nth-child(3) {
+            animation: ani2 2s 1;
+        }
+
+        .a2 ul li:nth-child(4) {
+            animation: ani2 2.5s 1;
+        }
+
+        .a2 ul li:nth-child(5) {
+            animation: ani2 3s 1;
+        }
+
+        .a2 ul li:nth-child(6) {
+            animation: ani2 3.5s 1;
+        }
+
+        .a2 ul li:nth-child(7) {
+            animation: ani2 4s 1;
+        }
+
+        .a2 ul li:nth-child(8) {
+            animation: ani2 4.5s 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <hr>
+        <h4>8. ANIMATION</h4>
+        <dl>
+            <dt>ANIMATION - keyframes</dt>
+            <dd>1. @keyframes basic1{} 0%{} 50%{} 100%{} }</dd>
+            <dd>2. .ani1 { animation : basic1 몇s 반복}</dd>
+
+            <dt>ex1</dt>
+            <dd class="animation a1">Animation</dd>
+        </dl>
+
+
+        <dt>ex2</dt>
+        <dd class="animation a2">
+            <ul class="myani2">
+                <li>f</li>
+                <li>r</li>
+                <li>o</li>
+                <li>n</li>
+                <li>t</li>
+                <li>e</li>
+                <li>n</li>
+                <li>d</li>
+            </ul>
+
+
+        </dd>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+strong {
+    color: rgb(245, 129, 129);
+}
+
+.myform {
+    width: 1000px;
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.myform h3 {
+    display: inline-block;
+    margin-top: 170px;
+    font-size: 35px;
+    color: #413E4C;
+    letter-spacing: 7px;
+
+}
+
+.myform p {
+    margin: 20px 0;
+    color: gray;
+}
+
+
+
+
+fieldset {
+
+    height: 300px;
+    padding: 50px;
+    border: none;
+
+}
+
+.floor {
+    /* border: 1px solid red; */
+    margin: 20px;
+    text-align: left;
+    height: 40px;
+}
+
+.floor_in {
+    /* border: 1px solid red; */
+    width: 49%;
+    height: 40px;
+    float: left;
+}
+
+.row_1 {
+    padding-left: 150px;
+    text-align: center;
+    line-height: 40px;
+    width: 25%;
+}
+
+.row_2 {
+    line-height: 40px;
+
+}
+
+.row_2 input {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #C7BDBF;
+    background-color: #EFECE7;
+    vertical-align: center;
+
+}
+.floor3 .row_1{
+    text-align: right;
+}
+.floor4 .row_1{
+
+    padding-left: 200px;
+    
+}
+.floor4 .row_2{
+    
+    width : 100px;
+    
+}
+.floor4 .row_1 input[type="submit"]{
+    
+    text-align: center;
+    border : 1px solid #123456;
+    width : 200px;
+    height : 36px;
+    background-color: #123456;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 3px;
+}
+.floor4 .row_2 a{
+    display: inline-block;
+    text-align: center;
+    border : 1px solid #123456;
+    width : 200px;
+    line-height : 35px;
+    background-color: #123456;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    vertical-align: bottom;
+    
+}
+.floor4 .row_1 input[type="submit"]:hover,
+.floor4 .row_1 input[type="submit"]:focus{
+    border-color:  rgb(161, 159, 159);;
+    background-color: #eee; color : #3a638d;
+    transition: all 0.2s ease-in-out 0.2s;
+}
+.floor4 .row_2 a:hover,
+.floor4 .row_2 a:focus{
+    border-color:  rgb(161, 159, 159);;
+    background-color: #eee; color : #3a638d;
+    transition: all 0.2s ease-in-out 0.2s;
+}

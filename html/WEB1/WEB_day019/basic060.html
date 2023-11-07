@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>basic058</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hidden.css">
+    <link rel="stylesheet" type="text/css" href="css/basic060.css">
+    
+
+</head>
+
+<body>
+    <div class="myform">
+        <h3>WELCOME OUR FAMILY</h3>
+        <P>안전한 개인정보보호를 위해 회원님의 동의없이 제 3자에게 정보를 제공하지 않습니다.</P>
+        <P><strong>(*)</strong>필수입력사항입니다.</P>
+
+        <form action="#" method="post" id="joinform">
+            <fieldset>
+                <legend class="myhidden">login</legend>
+
+                <div class="floor1 floor">
+                    <div class="floor_in row_1">
+                        <label for="id"><strong>(*)</strong> 이름</label>
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="name" name="name">
+                    </div>
+                </div>
+                <div class="floor1 floor">
+                    <div class="floor_in row_1">
+                        <label for="id"><strong>(*)</strong> 아이디</label>
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="id" name="id">
+                    </div>
+                    <div class="floor_in row_3">
+                        <input type="button" id="passCKbutton" name="passCKbutton" value="아이디중복체크">
+                    </div>
+                </div>
+                <div class="floor2 floor">
+                    <div class="floor_in row_1">
+                        <label for="password"><strong>(*)</strong> 비밀번호</label>
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="password" id="password" name="password">
+                    </div>
+                    
+                </div>
+
+                <div class="floor2 floor">
+                    <div class="floor_in row_1">
+                        <label for="passwordCK"><strong>(*)</strong> 비밀번호 확인</label>
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="password" id="passwordCK" name="passwordCK">
+                    </div>
+                </div>
+                
+                <div class="floor2 floor">
+                    <div class="floor_in row_1">
+                        <label for="email"><strong>(*)</strong> 이메일</label>
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="floor2 floor">
+                    <div class="floor_in row_1">
+                        <label for="tel1"><strong>(*)</strong> 연락처</label>
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="tel1" name="tel1"><div>-</div> 
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="tel2" name="tel2"><div>-</div> 
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="tel3" name="tel3"> 
+                    </div>
+                </div>
+                <div class="floor2 floor">
+                    <div class="floor_in row_1">
+                        <label for="address2"><strong>(*)</strong> 주소</label>
+                    </div>
+                    <div class="floor_in row_2 post_number">
+                        <input type="button" id="postCKbutton" name="postCKbutton" value="우편번호검색">
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="address2" name="address2"><div>-</div> 
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="address3" name="address3">
+                    </div>
+                </div>
+                <div class="floor3 floor">
+                    <div class="floor_in row_1">
+                       
+                    </div>
+                    <div class="floor_in row_2 post_number">
+                        상세주소
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="address4" name="address4"><div>-</div> 
+                    </div>
+                    <div class="floor_in row_2">
+                        <input type="text" id="address5" name="address5">
+                    </div>
+                </div>
+
+                <div class="floor4 floor">
+                    <div class="floor_in row_1">
+                        <input type="submit" id="submit" name="submit" value="회원가입">
+                    </div>
+                    <div class="floor_in row_2">
+                        <a href="#">취소</a>
+                    </div>
+
+                </div>
+
+
+
+            </fieldset>
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>

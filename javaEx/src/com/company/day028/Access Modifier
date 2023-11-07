@@ -1,0 +1,21 @@
+접근 제어자
+
+1. 클래스 및 클ㄹ스의 구성멤버에 대한 접근을 제한하는 역할
+2. 접근 제어자의 종류
+
+					클래스내부		동일패키지		하위클래스		그외 
+public 		(아무나)		O			O			O		O
+protexted 	(상속자)		O			O			O		X
+default 	(폴더)		O			O			X		X
+private 	(나만)		O			X			X		X
+
+
+진행
+1.패키지(폴더)		etc 폴더 만들기
+	com.company.프로젝트
+				ㄴ com 폴더
+					ㄴ company 폴더
+						ㄴ 프로젝트 폴더
+					
+2. etc 폴더 안에 Cat 클래스 만들기
+3. 금일 진행폴더에서 (etc 폴더와 다른 폴더) Modifier001.java

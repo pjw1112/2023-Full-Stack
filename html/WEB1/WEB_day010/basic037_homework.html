@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>basic037_homework</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        .basic .basic_dl {
+            background-color: #1e3932;
+            width: 350px;
+            height: 100px;
+            font-weight: bold;
+
+        }
+
+        .basic .basic_dl dt {
+            margin-top: 25px;
+            width: 100px;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;
+            /* padding-top :7px; */
+            border-radius: 12px;
+
+
+        }
+
+        .basic .basic_dl dt:nth-child(1) {
+            background-color: #00704a;
+            border: 3px solid #00704a;
+            margin-left: 50px;
+
+
+        }
+
+        .basic .basic_dl dt:nth-child(1):hover {
+            background-color: yellow;
+            border: 3px solid yellow;
+            margin-left: 50px;
+
+
+        }
+
+
+        .basic .basic_dl dt:nth-child(2) {
+            border: 3px solid white;
+            margin-left: 10px;
+            color: gray;
+
+        }
+
+        .basic .basic_dl dt:nth-child(2):hover {
+            border: 3px solid yellow;
+            background-color: yellow;
+
+
+
+        }
+
+        .basic .basic_dl dt a {
+
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .basic .basic_dl dt a {
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .basic .basic_dl dt a:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic">
+
+        <dl class="basic_dl">
+
+            <dt><a href="#" title="#">회원가입</a></dt>
+            <dt><a href="#" title="#">로그인</a></dt>
+            <dd></dd>
+        </dl>
+        <style>
+            .ex3_ul{
+                
+               
+            }
+                .ex3_ul li{
+                    text-align: left;
+                    background-color: #333;
+                    display: inline-block;
+                }
+
+                .ex3_ul li a{
+                    display: inline-block;
+                    background-color: #ccc;
+                    border : 1px solid #ccc;
+                    color : white;
+                    padding : 5px;
+                    margin-right : 10px;
+                }
+        </style>
+        
+        <dl>
+            <dt>display:inline-block</dt>
+            <dd>특징 : inline속성은 유지하되
+                block 특징을 사용가능하게 함.
+            </dd>
+            <dd>줄바꿈 [안되고]
+            </dd>
+            <dd>width, height, margin, padding 사용가능                
+            </dd>
+
+           
+                <ul class="ex3_ul">
+                    <li>
+                        <a href="#" title="#">KOREA</a>
+                    </li>
+                    <li>
+                        <a href="#" title="#">ENGLISH</a>
+                    </li>
+                </ul>
+
+
+        </dl>
+
+
+    </div>
+
+</body>
+
+</html>

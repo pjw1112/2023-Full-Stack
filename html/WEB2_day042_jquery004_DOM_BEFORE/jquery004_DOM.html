@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jquery</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <style>
+        .myblack {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic">
+        <h3>001. BASIC START</h3>
+        <h4>1. javascript core</h4>
+        <ol>
+            <li>document.wirte / console.log☆ </li>
+            <li>변수/자료형</li>
+            <li>이벤트</li>
+            <li>제어문1(if/switch) </li>
+            <li>제어문2(for/while/do while)</li>
+            <li>배열(Array)/객체(Object)</li>
+            <li>함수(function), 메서드</li>
+        </ol>
+
+        <h4>2. javascript oop</h4>
+        <ol>
+            <li>JS object - 내장객체 </li>
+            <li>DOM</li>
+            <li>BOM</li>
+        </ol>
+
+        <h4>3. javascript using ★</h4>
+        <ol>
+            <li><mark>JQUERY</mark></li>
+            <li>AJAX </li>
+            <li>PLUGIN</li>
+        </ol>
+    </div>
+
+    <!--            -->
+    <!--            -->
+    <div class="basic">
+        <h3> JQUERY BASIC </h3>
+        <pre>
+        1. 선택자     
+            $("*") , $("h3") ,   $("#id") , $(".class")
+            $("ul li") - $("ul >li") - $("ul").children("#son")
+            $("#son").parent() / $("#son").parents("ul") 
+            $("#son").prev()   ,   
+            $("#son").next()  ,   
+            $("#son").siblings()   
+            $(this)
+                
+        2. 효과1. 기본효과  
+            show/hide/toggle  fadeIn/fadeOut  slideUp/slideDown
+            
+            $(selector).hide(speed,callback);
+            $(selector).hide(시간 ,끝나고 해줘야 할일);
+                            기본시간은 400- 0.4초
+                            1000이 1초
+        3. 효과2. 내가  만든효과
+            animate
+
+        4. DOM
+        5. 이벤트  
+        </pre>
+
+
+        <h3 class="jbasic"> DOM(1) - 순서 </h3>
+        <ol class="mydom  order1">
+            <li> :first 첫번째 </li>
+            <li> :last 마지막번째 </li>
+            <li> :eq(0) 몇번째 - 0부터 시작 </li>
+            <li> :nth-child(1) 몇번째 - 1부터 시작 </li>
+        </ol>
+        <script>
+            // 1.    .mydom.order1 의 첫번째 li에      (   li:first )    글자색상 #00ccff
+            $(".order1 li:first").css("color", "#00ccff");
+            // 2.    .mydom.order1 의 마지막번째li에 (   li:last  )    글자색상#0033ff
+            $(".order1 li:last").css("color", "#0033ff");
+            // 3.    .mydom.order1 의 두번째 li에      (   li:eq(1)  )  글자색상 #0066ff  
+            $(".order1 li:eq(1)").css("color", "#0066ff");
+            // 4.    .mydom.order1 의 세번째 li에      (   li:eq(3)  )  글자색상#0099ff  
+            $(".order1 li:nth-child(3)").css("color", "#0099ff");
+        </script>
+        <ol class="mydom order2">
+            <li> one </li>
+            <li> two </li>
+            <li> :odd 홀수 </li>
+            <li> :even 짝수 </li>
+        </ol>
+        <script>
+            $(".order2 li:odd").css("color", "pink");
+            $(".order2 li:even").css("color", "red");
+        </script>
+
+        <h3 class="jbasic"> DOM(2) - 검사 ( css: 꾸미기 vs attr:속성설정 )</h3>
+        <dl class="cssTest">
+            <dt>1) 꾸미기설정 : css("속성","설정") </dt>
+            <dd class="mycss  c1"> css("color","red")</dd>
+            <dt>2) 검사 : css("속성") </dt>
+            <dd class="mycss  c1"> css("color")</dd>
+            <dt>3) 속성설정 : attr("href" , "http://www.naver.com") href / alt / src / id ....</dt>
+            <dd class="myattr  a1"><a href="http://www.naver.com">다음</a></dd>
+            <dt>4) 검사 : attr("속성") </dt>
+        </dl>
+        <script>
+            $(".cssTest dd:eq(0)").css("color", "red")
+            console.log($(".cssTest dd:eq(0)").css("color"));
+            console.log($(".myattr a").attr("href"));
+            console.log($(".cssTest").hasClass("myblack"));
+            $(".cssTest").addClass("myblack");
+            console.log($(".cssTest").attr("class"));
+        </script>
+
+
+        <h4> EX - css 연습</h4>
+        <p class="mycss  test1"> 1. width 120px로 설정 , 클릭하면 width 알림창 띄우기 </p>
+        <p class="mycss  test2"> 2. color red로 설정 , 클릭하면 color 알림창 띄우기 </p>
+        <p class="mycss  test3"> 3. backgroundColor green로 설정 , 클릭하면 backgroundColor 알림창 띄우기 </p>
+        <p class="mycss  test4"> 4. textAlign:center로 설정 , 클릭하면 textAlign 알림창 띄우기 </p>
+        <p class="mycss  test5"> 5. fontSize:15px로 설정 , 클릭하면 fontSize 알림창 띄우기 </p>
+
+        <script>
+
+            //1.  .mycss.test1 의 width를 검사해서 120px과 같다면  400px로 아니라면 120px로     
+            //alert(     $(".mycss.test1").css(  "width")    );      검사
+            //    .mycss.test1 의 width를 검사해서 120px과 같다면  400px로 아니라면 120px로
+            ///////////// 맞을경우   ==같다
+            myattr(".mycss.test1", "width", "120px", "400px");
+
+            //2. color red로 설정 , 클릭하면 color 알림창 띄우기   =>  글자색상이 red라면  blue로바꾸기  아니라면 red로 
+
+            //alert(     $(".mycss.test2").css(  "color")    );     
+            ///////////// 맞을경우   ==같다
+            myattr(".mycss.test2", "color", "red", "blue");
+
+
+            //3. backgroundColor green로 설정 , 클릭하면 backgroundColor 알림창 띄우기
+            //		=> 배경색상이 green이라면 blue로  아니라면 green으로
+
+            myattr(".mycss.test3", "backgroundColor", "green", "red");
+            //4. textAlign:center로 설정 , 클릭하면 textAlign 알림창 띄우기
+            //		=> 정렬이 center라면 right로   아니라면 center로
+
+            myattr(".mycss.test4", "textAlign", "center", "right");
+
+            //5. fontSize:15px로 설정 , 클릭하면 fontSize 알림창 띄우기
+            //		=> 글자사이즈가 15px라면 20px로   아니라면 15px로
+            myattr(".mycss.test5", "fontSize", "15px", "20px");
+
+            function myattr(target, attr, attr1, attr2) {
+                $(target).on("click", function (e) {
+                    alert(`${attr} :  ` + $(this).css(`${attr}`));
+                });
+                if ($(target).css(`${attr}`) == `${attr1}`) {
+                    $(target).css(`${attr}`, `${attr2}`);
+                } else {
+                    $(target).css(`${attr}`, `${attr1}`);
+                }
+            }
+        </script>
+
+
+        <h4> EX - attr 연습</h4>
+        <p><input type="button" alt="imgChange" value="imgchange" id="attrTest" /></p>
+        <p id="attrChange"><img src="images/a1.jpg" alt="" /></p>
+        <!--  #attrTest를 클릭하면   #attrChange 안의 이미지경로를 images/a2.jpg로 변경됨. -->
+        <script>
+            num = 1;
+            $("#attrTest").on("click", function () {
+                $("#attrChange img").attr("src", `images/a${(num % 2) + 1}.jpg`);
+                num++;
+            });
+
+        </script>
+
+        <h3 class="jbasic"> DOM(3) filter / find / children </h3>
+        <ul class="my1">
+            <li> children : 자식 - 아들</li>
+            <li> find : 자식 - 손자
+                    <ul>
+                        <li>ONE</li>
+                        <li id="two">TWO</li>
+                        <li>THREE</li>
+                    </ul>
+
+
+            </li>
+
+            <li> filter : 본인 </li>
+        </ul>
+
+        <h3 class="jbasic"> DOM(4) html / append/ prepend / after / before / insertBefore/ insertAfter / remove </h3>
+        <ul class="domcontrol">
+            <li> html [reset 리셋] / text[문자열]</li>
+            <li> append[대상안의 맨 뒤] / prepend[대상안의 맨 앞]</li>
+            <li> after[대상 뒤] / before[대상 앞] </li>
+            <li> insertBefore[대상안에 ~앞] / insertAfter[대상안에 ~뒤] </li>
+            <li> remove [대상지우기] </li>
+        </ul>
+        <script>
+            $("ul.my1 li:eq(1)").css("color","red"); //손자까지
+            $("ul.my1 >li:eq(1)").css("color","blue"); //손자까지
+
+            $("ul.my1 >li:even").css("color","gray");
+
+            //find 사용하면 자식손자까지 여러 태그에 걸쳐서 찾음
+
+            console.log($("ul.my1").find("#two").text());
+
+            $(".domcontrol").append( $("<li>",{
+                class : "newli",
+                text : "새 LI 추가!!"
+            }));
+
+            $(".newli").css("background", "yellow");
+            $(".domcontrol").append("<li class ='newli2'>하나 더 추가</li>");
+            console.log( $(".newli2").text() );
+
+            $("<li>3번째 추가 (insertBefore)</li>").insertBefore(".newli");
+            $("<li>4번째 추가 (insertAfter)</li>").insertAfter(".newli");
+
+            $(".domcontrol li:last").remove(); //지워짐
+        </script>
+
+    </div>
+
+
+
+</body>
+
+</html>

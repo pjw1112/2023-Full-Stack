@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jquery</title>
+    <link  rel="stylesheet"  type="text/css"  href="css/reset.css"  />
+    <link  rel="stylesheet"  type="text/css"  href="css/base.css"  />
+    <link  rel="stylesheet"  type="text/css"  href="css/style.css"  />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="basic">
+        <h3>001. BASIC START</h3>
+        <h4>1. javascript core</h4>
+        <ol>
+            <li>document.wirte / console.log☆ </li>
+            <li>변수/자료형</li>
+            <li>이벤트</li>
+            <li>제어문1(if/switch) </li>
+            <li>제어문2(for/while/do while)</li>
+            <li>배열(Array)/객체(Object)</li>
+            <li>함수(function), 메서드</li>
+        </ol>
+
+        <h4>2. javascript oop</h4>
+        <ol>
+            <li>JS object - 내장객체 </li>
+            <li>DOM</li>
+            <li>BOM</li>
+        </ol>
+
+        <h4>3. javascript using ★</h4>
+        <ol>
+            <li><mark>JQUERY</mark></li>
+            <li>AJAX </li>
+            <li>PLUGIN</li>
+        </ol>
+    </div>
+
+    <!--            -->
+    <!--            -->    
+    <div class="basic">
+		<h3  class="jbasic">  JQUERY BASIC </h3>
+        <pre>
+
+        </pre>
+		<h4  class="jbasic">  효과 </h4>
+        <p  class="jeffect">  <strong  class="j2" >정의 : </strong> 제이쿼리에서 기본으로 제공해주는 효과 </p>
+		<p>  보이기 / 숨기기  , 서서히보여주기 / 서서히숨기기 , 슬라이드업/다운 </p>
+		<ul  id="effect">
+			<li> <input type="button"  value="HIED"  id="hide"/> </li>
+			<li> <input type="button"  value="SHOW"  id="show"/> </li>
+			<li> <input type="button"  value="SLIDEUP"  id="slideUp"/> </li>
+			<li> <input type="button"  value="SLIDEDOWN"  id="slideDown"/> </li>
+			<li> <input type="button"  value="FADEIN"  id="fadeIn"/> </li>
+			<li> <input type="button"  value="FADEOUT"  id="fadeOut"/> </li>
+		</ul>
+		<script>
+			/*  1. #hide를 클릭하면  #hide가 감싸고 있는 (li)의 감싸고 있는(ul)태그의 이전 p태그가 1초동안 사라짐.  */
+				// 패턴:  이벤트대상: #hide
+				//         이벤트 : click
+				//         이벤트핸들러 :  #hide가 감싸고 있는 (li)의 감싸고 있는(ul)태그의 이전 p태그가 1초동안 사라짐.
+				//   *  h2  #id  .class  ul  li   children   partent   prev next siblings
+				//   .hide(  얼마동안(1000이 1초)   , 어떠한 속도로(linear/swing) ,  function(){ 끝나고 해줄일  } )
+
+			/*  2. #show를 클릭하면  #show가 감싸고 있는 (li)의 감싸고 있는(ul)태그의 이전 p태그가 0.5초동안 나타남.  */
+			/*  3. #slideUp를 클릭하면  #slideUp가 감싸고  감싸고 있는태그의 이전 p태그가 0.5초동안 sliding효과를내며 없어짐.  */
+			/*  4. #slideDown를 클릭하면  #slideDown가 감싸고  감싸고 있는태그의 이전태그가 0.5초동안 sliding 효과로 나타남.  */
+			/*  5. #fadeIn를 클릭하면  #fadeIn가 감싸고  감싸고 있는태그의 이전태그가  천천히 서서히 나타남.  */
+			/*  6. #fadeOut를 클릭하면  #fadeOut가 감싸고  감싸고 있는태그의 이전태그가  1초동안 서서히 사라짐.  */
+
+		</script>        
+    </div>
+</body>
+</html>
