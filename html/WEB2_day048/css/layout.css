@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.header { height: 56px;  /* background-color:#000;  */} 
+.visual   { height: 600px;  background-color:#333; } 
+.banner   {height: 600px; background-color:#666;  } 
+.promotion.p1   { height: 600px; background-color:#999;  } 
+.promotion.p2   { height: 600px; background-color:#aaa;  } 
+.channel   { height: 600px; background-color:#ccc;  } 
+.footer   { height: 417px; background-color:#eee;  } 

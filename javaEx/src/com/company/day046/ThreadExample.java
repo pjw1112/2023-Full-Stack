@@ -1,5 +1,7 @@
 package com.company.day046;
 
+import java.util.Arrays;
+
 class AA extends Thread {
     public void run() {
         System.out.println("Thread AA is running.");
@@ -26,6 +28,8 @@ class BB extends Thread {
 
 public class ThreadExample {
     public static void main(String[] args) {
+    	
+    	Arrays
         AA threadAA = new AA();
         BB threadBB = new BB();
 

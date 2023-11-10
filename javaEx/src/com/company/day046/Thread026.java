@@ -65,5 +65,16 @@ public class Thread026 {
 		
 		Thread.sleep(10000);
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
