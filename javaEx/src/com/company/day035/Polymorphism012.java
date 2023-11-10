@@ -28,7 +28,7 @@ class Dog012 extends Animal012 {
 		return "Dog012 [name=" + name + "]";
 	}
 	
-	
+}	
 class Cat012 extends Animal012 {
 	public Cat012() {
 			

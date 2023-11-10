@@ -10,8 +10,8 @@ class Wheel2{
 }
 
 class Car2{
-	private Engine engine2;
-	private Wheel wheel2;
+	private Engine2 engine2;
+	private Wheel2 wheel2;
 	
 	public Car2() {
 		this.engine2 = new Engine2();
