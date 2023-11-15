@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/media_query.css">
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>신입 개발자 박진우</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            color: white;
+            font-family: "MaruBuri", "Malgun Gothic", dotum, sans-serif;
+            background-color: #1B1F24;
+        }
+
+        li {
+            list-style-type: none;
+            
+        }
+
+
+        header {
+            /* border: 1px solid red; */
+            height: 46px;
+            padding: 36px 0;
+        }
+
+        main {}
+
+        section {
+            position: relative;
+        }
+
+        .section_1 {
+            height: 900px;
+            /* border: 1px solid red; */
+        }
+
+        .me_wrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top : 0;
+            z-index: -1;
+        }
+        .me {
+            border: 1px solid red;
+            background-image: url("images/ME.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom;
+            height: 100%;
+            margin: 0 auto;
+            opacity: 0.8;
+
+
+        }
+
+        .article_1 {
+            opacity: 1;
+            border: 1px solid blue;
+            height: 900px;
+
+            margin: 0 auto;
+        }
+
+        .me_about {
+            max-width : 1800px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 800px;
+            border: 1px solid red;
+            
+            margin : 0 auto;            
+        }
+        .me_about div{
+            border: 1px solid blue;
+            transition: all ease-in-out 0.5s;
+        }
+        .me_left{
+            max-width: 500px;
+            min-width: 200px; 
+                        
+        }
+        .me_right div:not(:last-child):hover{
+        cursor: pointer;
+        color: rgb(187, 187, 187);
+
+        
+    }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section class="section_1">
+            <article class="article_1">
+                <div class="me_about">
+                    <div class="me_left">
+                        <h1>저는 <br>신입 개발자<br> 박진우 입니다 </h1>
+                    </div>
+                    <div class="me_right">
+                        <div class="about_me">
+                            <h3>ABOUT ME</h3>
+                            <P>
+                            저에 대한 간단한 소개와 성장환경 등    
+                            </P>
+                            <br>
+                            <p>바로가기 ></p>
+                        </div>
+                        <div class="my_work">
+                            <h3>MY WORK</h3>
+                            <p>개인 포트폴리오 2개와 협업 포트폴리오 2개가 있습니다.</p>
+                            <br>
+                            <p>바로 가기 ></p>
+                        </div>
+                        <div class="follow_me">
+                            <h3>FOLLOW ME</h3>
+                            <P>o o o o o o </P>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                </div>
+                <div class="me_wrapper">
+                <div class="me">
+                </div>
+            </div>
+            </article>
+
+
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
