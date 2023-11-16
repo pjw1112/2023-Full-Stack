@@ -21,13 +21,13 @@ public class Calendar_JW {
 
 		// 형식을 적용하여 출력합니다.
 		String formattedDate = now.format(formatter);
-		
-		System.out.println();
-		System.out.println("서기 1년 ~ 오늘 까지 총 날수 : " + sum_days(year, month, day));
-		System.out.println(formattedDate+" "+week(year, month, day)+"요일");
 
 		System.out.println();
-		showCalendar(year, month, day);
+		System.out.println("서기 1년 ~ 오늘 까지 총 날수 : " + sum_days(year, month, day));
+		System.out.println(formattedDate + " " + week(year, month, day) + "요일");
+
+		System.out.println();
+		showCalendar(year, 2, day);
 
 	}
 
@@ -47,11 +47,11 @@ public class Calendar_JW {
 	public static String week(int year, int month, int day) {
 		String[] day_of_week = { "일", "월", "화", "수", "목", "금", "토" };
 		int sum = 0;
-		String str = "";
+		String str = leap(year);
 		int[] mon = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		
 		for (int i = 1; i <= year - 1; i++) {
-			str = leap(year);
-
+			
 			if (str == "윤년") {
 				sum = sum + 366;
 			} else if (str == "평년") {
@@ -60,8 +60,8 @@ public class Calendar_JW {
 
 		}
 
-		for (int j = 1; j <= month; j++) {
-			sum = sum + mon[j - 1];
+		for (int i = 1; i <= month; i++) {
+			sum = sum + mon[i - 1];
 		}
 		sum += leapint(year);
 
@@ -100,12 +100,11 @@ public class Calendar_JW {
 	public static void showCalendar(int year, int month, int day) {
 
 		String result = "";
-		String str = "";
+		String str = leap(year);
 		int sum = 0;
 		int[] mon = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 		String[] week = { "일", "월", "화", "수", "목", "금", "토" };
-
-		str = leap(year);
+ 
 		for (int i = 1; i <= year - 1; i++) {
 
 			if (str == "윤년") {
