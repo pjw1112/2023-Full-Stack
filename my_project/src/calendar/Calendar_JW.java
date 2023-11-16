@@ -1,9 +1,9 @@
-package com.company.day019;
+package calendar;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Method014 {
+public class Calendar_JW {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
