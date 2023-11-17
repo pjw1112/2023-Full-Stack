@@ -1,10 +1,12 @@
 package com.company.day1116;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Map;
 import java.util.Set;
 
 class ScoreDto8 {
@@ -76,47 +78,63 @@ public class ScoreDto {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-
 		List<ScoreDto8> list = new ArrayList<>();
-		
-		list.add(new ScoreDto8("아이언맨",30,40,50));
-		list.add(new ScoreDto8("헐크",40,60,70));
-		list.add(new ScoreDto8("캡틴",80,90,100));
-		
+
+		list.add(new ScoreDto8("아이언맨", 30, 40, 50));
+		list.add(new ScoreDto8("헐크", 40, 60, 70));
+		list.add(new ScoreDto8("캡틴", 80, 90, 100));
+
 		System.out.println("이름\t국어\t영어\t수학\t평균");
 		System.out.println("====================================");
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
+
 		System.out.println();
+
 		Iterator<ScoreDto8> it = list.iterator();
-		
-		while(it.hasNext()) {
-		System.out.println(it.next());
-		
+
+		while (it.hasNext()) {
+			System.out.println(it.next());
+
 		}
-		
-		System.out.println();
+
 		ListIterator<ScoreDto8> it2 = list.listIterator();
-		
+
 		System.out.println();
-		for(ScoreDto8 item : list) {
+		for (ScoreDto8 item : list) {
 			System.out.println(item);
 		}
+
 		System.out.println();
+		System.out.println("해쉬셋을 이용한 출력");
 		Set<ScoreDto8> list2 = new HashSet<>();
 		list2.addAll(list);
-		
-		for(ScoreDto8 item : list2) {
+
+		for (ScoreDto8 item : list2) {
 			System.err.println(item);
 		}
-		ScoreDto8[] aa = list2.toArray();
-		
-		
-		
-		
-		
-		
+
+		int i = 0;
+		Map<String, Integer> mymap = new HashMap<>();
+		for (ScoreDto8 item : list) {
+			mymap.put(item.getName(), i);
+			i++;
+		}
+
+		Iterator<String> strlist = mymap.keySet().iterator();
+
+		System.out.println();
+		System.out.println("해쉬맵을 이용한 출력");
+		while (strlist.hasNext()) {
+			String string = (String) strlist.next();
+
+			System.out.println(string + "\t" + list.get(mymap.get(string)).getKor() + "\t"
+					+ list.get(mymap.get(string)).getEng() + "\t" + list.get(mymap.get(string)).getMat() + "\t"
+					+ list.get(mymap.get(string)).getAver());
+
+		}
+
 	}
 
 }

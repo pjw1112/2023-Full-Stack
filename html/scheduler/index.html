@@ -45,19 +45,19 @@
 
         // # 1 윤년인지 판단해서 정수로 반환
         function leapYear_Int(year) {
-            let str = (year % 4 == 0) ? ((year % 100 == 0) && !(year % 400 == 0)) ? 0 : 1 : 0;
-            return str;
+            let int = (year % 4 == 0) ? ((year % 100 == 0) && !(year % 400 == 0)) ? 0 : 1 : 0;
+            return int;
         }
 
         // # 2 요일 구하는 메서드
         function week(sum) {
             let day_of_week = ["일", "월", "화", "수", "목", "금", "토"];
-            return day_of_week[sum % 7];
+            return day_of_week[(sum % 7)];
         }
 
         function sum_days(year, month, day) {
 
-            let sum = 1; //1년 1월 1일부터 현재 까지 모든 일 수 를 더할 변수
+            let sum = 0; //1년 1월 1일부터 현재 까지 모든 일 수 를 더할 변수
             let str = leapYear_Str(year); //윤년인지 아닌지를 판별해서 년도 더할때 365일 더할지 366일 더할지
             let mon = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
@@ -87,16 +87,15 @@
 
             let sum = sum_days(year, month, day);
             let mon = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-            console.log("========== " + month + "월 ===================================");
+            console.log("========== " + month + "월 ============");
             console.log("일\t월\t화\t수\t목\t금\t토");
 
-            let str1;
-            for (let i = 0; i < sum % 7; i++) {
+            let str1 = "";
+            for (let i = 0; i < ((sum-day) % 7)+1; i++) {
                 str1 += "*\t";
             }
             console.log(str1);
-
-            let str2;
+            let str2= "";
             for (let i = 1; i <= mon[month]; i++) {
 
                 str2 += i + "\t";
@@ -108,12 +107,13 @@
 
             }
 
-            // if (str == "윤년" && month == 2) {
-            //     System.out.print("29");
+            if (str == "윤년" && month == 2) {
+                System.out.print("29");
 
-            // }
-
+            }
         }
+        let day_of_week = ["일", "월", "화", "수", "목", "금", "토"];
+        console.log(week(sum_days(2023, 11, 26)));
 
     </script>
 </head>
