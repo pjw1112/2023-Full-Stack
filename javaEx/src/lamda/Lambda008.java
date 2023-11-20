@@ -3,6 +3,7 @@ package lamda;
 @FunctionalInterface
 interface Test8 {
 	int method(int num1, int num2);
+	
 }
 
 public class Lambda008 {
@@ -21,8 +22,8 @@ public class Lambda008 {
 		System.out.println(test.method(10, 3));
 
 		System.out.println("[ 2. LAMBDA 표현 ]");
-		test = (num1, num2) -> { return add(num1, num2);
-		};
+		test = (num1, num2) -> add(num1, num2);
+		
 		System.out.println(test.method(10, 3));
 
 		
