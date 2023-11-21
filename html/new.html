@@ -2,67 +2,130 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
 
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
-    body {
-      font-family: "Malgun Gothic", dotum, sans-serif;
-      padding: 30px;
-    }
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+            padding: 30px;
+        }
 
-    li {
-      list-style-type: none;
-    }
+        li {
+            list-style-type: none;
+        }
 
-    .wrapper {
-      margin: 0 auto;
-      width: 300px;
-      height: 600px;
-      box-shadow: 0px 0px 3px 0px rgba(25, 142, 177, 0.75);
-      border-radius: 20px;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      justify-items: center;
-      align-items: center;
+        .wrapper {
+            margin: 0 auto;
+            width: 300px;
+            height: 600px;
+            box-shadow: 0px 0px 3px 0px rgba(25, 142, 177, 0.75);
+            border-radius: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
 
-    }
+        }
 
-    .item {
-      width: 50px;
-      height: 50px;
-      box-shadow: 0px 0px 3px 0px rgba(188, 28, 105, 0.75);
-      border-radius: 10px;
+        .item {
+            width: 50px;
+            height: 50px;
+            box-shadow: 0px 0px 3px 0px rgba(188, 28, 105, 0.75);
+            border-radius: 10px;
 
-    }
+        }
 
-    .item:hover {
-      cursor: pointer;
-    }
+        .item:hover {
+            cursor: pointer;
+        }
 
-    .item:active {
-      background-color: aliceblue;
-    }
-  </style>
+        .item:active {
+            background-color: aliceblue;
+        }
+        .score{
+            /* width: 200px;
+            height: 50px;
+            box-shadow: 0px 0px 3px 0px rgba(188, 28, 105, 0.75); */
+            border-radius: 10px;
+            margin : 20px auto;
+            line-height: 50px;
+            text-align: center;
+        }
+        .div_x,
+        .div_y{
+            display: inline-block;
+            
+            width: 30px;
+            height: 30px;
+            box-shadow: 0px 0px 3px 0px rgba(188, 28, 105, 0.75);
+            border-radius: 5px;
+            margin : 0 10px;
+        }
+    </style>
 </head>
 
 <body>
-  <script>
-    let div = document.createElement("div");
-    div.class
+    <script>
+        let wrapperDiv = document.createElement("div");
+        wrapperDiv.classList.add("wrapper");
+        document.querySelector("body").appendChild(wrapperDiv);
+        for (let i = 0; i < 20; i++) {
+            let div = document.createElement("div");
+            div.classList.add("item");
+            document.querySelector(".wrapper").appendChild(div);
+        }
+        let div = document.createElement("div");
+        div.classList.add("score");
+        document.querySelector("body").appendChild(div);
+        div.append("x : ");
+        let div_x = document.createElement("div");
+        div_x.classList.add("div_x");
+        div.appendChild(div_x);
+        div.append("y : ");
+        let div_y = document.createElement("div");
+        div_y.classList.add("div_y");
+        div.appendChild(div_y);
 
-    document.querySelector("body").appendChild(div);
 
+        // 마우스 클릭 상태 변수
+        let isMouseDown = false;
+        let init_x, init_y;
 
-  </script>
+        // 마우스 다운 이벤트 리스너
+        window.addEventListener("mousedown", function (e) {
+            isMouseDown = true;
+            init_x = e.clientX;
+            init_y = e.clientY;
+            
+        });
+
+        // 마우스 업 이벤트 리스너
+        window.addEventListener("mouseup", function () {
+            isMouseDown = false;
+            console.log("마우스 업");
+        });
+
+        
+        // 마우스 이동 이벤트 리스너
+        document.addEventListener("mousemove", function (e) {
+            // 마우스 왼쪽 버튼이 클릭된 상태에서만 이벤트 처리
+            if (isMouseDown) {
+                // 마우스 좌표값 출력
+                div_x.innerText= e.clientX-init_x;
+                div_y.innerText= e.clientY-init_y;
+            }
+        });
+
+    </script>
 </body>
 
 </html>
