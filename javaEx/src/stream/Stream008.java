@@ -1,7 +1,12 @@
 package stream;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -20,7 +25,18 @@ public class Stream008 {
 		
 		//1. list 준비
 		List<Integer> list = Arrays.asList(1,2,3,4,5,2,4);
-				
+		List<String> aa = new LinkedList<String>();
+		Set<Double> bb = new HashSet<Double>();
+		bb.add(2.1);
+		bb.add(3.4);
+		bb.stream();
+		Map<String, Integer> mymap = new HashMap<String, Integer>();
+		mymap.put("하나", 1);
+		mymap.put("둘", 2);
+		mymap.put("셋", 3);
+		
+		mymap.entrySet().stream();
+		
 		//2. filter (특정값 걸러내기)
 		list.stream().filter(t -> t>3).forEach(t -> System.out.print(t+"\t"));
 		System.out.println();
