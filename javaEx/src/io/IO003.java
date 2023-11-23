@@ -12,6 +12,7 @@ public class IO003 {
 		// TODO Auto-generated method stub
 
 		LocalDate currentDate = LocalDate.now(); //현재 날짜 문자열
+		
 		Calendar today = Calendar.getInstance();
 		System.out.println(today.get(5));
 		System.out.println(currentDate);
