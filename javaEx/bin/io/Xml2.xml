@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<userinfo>
+		<no>1</no>
+		<name>박진우</name>
+		<age>37</age>
+	</userinfo>
+	<userinfo>
+		<no>2</no>
+		<name>김상덕</name>
+		<age>28</age>
+	</userinfo>
+</root>

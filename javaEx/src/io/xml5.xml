@@ -1,0 +1,20 @@
+<?xml  version="1.0"  encoding="UTF-8"?><milk>
+<item>
+<milkid>milk01</milkid>
+<milkname>WHITE</milkname>
+<milkprice>1200</milkprice>
+<milkbest>★★★★★</milkbest>
+</item>
+<item>
+<milkid>milk02</milkid>
+<milkname>CHOCO</milkname>
+<milkprice>1300</milkprice>
+<milkbest>★★★★</milkbest>
+</item>
+<item>
+<milkid>milk03</milkid>
+<milkname>BANANA</milkname>
+<milkprice>1500</milkprice>
+<milkbest>★★★</milkbest>
+</item>
+</milk>

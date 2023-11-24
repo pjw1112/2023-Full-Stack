@@ -40,7 +40,7 @@ public class IO018 {
 
 		InputStream is = new FileInputStream(file);
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outfile)));
-
+		
 		int cnt;
 		while ((cnt = is.read()) != -1) {
 			bw.write((char) cnt);

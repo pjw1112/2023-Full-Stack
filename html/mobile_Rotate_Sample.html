@@ -134,7 +134,7 @@
         let x_point, y_point;
 
 
-        window.addEventListener("mousedown", function (e) {
+        document.addEventListener("mousedown", function (e) {
             console.log("mouse down");
             isMouseDown = true;
             init_x = e.clientX;
@@ -144,7 +144,7 @@
         });
 
 
-        window.addEventListener("mouseup", function () {
+        document.addEventListener("mouseup", function () {
             console.log("mouse up");
             isMouseDown = false;
             last_x_point = x_point;
