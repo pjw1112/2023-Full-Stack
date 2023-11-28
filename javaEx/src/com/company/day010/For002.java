@@ -14,7 +14,7 @@ public class For002 {
 		for (int i = 5; i > 0; i--) {
 			System.out.printf(i + "\t");
 		}
-
+		System.out.println("안녕하세요 $번째입니다");
 		System.out.println();
 
 		for (int i = 1; i < 4; i++) {

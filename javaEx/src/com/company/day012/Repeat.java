@@ -1,5 +1,7 @@
 package com.company.day012;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Repeat {
@@ -24,6 +26,7 @@ public class Repeat {
 				break;
 			}
 		}
+		
 		for (;;) {
 			System.out.println("영어 > ");
 			eng = sc.nextInt();
