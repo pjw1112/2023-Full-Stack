@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>기상청 1시간단위 동네예보 웹서비스 - 서울특별시 서초구 양재2동</title>
+<link>https://www.weather.go.kr/w/index.do</link>
+<description>동네예보 웹서비스</description>
+<language>ko</language>
+<generator>동네예보</generator>
+<pubDate>2023년 11월 24일 (금)요일 14:00</pubDate>
+	<item>
+	<author>기상청</author>
+	<category>서울특별시 서초구 양재2동</category>
+	<title>1시간단위 동네예보(도표) : 서울특별시 서초구 양재2동 [X=61,Y=125]</title>
+	<link>https://www.weather.go.kr/w/weather/forecast/short-term.do#dong/1165065200</link>
+	<guid>https://www.weather.go.kr/w/weather/forecast/short-term.do#dong/1165065200</guid>
+	<description>
+		<header>
+			<tm>202311241400</tm>
+			<ts>4</ts>
+			<x>61</x>
+			<y>125</y>
+		</header>
+		<body>
+			<data seq="0">
+<hour>16</hour>
+<day>0</day>
+<temp>2.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>3.6</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>40</reh>
+			</data>
+			<data seq="1">
+<hour>17</hour>
+<day>0</day>
+<temp>0.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>2.3000000000000003</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>45</reh>
+			</data>
+			<data seq="2">
+<hour>18</hour>
+<day>0</day>
+<temp>-1.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>2.5</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>45</reh>
+			</data>
+			<data seq="3">
+<hour>19</hour>
+<day>0</day>
+<temp>-1.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>3.0</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>50</reh>
+			</data>
+			<data seq="4">
+<hour>20</hour>
+<day>0</day>
+<temp>-2.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>3.2</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>50</reh>
+			</data>
+			<data seq="5">
+<hour>21</hour>
+<day>0</day>
+<temp>-2.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>3.1</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="6">
+<hour>22</hour>
+<day>0</day>
+<temp>-3.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>3.0</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="7">
+<hour>23</hour>
+<day>0</day>
+<temp>-3.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>2.8000000000000003</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="8">
+<hour>24</hour>
+<day>0</day>
+<temp>-3.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>2.6</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="9">
+<hour>1</hour>
+<day>1</day>
+<temp>-3.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>2.3000000000000003</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="10">
+<hour>2</hour>
+<day>1</day>
+<temp>-4.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>2.2</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="11">
+<hour>3</hour>
+<day>1</day>
+<temp>-4.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.9000000000000001</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="12">
+<hour>4</hour>
+<day>1</day>
+<temp>-4.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.7000000000000002</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="13">
+<hour>5</hour>
+<day>1</day>
+<temp>-5.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.6</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="14">
+<hour>6</hour>
+<day>1</day>
+<temp>-5.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.4000000000000001</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="15">
+<hour>7</hour>
+<day>1</day>
+<temp>-5.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.2000000000000002</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="16">
+<hour>8</hour>
+<day>1</day>
+<temp>-4.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.1</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="17">
+<hour>9</hour>
+<day>1</day>
+<temp>-3.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.2000000000000002</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="18">
+<hour>10</hour>
+<day>1</day>
+<temp>-2.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.2000000000000002</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>50</reh>
+			</data>
+			<data seq="19">
+<hour>11</hour>
+<day>1</day>
+<temp>-1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.3</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>40</reh>
+			</data>
+			<data seq="20">
+<hour>12</hour>
+<day>1</day>
+<temp>0.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.3</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>40</reh>
+			</data>
+			<data seq="21">
+<hour>13</hour>
+<day>1</day>
+<temp>2.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.3</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>35</reh>
+			</data>
+			<data seq="22">
+<hour>14</hour>
+<day>1</day>
+<temp>3.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.3</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>35</reh>
+			</data>
+			<data seq="23">
+<hour>15</hour>
+<day>1</day>
+<temp>3.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.3</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>35</reh>
+			</data>
+			<data seq="24">
+<hour>16</hour>
+<day>1</day>
+<temp>3.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.3</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>35</reh>
+			</data>
+			<data seq="25">
+<hour>17</hour>
+<day>1</day>
+<temp>1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>1.1</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>45</reh>
+			</data>
+			<data seq="26">
+<hour>18</hour>
+<day>1</day>
+<temp>0.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>0.7000000000000001</ws>
+<wd>0</wd>
+<wdKor>북</wdKor>
+<wdEn>N</wdEn>
+<reh>50</reh>
+			</data>
+			<data seq="27">
+<hour>19</hour>
+<day>1</day>
+<temp>-1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>1</sky>
+<pty>0</pty>
+<wfKor>맑음</wfKor>
+<wfEn>Clear</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>0</pop>
+<ws>0.7000000000000001</ws>
+<wd>0</wd>
+<wdKor>북</wdKor>
+<wdEn>N</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="28">
+<hour>20</hour>
+<day>1</day>
+<temp>-1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.8</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="29">
+<hour>21</hour>
+<day>1</day>
+<temp>-1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.5</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="30">
+<hour>22</hour>
+<day>1</day>
+<temp>-1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.30000000000000004</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>65</reh>
+			</data>
+			<data seq="31">
+<hour>23</hour>
+<day>1</day>
+<temp>-1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.4</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>65</reh>
+			</data>
+			<data seq="32">
+<hour>24</hour>
+<day>1</day>
+<temp>-1.0</temp>
+<tmx>4.0</tmx>
+<tmn>-5.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.4</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>65</reh>
+			</data>
+			<data seq="33">
+<hour>1</hour>
+<day>2</day>
+<temp>-1.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.6000000000000001</ws>
+<wd>0</wd>
+<wdKor>북</wdKor>
+<wdEn>N</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="34">
+<hour>2</hour>
+<day>2</day>
+<temp>0.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.4</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="35">
+<hour>3</hour>
+<day>2</day>
+<temp>0.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.4</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="36">
+<hour>4</hour>
+<day>2</day>
+<temp>0.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.4</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="37">
+<hour>5</hour>
+<day>2</day>
+<temp>-1.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.7000000000000001</ws>
+<wd>1</wd>
+<wdKor>북동</wdKor>
+<wdEn>NE</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="38">
+<hour>6</hour>
+<day>2</day>
+<temp>-1.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>0.8</ws>
+<wd>2</wd>
+<wdKor>동</wdKor>
+<wdEn>E</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="39">
+<hour>7</hour>
+<day>2</day>
+<temp>-1.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.1</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="40">
+<hour>8</hour>
+<day>2</day>
+<temp>-1.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.3</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>65</reh>
+			</data>
+			<data seq="41">
+<hour>9</hour>
+<day>2</day>
+<temp>1.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.6</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="42">
+<hour>10</hour>
+<day>2</day>
+<temp>2.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.5</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="43">
+<hour>11</hour>
+<day>2</day>
+<temp>3.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.6</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>50</reh>
+			</data>
+			<data seq="44">
+<hour>12</hour>
+<day>2</day>
+<temp>4.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.6</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>50</reh>
+			</data>
+			<data seq="45">
+<hour>13</hour>
+<day>2</day>
+<temp>5.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.0</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>50</reh>
+			</data>
+			<data seq="46">
+<hour>14</hour>
+<day>2</day>
+<temp>6.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.0</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="47">
+<hour>15</hour>
+<day>2</day>
+<temp>6.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.7000000000000002</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>55</reh>
+			</data>
+			<data seq="48">
+<hour>16</hour>
+<day>2</day>
+<temp>6.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.3</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>60</reh>
+			</data>
+			<data seq="49">
+<hour>17</hour>
+<day>2</day>
+<temp>5.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.8</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>65</reh>
+			</data>
+			<data seq="50">
+<hour>18</hour>
+<day>2</day>
+<temp>5.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.6</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>70</reh>
+			</data>
+			<data seq="51">
+<hour>19</hour>
+<day>2</day>
+<temp>4.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.8</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="52">
+<hour>20</hour>
+<day>2</day>
+<temp>4.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.7000000000000002</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>70</reh>
+			</data>
+			<data seq="53">
+<hour>21</hour>
+<day>2</day>
+<temp>4.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.8</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="54">
+<hour>22</hour>
+<day>2</day>
+<temp>4.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.0</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="55">
+<hour>23</hour>
+<day>2</day>
+<temp>4.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.2</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="56">
+<hour>24</hour>
+<day>2</day>
+<temp>4.0</temp>
+<tmx>7.0</tmx>
+<tmn>-1.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.3000000000000003</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="57">
+<hour>1</hour>
+<day>3</day>
+<temp>4.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>1</pty>
+<wfKor>비</wfKor>
+<wfEn>Rain</wfEn>
+<pcp>0.2</pcp>
+<sno>0.0</sno>
+<pop>60</pop>
+<ws>2.3000000000000003</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="58">
+<hour>2</hour>
+<day>3</day>
+<temp>4.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.5</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="59">
+<hour>3</hour>
+<day>3</day>
+<temp>5.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.4000000000000004</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="60">
+<hour>4</hour>
+<day>3</day>
+<temp>5.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.7</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="61">
+<hour>5</hour>
+<day>3</day>
+<temp>5.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>1</pty>
+<wfKor>비</wfKor>
+<wfEn>Rain</wfEn>
+<pcp>0.2</pcp>
+<sno>0.0</sno>
+<pop>60</pop>
+<ws>2.9000000000000004</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="62">
+<hour>6</hour>
+<day>3</day>
+<temp>5.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>3.1</ws>
+<wd>3</wd>
+<wdKor>남동</wdKor>
+<wdEn>SE</wdEn>
+<reh>85</reh>
+			</data>
+			<data seq="63">
+<hour>7</hour>
+<day>3</day>
+<temp>5.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>3.0</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>85</reh>
+			</data>
+			<data seq="64">
+<hour>8</hour>
+<day>3</day>
+<temp>6.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.8000000000000003</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>90</reh>
+			</data>
+			<data seq="65">
+<hour>9</hour>
+<day>3</day>
+<temp>7.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.3000000000000003</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>90</reh>
+			</data>
+			<data seq="66">
+<hour>10</hour>
+<day>3</day>
+<temp>8.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>1</pty>
+<wfKor>비</wfKor>
+<wfEn>Rain</wfEn>
+<pcp>0.5</pcp>
+<sno>0.0</sno>
+<pop>60</pop>
+<ws>1.2000000000000002</ws>
+<wd>4</wd>
+<wdKor>남</wdKor>
+<wdEn>S</wdEn>
+<reh>90</reh>
+			</data>
+			<data seq="67">
+<hour>11</hour>
+<day>3</day>
+<temp>8.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>1</pty>
+<wfKor>비</wfKor>
+<wfEn>Rain</wfEn>
+<pcp>0.5</pcp>
+<sno>0.0</sno>
+<pop>60</pop>
+<ws>1.0</ws>
+<wd>5</wd>
+<wdKor>남서</wdKor>
+<wdEn>SW</wdEn>
+<reh>90</reh>
+			</data>
+			<data seq="68">
+<hour>12</hour>
+<day>3</day>
+<temp>9.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>1</pty>
+<wfKor>비</wfKor>
+<wfEn>Rain</wfEn>
+<pcp>0.2</pcp>
+<sno>0.0</sno>
+<pop>60</pop>
+<ws>1.1</ws>
+<wd>5</wd>
+<wdKor>남서</wdKor>
+<wdEn>SW</wdEn>
+<reh>90</reh>
+			</data>
+			<data seq="69">
+<hour>13</hour>
+<day>3</day>
+<temp>10.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.3</ws>
+<wd>5</wd>
+<wdKor>남서</wdKor>
+<wdEn>SW</wdEn>
+<reh>85</reh>
+			</data>
+			<data seq="70">
+<hour>14</hour>
+<day>3</day>
+<temp>11.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>3.0</ws>
+<wd>5</wd>
+<wdKor>남서</wdKor>
+<wdEn>SW</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="71">
+<hour>15</hour>
+<day>3</day>
+<temp>11.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.9000000000000004</ws>
+<wd>6</wd>
+<wdKor>서</wdKor>
+<wdEn>W</wdEn>
+<reh>70</reh>
+			</data>
+			<data seq="72">
+<hour>16</hour>
+<day>3</day>
+<temp>10.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.5</ws>
+<wd>6</wd>
+<wdKor>서</wdKor>
+<wdEn>W</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="73">
+<hour>17</hour>
+<day>3</day>
+<temp>9.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.5</ws>
+<wd>5</wd>
+<wdKor>남서</wdKor>
+<wdEn>SW</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="74">
+<hour>18</hour>
+<day>3</day>
+<temp>8.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>1.4000000000000001</ws>
+<wd>5</wd>
+<wdKor>남서</wdKor>
+<wdEn>SW</wdEn>
+<reh>80</reh>
+			</data>
+			<data seq="75">
+<hour>19</hour>
+<day>3</day>
+<temp>7.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>2.5</ws>
+<wd>6</wd>
+<wdKor>서</wdKor>
+<wdEn>W</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="76">
+<hour>20</hour>
+<day>3</day>
+<temp>6.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>3.3000000000000003</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="77">
+<hour>21</hour>
+<day>3</day>
+<temp>5.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>3.8000000000000003</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>75</reh>
+			</data>
+			<data seq="78">
+<hour>22</hour>
+<day>3</day>
+<temp>4.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>3.9000000000000004</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>70</reh>
+			</data>
+			<data seq="79">
+<hour>23</hour>
+<day>3</day>
+<temp>3.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>4.1000000000000005</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>65</reh>
+			</data>
+			<data seq="80">
+<hour>24</hour>
+<day>3</day>
+<temp>2.0</temp>
+<tmx>12.0</tmx>
+<tmn>4.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfKor>흐림</wfKor>
+<wfEn>Cloudy</wfEn>
+<pcp>0.0</pcp>
+<sno>0.0</sno>
+<pop>30</pop>
+<ws>3.6</ws>
+<wd>7</wd>
+<wdKor>북서</wdKor>
+<wdEn>NW</wdEn>
+<reh>65</reh>
+			</data>
+		</body>
+	</description>
+	</item>
+</channel>
+</rss>
