@@ -16,7 +16,7 @@ let beforeDaysInMonth = new Date(year, month, 0).getDate(); //전달의 총 일 
 let sum = 0;
 dt= new Date(year,month,1);
 
-left_arrow.addEventListener("click", function () {
+left_arrow.addEventListener("click", function () {gi
   dt.setMonth(--month);
   dt.setDate(1);
   date_refresh();
