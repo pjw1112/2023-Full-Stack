@@ -34,6 +34,9 @@ public class Sally_Lang {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
+		
 		String article = 
 		  "클래스를 정의할 때... 관련된 클래스들은 최대한 관계를 많이 맺어주어서 재사용성을 높여야 합니다.\r\n"
 		+ "\r\n"

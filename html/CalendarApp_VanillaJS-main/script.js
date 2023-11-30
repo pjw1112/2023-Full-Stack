@@ -1,7 +1,7 @@
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem("events")? JSON.parse(localStorage.getItem("events")): [];
-console.log(events);
+
 
 const calendar = document.getElementById("calendar");
 const backDrop = document.getElementById("modalBackDrop");
@@ -76,7 +76,7 @@ function deleteEvent() {
 
 function load() {
   const dt = new Date();
-console.log(dt);
+
   if (nav !== 0) {
     dt.setMonth(new Date().getMonth() + nav);
   }
@@ -88,12 +88,7 @@ console.log(dt);
   const firstDayofMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  document.getElementById("monthDisplay").innerText = `${dt.toLocaleDateString(
-    "en-IN",
-    {
-      month: "long",
-    }
-  )} ${year}`;
+  document.getElementById("monthDisplay").innerText = `${year}년 ${dt.toLocaleDateString("default",{month: "long",})} `;
 
   const dateString = firstDayofMonth.toLocaleDateString("en-IN", {
     weekday: "long",

@@ -6,149 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/media_query.css">
-    <title></title>
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            font-family: 'MaruBuriLight';
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        .wrapper {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .header {
-            font-size: 20px;
-            color: rgb(62, 62, 62);
-            border: 1px solid gray;
-            height: 40px;
-            padding: 0 10px;
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-
-        }
-
-        .logo {
-            flex-grow: 1;
-        }
-
-        .body {
-            width: 100%;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: row;
-            background-color: aqua;
-        }
-
-        .side {
-            width: 200px;
-            background-color: rgb(226, 248, 87);
-        }
-
-        .calendar {
-            flex-grow: 1;
-            background-color: rgb(118, 77, 253);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .menu1 {
-            padding: 5px;
-            text-align: center;
-        }
-
-        .menu2 {
-            padding: 5px 10px;
-        }
-
-        .menu3 {
-            padding: 5px;
-            text-align: center;
-        }
-
-        .c_top {
-            height: 40px;
-            display: flex;
-        }
-
-        .c_top_left {
-            background-color: bisque;
-            flex-grow: 1;
-        }
-
-        .c_top_right {
-            background-color: rgb(238, 160, 65);
-            flex-grow: 1;
-        }
-
-        .c_top_center {
-            background-color: rgb(138, 243, 229);
-            flex-grow: 2;
-            text-align: center;
-            line-height: 40px;
-            font-size: 25px;
-            font-weight: bold;
-            letter-spacing: 5px;
-        }
-
-        .week_column {
-            display: flex;
-
-        }
-
-        .week {
-            flex-grow: 1;
-            border: 1px solid yellow;
-            padding: 3px;
-            text-align: center;
-            font-size: 15px;
-        }
-        .calendar_body{
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-gap : 1px;
-        }
-        .beforeMonth_daybox{
-            
-            background-color: rgb(209, 235, 235);
-            padding : 10px;
-            box-sizing: border-box;
-            color: rgb(169, 173, 176);
-        }
-        .thisMonth_daybox{
-            
-            background-color: rgb(197, 220, 160);
-            padding : 10px;
-            box-sizing: border-box;
-            color: rgb(90, 91, 92);
-        }
-
-        .afterMonth_daybox{
-            
-            background-color: rgb(209, 235, 235);
-            padding : 10px;
-            box-sizing: border-box;
-            color: rgb(90, 91, 92);
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/5081dee0c3.js" crossorigin="anonymous"></script>
+    <title>My Calendar</title>
 </head>
 
 <body>
@@ -189,7 +50,11 @@
             <div class="calendar">
                 <div class="c_top">
                     <div class="c_top_left"></div>
-                    <div class="c_top_center"></div>
+                    <div class="c_top_center">
+                        <div class="left_arrow c_top_center_in"><i class="fa-solid fa-play rotate180"></i></div>
+                        <div class="month_display c_top_center_in"></div>
+                        <div class="right_arrow c_top_center_in"><i class="fa-solid fa-play"></i></div>
+                    </div>
                     <div class="c_top_right"></div>
 
                 </div>
@@ -204,81 +69,11 @@
                     <div class="week week7">토요일</div>
                 </div>
                 <div class="calendar_body"></div>
-
-
-
-
             </div>
-
-
-
         </div>
-
-
-
     </div>
 
-    <script>
-        let c_center = document.querySelector(".c_top_center");
-        let calendar_body = document.querySelector(".calendar_body");
-        // month.innerHTML = 
-        let dt = new Date();
-        let day = dt.getDate(); //일
-        let week = dt.getDay();
-        let week_str = dt.toLocaleString('default', { weekday: "long" });
-        let month = dt.getMonth(); //월
-        let month_str = dt.toLocaleString('default', { month: 'long' });
-        let year = dt.getFullYear(); //년
-        let firstDayofMonth = new Date(year, month, 1); //달의 1일
-        let daysInMonth = new Date(year, month + 1, 0).getDate(); //달의 총 일 수
-        let beforeDaysInMonth = new Date(year, month , 0).getDate(); //전달의 총 일 수
-        let sum = 0;
-        console.log(dt);
-        console.log(day);
-        console.log(month);
-        console.log(year);
-        console.log(firstDayofMonth);
-        console.log(daysInMonth);
-        console.log(week_str);
-        console.log(month_str);
-        console.log(week);
-
-        c_center.innerText= month_str;
-
-
-        //전 달(before month) 표현
-        for(let i=0;i<week;i++){
-            sum++;
-          let item = document.createElement("div");
-          item.classList.add("beforeMonth_daybox");
-          item.classList.add(`beforemonthbox${i}`);
-          item.innerText=beforeDaysInMonth-(week-i-1);
-          calendar_body.appendChild(item);
-        }
-
-        //이번 달(this month) 표현
-        for(let i=0;i<daysInMonth;i++){
-            sum++;
-          let item = document.createElement("div");
-          item.classList.add("thisMonth_daybox");
-          item.classList.add(`thismonthbox${i}`);
-          item.innerText=i+1;
-          calendar_body.appendChild(item);
-        }
-
-        //총 35개
-        for(let i=0;i<35-sum;i++){
-            
-          let item = document.createElement("div");
-          item.classList.add("afterMonth_daybox");
-          item.classList.add(`aftermonthbox${i}`);
-          item.innerText=i+1;
-          calendar_body.appendChild(item);
-        }
-
-
-    </script>
-
+    <script src="script/script.js"></script>
 </body>
 
 </html>

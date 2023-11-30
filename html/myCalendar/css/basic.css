@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 분리 할 것 */
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+.fa-solid {}
+
+.c_top_center_in {
+    cursor: pointer;
+}
+
+.c_top_center_in:hover {
+    opacity: 0.6;
+}
+
+.c_top_center_in:active {
+    transform: scale(0.9);
+}
+
+/* 분리 할 것 */
+body {
+    font-family: 'MaruBuriLight';
+}
+
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    font-size: 20px;
+    color: rgb(62, 62, 62);
+    border: 1px solid gray;
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.body {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.side {
+    width: 200px;
+    background-color: rgb(226, 248, 87);
+}
+
+.calendar {
+    flex-grow: 1;
+    background-color: rgb(118, 77, 253);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu1 {
+    padding: 5px;
+    text-align: center;
+}
+
+.menu2 {
+    padding: 5px 10px;
+}
+
+.menu3 {
+    padding: 5px;
+    text-align: center;
+}
+
+.c_top {
+    height: 40px;
+    display: flex;
+}
+
+.c_top_left {
+    background-color: bisque;
+    flex-grow: 1;
+}
+
+.c_top_right {
+    background-color: rgb(238, 160, 65);
+    flex-grow: 1;
+}
+
+.c_top_center {
+    background-color: rgb(138, 243, 229);
+    flex-grow: 2;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    display: flex;
+}
+
+.c_top_center_in {
+    /* border : 1px solid red; */
+}
+
+.month_display {
+    flex-grow: 1;
+}
+
+.week_column {
+    display: flex;
+
+}
+
+.week {
+    flex-grow: 1;
+    border: 1px solid yellow;
+    padding: 3px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.calendar_body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+}
+
+.beforeMonth_daybox {
+
+    background-color: rgb(236, 252, 252);
+    padding: 10px;
+    box-sizing: border-box;
+    color: rgb(169, 173, 176);
+}
+
+.thisMonth_daybox {
+
+    background-color: rgb(197, 220, 160);
+    padding: 10px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.afterMonth_daybox {
+
+    background-color: rgb(236, 252, 252);
+    padding: 10px;
+    box-sizing: border-box;
+    color: rgb(169, 173, 176);
+}
