@@ -104,6 +104,7 @@
             font-size: 25px;
             font-weight: bold;
             letter-spacing: 5px;
+            box-sizing: border-box;
         }
 
         .week_column {
@@ -221,7 +222,6 @@
     <script>
         let c_center = document.querySelector(".c_top_center");
         let calendar_body = document.querySelector(".calendar_body");
-        // month.innerHTML = 
         let dt = new Date();
         let day = dt.getDate(); //일
         let week = dt.getDay();
@@ -233,18 +233,11 @@
         let daysInMonth = new Date(year, month + 1, 0).getDate(); //달의 총 일 수
         let beforeDaysInMonth = new Date(year, month , 0).getDate(); //전달의 총 일 수
         let sum = 0;
-        console.log(dt);
-        console.log(day);
-        console.log(month);
-        console.log(year);
-        console.log(firstDayofMonth);
-        console.log(daysInMonth);
-        console.log(week_str);
-        console.log(month_str);
-        console.log(week);
+       
+        pageload();
 
-        c_center.innerText= month_str;
-
+        function pageload(){
+        // c_center.innerText= month_str; //월 표시 집어 넣기
 
         //전 달(before month) 표현
         for(let i=0;i<week;i++){
@@ -275,7 +268,7 @@
           item.innerText=i+1;
           calendar_body.appendChild(item);
         }
-
+    }
 
     </script>
 
