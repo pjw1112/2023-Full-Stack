@@ -2,29 +2,33 @@
     padding: 0;
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+}
+a:active{
+    color: rgb(104, 104, 104);
+    transform: scale(0.9);
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
 /* 분리 할 것 */
 .rotate180 {
     transform: rotate(180deg);
 }
 
-.fa-solid {}
 
-.c_top_center_in {
-    cursor: pointer;
-}
-
-.c_top_center_in:hover {
-    opacity: 0.6;
-}
-
-.c_top_center_in:active {
-    transform: scale(0.9);
+.br{
+    height: 35px;
 }
 
 /* 분리 할 것 */
 body {
     font-family: 'MaruBuriLight';
+    color: rgb(104, 104, 104);
+    font-weight: bold;
 }
 
 li {
@@ -41,9 +45,9 @@ li {
 
 .header {
     font-size: 20px;
-    color: rgb(62, 62, 62);
-    border: 1px solid gray;
-    height: 40px;
+    /* color: rgb(62, 62, 62); */
+    /* border: 1px solid gray; */
+    height: 45px;
     padding: 0 10px;
     display: flex;
     align-items: center;
@@ -53,24 +57,35 @@ li {
 
 .logo {
     flex-grow: 1;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    
 }
-
+.logo span{
+    font-size: 23px;
+}
+.menu ul li{
+    float : left;
+    margin-right: 20px;
+    font-size: 16px;
+}
 .body {
     width: 100%;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .side {
-    width: 200px;
-    background-color: rgb(226, 248, 87);
+    width: 220px;
+    /* background-color: rgb(226, 248, 87); */
 }
 
 .calendar {
     flex-grow: 1;
-    background-color: rgb(118, 77, 253);
+    /* background-color: rgb(118, 77, 253); */
     display: flex;
     flex-direction: column;
 }
@@ -95,77 +110,169 @@ li {
 }
 
 .c_top_left {
-    background-color: bisque;
-    flex-grow: 1;
+    flex-grow: 3;
 }
 
 .c_top_right {
-    background-color: rgb(238, 160, 65);
-    flex-grow: 1;
+     flex-grow: 3;
 }
 
 .c_top_center {
-    background-color: rgb(138, 243, 229);
+    /* border : 1px solid red; */
     flex-grow: 2;
     text-align: center;
     line-height: 40px;
     font-size: 25px;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     display: flex;
 }
-
+.c_top_center_in:nth-child(1){
+    flex-grow: 1;
+}
+.c_top_center_in:nth-child(2){
+    flex-grow: 1;
+    cursor: initial;
+}
+.c_top_center_in:nth-child(3){
+    flex-grow: 1;
+}
+.c_top_center_in:nth-child(4){
+    flex-grow: 1;
+    cursor: initial;
+}
+.c_top_center_in:nth-child(5){
+    flex-grow: 1;
+}
 .c_top_center_in {
     /* border : 1px solid red; */
+    cursor: pointer;
+}
+
+.c_top_center_in:hover {
+    opacity: 0.6;
+}
+
+.c_top_center_in:active {
+    transform: scale(0.9);
 }
 
 .month_display {
-    flex-grow: 1;
+    /* border: 1px solid blue; */
+    width : 200px;
+    margin: 0 auto;
 }
 
-.week_column {
+.list_column {
     display: flex;
-
+    line-height: 55px;
+    height : 50px;
+    
 }
 
 .week {
     flex-grow: 1;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding: 3px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
+}
+.week:nth-child(1),
+.week:nth-child(7){
+    color: rgb(253, 145, 145);
 }
 
-.calendar_body {
+.calendar_body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1px;
+    
+    
 }
 
-.beforeMonth_daybox {
 
-    background-color: rgb(236, 252, 252);
+.beforeMonth_daybox,
+.afterMonth_daybox {
+    border-radius: 10px;
+    background-color: rgb(223, 239, 239);
     padding: 10px;
     box-sizing: border-box;
-    color: rgb(169, 173, 176);
+    color: rgb(135, 134, 134);
+    font-weight: bold;
+    opacity: 0.5;
 }
 
 .thisMonth_daybox {
-
-    background-color: rgb(197, 220, 160);
+    border-radius: 5px;
+    border : 1px solid rgb(204, 204, 204);
+    /* box-shadow: 0px 0px 2px 0px rgb(204, 204, 204); */
     padding: 10px;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: rgb(141, 140, 140);
     font-weight: bold;
 }
 
-.afterMonth_daybox {
-
-    background-color: rgb(236, 252, 252);
+.month_box{
+    
+    border-radius: 10px;
+    border : 1px solid rgb(204, 204, 204);
     padding: 10px;
     box-sizing: border-box;
-    color: rgb(169, 173, 176);
+    color: rgb(141, 140, 140);
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr 7fr;
+    height: 270px;
+    
+}
+.week_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.week_box div{
+    text-align: center;
+}
+
+.week_box div:nth-child(1),
+.week_box div:nth-child(7)
+{
+    color: rgb(253, 145, 145);
+}
+
+.last_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.dropdown *{
+    font-family: 'MaruBuriLight';
+    color: rgb(104, 104, 104);
+    font-weight: bold;
+    font-size : 20px;
+    
+}
+.btn-default{
+    color: rgb(104, 104, 104);
+    width : 170px;
+}
+.btn-default:focus{
+    background-color: white;
+}
+.dropdown-menu-right{
+    top : 0;
+    left : 200px;
+    font-weight: bold;
+}
+.dropdown-menu-right li a{
+    color: rgb(104, 104, 104);
+    font-weight: bold;
+}
+.view_type_choice{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.view_type_choice div:nth-child(2){
+    text-align: right;
 }

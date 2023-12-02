@@ -5,171 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/media_query.css">
-<<<<<<< HEAD
     <script src="https://kit.fontawesome.com/5081dee0c3.js" crossorigin="anonymous"></script>
+    <script src="script/script.js" defer></script>
     <title>My Calendar</title>
-=======
-    <title></title>
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            font-family: 'MaruBuriLight';
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        .wrapper {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .header {
-            font-size: 20px;
-            color: rgb(62, 62, 62);
-            border: 1px solid gray;
-            height: 40px;
-            padding: 0 10px;
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-
-        }
-
-        .logo {
-            flex-grow: 1;
-        }
-
-        .body {
-            width: 100%;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: row;
-            background-color: aqua;
-        }
-
-        .side {
-            width: 200px;
-            background-color: rgb(226, 248, 87);
-        }
-
-        .calendar {
-            flex-grow: 1;
-            background-color: rgb(118, 77, 253);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .menu1 {
-            padding: 5px;
-            text-align: center;
-        }
-
-        .menu2 {
-            padding: 5px 10px;
-        }
-
-        .menu3 {
-            padding: 5px;
-            text-align: center;
-        }
-
-        .c_top {
-            height: 40px;
-            display: flex;
-        }
-
-        .c_top_left {
-            background-color: bisque;
-            flex-grow: 1;
-        }
-
-        .c_top_right {
-            background-color: rgb(238, 160, 65);
-            flex-grow: 1;
-        }
-
-        .c_top_center {
-            background-color: rgb(138, 243, 229);
-            flex-grow: 2;
-            text-align: center;
-            line-height: 40px;
-            font-size: 25px;
-            font-weight: bold;
-            letter-spacing: 5px;
-            box-sizing: border-box;
-        }
-
-        .week_column {
-            display: flex;
-
-        }
-
-        .week {
-            flex-grow: 1;
-            border: 1px solid yellow;
-            padding: 3px;
-            text-align: center;
-            font-size: 15px;
-        }
-        .calendar_body{
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-gap : 1px;
-        }
-        .beforeMonth_daybox{
-            
-            background-color: rgb(209, 235, 235);
-            padding : 10px;
-            box-sizing: border-box;
-            color: rgb(169, 173, 176);
-        }
-        .thisMonth_daybox{
-            
-            background-color: rgb(197, 220, 160);
-            padding : 10px;
-            box-sizing: border-box;
-            color: rgb(90, 91, 92);
-        }
-
-        .afterMonth_daybox{
-            
-            background-color: rgb(209, 235, 235);
-            padding : 10px;
-            box-sizing: border-box;
-            color: rgb(90, 91, 92);
-        }
-    </style>
->>>>>>> 928c825dceaeb758de6896cf1eaca42836166c77
 </head>
 
 <body>
     <div class=wrapper>
 
         <div class="header">
-            <div class="logo"><span>My calendar</span></div>
-            <div class="menu"><span>오른쪽메뉴</span></div>
+            <div class="logo"><a href="index.html"><i class="fa-regular fa-calendar"></i><span> 마이 캘린더</span></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="body">
 
             <div class="side">
-                <div class="menu1">legend</div>
+                <div class="br"></div>
+                <div class="br"></div>
+                <div class="br"></div>
+                <div class="menu1">
+                    
+                        
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">월별 보기
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="view_type"><a href="#"><div class="view_type_choice"><div>일</div><div>1</div></div></a></li>
+                            <li class="view_type"><a href="#"><div class="view_type_choice"><div>주</div><div>2</div></div></a></li>
+                            <li class="view_type"><a href="#"><div class="view_type_choice"><div>월</div><div>3</div></div></a></li>
+                            <li class="view_type"><a href="#"><div class="view_type_choice"><div>년</div><div>4</div></div></a></li>
+                          </ul>
+                        </div>
+                     
+
+
+
+
+
+
+                </div>
                 <div class="menu2">
                     <ul>
                         <li>1 asdoijwe</li>
@@ -194,88 +81,30 @@
 
             </div>
             <div class="calendar">
+
+                
                 <div class="c_top">
                     <div class="c_top_left"></div>
                     <div class="c_top_center">
-                        <div class="left_arrow c_top_center_in"><i class="fa-solid fa-play rotate180"></i></div>
-                        <div class="month_display c_top_center_in"></div>
-                        <div class="right_arrow c_top_center_in"><i class="fa-solid fa-play"></i></div>
+                        <div class="left_arrow c_top_center_in">&lt;</div>
+                        <div class="c_top_center_in"></div>
+                        <div class="c_top_center_in">
+                            <div class="month_display"></div>
+                        </div>
+                        <div class="c_top_center_in"></div>
+                        <div class="right_arrow c_top_center_in">&gt;</div>
                     </div>
                     <div class="c_top_right"></div>
 
                 </div>
-                <div class="week_column">
-
-                    <div class="week week1">일요일</div>
-                    <div class="week week2">월요일</div>
-                    <div class="week week3">화요일</div>
-                    <div class="week week4">수요일</div>
-                    <div class="week week5">목요일</div>
-                    <div class="week week6">금요일</div>
-                    <div class="week week7">토요일</div>
-                </div>
+                <div class="list_column"></div>
                 <div class="calendar_body"></div>
+            <div style="height : 100px"></div>
             </div>
+            
         </div>
     </div>
 
-<<<<<<< HEAD
-    <script src="script/script.js"></script>
-=======
-    <script>
-        let c_center = document.querySelector(".c_top_center");
-        let calendar_body = document.querySelector(".calendar_body");
-        let dt = new Date();
-        let day = dt.getDate(); //일
-        let week = dt.getDay();
-        let week_str = dt.toLocaleString('default', { weekday: "long" });
-        let month = dt.getMonth(); //월
-        let month_str = dt.toLocaleString('default', { month: 'long' });
-        let year = dt.getFullYear(); //년
-        let firstDayofMonth = new Date(year, month, 1); //달의 1일
-        let daysInMonth = new Date(year, month + 1, 0).getDate(); //달의 총 일 수
-        let beforeDaysInMonth = new Date(year, month , 0).getDate(); //전달의 총 일 수
-        let sum = 0;
-       
-        pageload();
-
-        function pageload(){
-        // c_center.innerText= month_str; //월 표시 집어 넣기
-
-        //전 달(before month) 표현
-        for(let i=0;i<week;i++){
-            sum++;
-          let item = document.createElement("div");
-          item.classList.add("beforeMonth_daybox");
-          item.classList.add(`beforemonthbox${i}`);
-          item.innerText=beforeDaysInMonth-(week-i-1);
-          calendar_body.appendChild(item);
-        }
-
-        //이번 달(this month) 표현
-        for(let i=0;i<daysInMonth;i++){
-            sum++;
-          let item = document.createElement("div");
-          item.classList.add("thisMonth_daybox");
-          item.classList.add(`thismonthbox${i}`);
-          item.innerText=i+1;
-          calendar_body.appendChild(item);
-        }
-
-        //총 35개
-        for(let i=0;i<35-sum;i++){
-            
-          let item = document.createElement("div");
-          item.classList.add("afterMonth_daybox");
-          item.classList.add(`aftermonthbox${i}`);
-          item.innerText=i+1;
-          calendar_body.appendChild(item);
-        }
-    }
-
-    </script>
-
->>>>>>> 928c825dceaeb758de6896cf1eaca42836166c77
 </body>
 
 </html>

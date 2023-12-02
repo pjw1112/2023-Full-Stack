@@ -11,6 +11,24 @@ const eventTitleInput = document.getElementById("eventTitleInput");
 const eventTitleUpdate = document.getElementById("eventTitleUpdate");
 const weekdays = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
 
+document.getElementById("nextButton").addEventListener("click", () => {
+  nav++;
+  load();
+});
+
+document.getElementById("backButton").addEventListener("click", () => {
+  nav--;
+  load();
+});
+
+document.getElementById("saveButton").addEventListener("click", saveEvent);
+document.getElementById("cancelButton").addEventListener("click", closeModal);
+document.getElementById("updateButton").addEventListener("click", updateEvent);
+document.getElementById("deleteButton").addEventListener("click", deleteEvent);
+document.getElementById("closeButton").addEventListener("click", closeModal);
+
+
+
 function openModal(date) {
   clicked = date;
 
@@ -132,24 +150,6 @@ function load() {
   }
 }
 
-function initButtons() {
-  document.getElementById("nextButton").addEventListener("click", () => {
-    nav++;
-    load();
-  });
 
-  document.getElementById("backButton").addEventListener("click", () => {
-    nav--;
-    load();
-  });
-
-  document.getElementById("saveButton").addEventListener("click", saveEvent);
-  document.getElementById("cancelButton").addEventListener("click", closeModal);
-  document.getElementById("updateButton").addEventListener("click", updateEvent);
-  document.getElementById("deleteButton").addEventListener("click", deleteEvent);
-  document.getElementById("closeButton").addEventListener("click", closeModal);
-}
-
-initButtons();
 load();
 
