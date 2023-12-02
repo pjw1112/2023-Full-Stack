@@ -2,25 +2,29 @@
     padding: 0;
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(104, 104, 104);
 }
-a:active{
+
+a:active {
     color: rgb(104, 104, 104);
     transform: scale(0.9);
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     opacity: 0.6;
 }
+
 /* 분리 할 것 */
 .rotate180 {
     transform: rotate(180deg);
 }
 
 
-.br{
+.br {
     height: 35px;
 }
 
@@ -60,16 +64,19 @@ li {
     font-weight: bold;
     font-size: 25px;
     padding: 5px;
-    
+
 }
-.logo span{
+
+.logo span {
     font-size: 23px;
 }
-.menu ul li{
-    float : left;
+
+.menu ul li {
+    float: left;
     margin-right: 20px;
     font-size: 16px;
 }
+
 .body {
     width: 100%;
     flex-grow: 1;
@@ -114,7 +121,7 @@ li {
 }
 
 .c_top_right {
-     flex-grow: 3;
+    flex-grow: 3;
 }
 
 .c_top_center {
@@ -127,23 +134,29 @@ li {
     letter-spacing: 3px;
     display: flex;
 }
-.c_top_center_in:nth-child(1){
+
+.c_top_center_in:nth-child(1) {
     flex-grow: 1;
 }
-.c_top_center_in:nth-child(2){
-    flex-grow: 1;
-    cursor: initial;
-}
-.c_top_center_in:nth-child(3){
-    flex-grow: 1;
-}
-.c_top_center_in:nth-child(4){
+
+.c_top_center_in:nth-child(2) {
     flex-grow: 1;
     cursor: initial;
 }
-.c_top_center_in:nth-child(5){
+
+.c_top_center_in:nth-child(3) {
     flex-grow: 1;
 }
+
+.c_top_center_in:nth-child(4) {
+    flex-grow: 1;
+    cursor: initial;
+}
+
+.c_top_center_in:nth-child(5) {
+    flex-grow: 1;
+}
+
 .c_top_center_in {
     /* border : 1px solid red; */
     cursor: pointer;
@@ -159,15 +172,15 @@ li {
 
 .month_display {
     /* border: 1px solid blue; */
-    width : 200px;
+    width: 300px;
     margin: 0 auto;
 }
 
 .list_column {
     display: flex;
     line-height: 55px;
-    height : 50px;
-    
+    height: 50px;
+
 }
 
 .week {
@@ -177,18 +190,19 @@ li {
     text-align: center;
     font-size: 18px;
 }
+
 .week:nth-child(1),
-.week:nth-child(7){
+.week:nth-child(7) {
     color: rgb(253, 145, 145);
 }
 
-.calendar_body{
+.calendar_body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     display: grid;
-    
-    
+
+
 }
 
 
@@ -205,7 +219,7 @@ li {
 
 .thisMonth_daybox {
     border-radius: 5px;
-    border : 1px solid rgb(204, 204, 204);
+    border: 1px solid rgb(204, 204, 204);
     /* box-shadow: 0px 0px 2px 0px rgb(204, 204, 204); */
     padding: 10px;
     box-sizing: border-box;
@@ -213,10 +227,10 @@ li {
     font-weight: bold;
 }
 
-.month_box{
-    
+.month_box {
+
     border-radius: 10px;
-    border : 1px solid rgb(204, 204, 204);
+    border: 1px solid rgb(204, 204, 204);
     padding: 10px;
     box-sizing: border-box;
     color: rgb(141, 140, 140);
@@ -224,55 +238,93 @@ li {
     display: grid;
     grid-template-rows: 1.5fr 1.5fr 7fr;
     height: 270px;
-    
+
 }
-.week_box{
+
+.week_box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.week_box div{
+
+.week_box div {
     text-align: center;
 }
 
 .week_box div:nth-child(1),
-.week_box div:nth-child(7)
-{
+.week_box div:nth-child(7) {
     color: rgb(253, 145, 145);
 }
 
-.last_box{
+.last_box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
+
 }
 
-.dropdown *{
+.dropdown * {
     font-family: 'MaruBuriLight';
     color: rgb(104, 104, 104);
     font-weight: bold;
-    font-size : 20px;
-    
+    font-size: 20px;
+
 }
-.btn-default{
+
+.btn-default {
     color: rgb(104, 104, 104);
-    width : 170px;
+    width: 170px;
 }
-.btn-default:focus{
+
+.btn-default:focus {
     background-color: white;
 }
-.dropdown-menu-right{
-    top : 0;
-    left : 200px;
+
+.dropdown-menu-right {
+    top: 0;
+    left: 200px;
     font-weight: bold;
 }
-.dropdown-menu-right li a{
+
+.dropdown-menu-right li a {
     color: rgb(104, 104, 104);
     font-weight: bold;
 }
-.view_type_choice{
+
+.view_type_choice {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.view_type_choice div:nth-child(2){
+
+.view_type_choice div:nth-child(2) {
     text-align: right;
+}
+
+.select {
+    outline: 5px dashed rgb(177, 253, 101);
+    outline-offset: -8px;
+}
+
+.year_in_today{
+    background-color: rgb(120, 116, 250)!important;
+    border-radius: 10px!important;
+    color: white!important;
+    font-size: 50px!important;
+}
+
+.daybox:hover {
+    cursor: pointer;
+}
+
+.year_view_day_box {
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    
+}
+.holiday{
+    color: rgb(253, 145, 145);
+    background-color: rgb(255, 233, 233);
+    /* border-radius: 99px; */
+}
+.month_in_today span{
+    color: rgb(120, 116, 250);
 }
