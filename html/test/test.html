@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .wrapper {
+            border: 2px solid gray;
+            width: 500px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 20px;
+            padding : 10px;
+        }
+        .wrapper:focus{
+            outline: 3px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="wrapper"></div>
+    </div>
+    <script>
+        let textbox = document.querySelector(".wrapper");
+
+        document.addEventListener("keydown",(e) =>{
+            console.log(e.key);
+            if(e.key=="Enter"){
+           
+
+
+
+                
+            }
+
+
+        });
+
+    </script>
+</body>
+
+</html>
