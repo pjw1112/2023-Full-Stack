@@ -64,6 +64,7 @@ li {
     font-weight: bold;
     font-size: 25px;
     padding: 5px;
+    opacity: 0.8;
 
 }
 
@@ -327,4 +328,12 @@ li {
 }
 .month_in_today span{
     color: rgb(120, 116, 250);
+}
+.naver{
+    display: inline-block;
+    color: rgb(36, 209, 36);
+    padding-top: 20px;
+}
+.naver:active{
+    transform: scale(0.95);
 }
