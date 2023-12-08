@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", dotum, sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .wrapper {
+            margin: 50px;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 500px;
+            height: 50px;
+            padding: 3px;
+        }
+
+       
+        input[type=text]{
+            width : 50px;
+            display: inline;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <textarea id="text" cols="30" rows="10"></textarea> -->
+        <input type="text" id="text">
+
+    </div>
+
+</body>
+<script>
+
+    let inputElement = document.querySelector("#text");
+    let wrapper = document.querySelector(".wrapper");
+    let pattern = /\d{1,2}(일|월|년)/g;
+
+    inputElement.addEventListener("input", () => {
+        let inputValue = inputElement.value;
+      
+        // 정규 표현식에 해당하는 부분 찾기
+        let match = inputValue.match(pattern);
+
+        if (match) {
+            // input 초기화
+            inputElement.remove();
+
+            // 정규 표현식에 해당하지 않는 부분 가져오기
+            let nonMatchedText = inputValue.split(match[0])[0];
+
+            // 새로운 input 태그 생성하고 추가
+            let newInputElement = document.createElement("input");
+            newInputElement.type = "text";
+            newInputElement.value = nonMatchedText;
+            newInputElement.id = "text";
+            // newInputElement.oninput = processInput; // 새로운 input에도 동일한 이벤트 핸들러 추가
+            wrapper.appendChild(newInputElement);
+
+            // 새로운 div 태그 생성하고 추가
+            let newDiv = document.createElement("div");
+            newDiv.innerText = match[0];
+            newDiv.style.display="inline";
+            newDiv.style.backgroundColor = "red";
+            wrapper.appendChild(newDiv);
+
+            let newInputElement2 = document.createElement("input");
+            newInputElement2.type = "text";
+            
+            newInputElement2.id = "text2";
+            // newInputElement2.oninput = processInput; // 새로운 input에도 동일한 이벤트 핸들러 추가
+            wrapper.appendChild(newInputElement2);
+            // 새로운 input에 포커스 주기
+            newInputElement2.focus();
+        }
+
+
+
+
+    });
+
+
+
+
+
+</script>
+
+</html>
