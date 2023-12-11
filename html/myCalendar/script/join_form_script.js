@@ -206,3 +206,18 @@ email_form.addEventListener("input", () =>{
 birth_form.addEventListener("input",() =>{
 
 });
+
+
+let find_id_button = document.querySelector(".find_id_button");
+find_id_button.addEventListener("click" , function(){
+  login_box.style.display="none"
+ 
+  document.querySelector(".find_id").style.display="initial"
+  background_black.style.display="initial"
+});
+
+let find_pass_button = document.querySelector(".find_pass_button");
+find_pass_button.addEventListener("click" , function(){
+  document.querySelector(".find_id").style.display="initial"
+  background_black.style.display="initial"
+});

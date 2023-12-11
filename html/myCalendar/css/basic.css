@@ -432,6 +432,7 @@ li {
     left: 0;
     top: 0;
     z-index: 10;
+    display: none;
 }
 
 .form-group * {
@@ -483,9 +484,7 @@ margin-bottom: 0;
     display: none;
 }
 
-.black{
-    display: none;
-}
+
 .find_id_pass{
     display: flex;
     
@@ -495,3 +494,33 @@ margin-bottom: 0;
     text-align: center;
     opacity: 0.7;
 }
+
+
+
+
+
+
+
+.find_id {
+    width: 500px;
+    height: 500px;
+    padding : 50px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+    display: none;
+}
+.find_id .subject{
+ font-size: 20px;
+ margin-bottom: 20px;
+}    
+
+.find_id .description{
+    margin-bottom: 50px;
+}
+
+
