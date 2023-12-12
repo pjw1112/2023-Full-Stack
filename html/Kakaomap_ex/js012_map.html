@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link  rel="stylesheet"  type="text/css"  href="css/reset.css"  />
+    <link  rel="stylesheet"  type="text/css"  href="css/base.css"  />
+    <link  rel="stylesheet"  type="text/css"  href="css/style.css"  />
+</head>
+<body>
+    <div class="basic">
+        <h3>001. BASIC START</h3>
+        <h4>1. javascript core</h4>
+        <ol>
+            <li>document.wirte / console.log☆ </li>
+            <li>변수/자료형</li>
+            <li>이벤트</li>
+            <li>제어문1(if/switch) </li>
+            <li>제어문2(for/while/do while)</li>
+            <li>배열(Array)/객체(Object)</li>
+            <li>함수(function), <mark>메서드</mark></li>
+        </ol>
+        
+        <h4>2. javascript oop</h4>
+        <ol>
+            <li>JS object - 내장객체</li>
+            <li>BOM</li>
+            <li>DOM</li>
+        </ol>
+        
+        <h4>3. javascript using ★</h4>
+        <ol>
+            <li>JQUERY</li>
+            <li>AJAX  </li>
+            <li>PLUGIN</li>
+        </ol> 
+    </div>   
+
+    <!--            -->
+    <!--            -->
+    <!--            -->
+
+    <div class="basic">  
+        <h4>1. KAKAO MAP-BASIC - 기본사용법</h4> 
+        <pre>
+            1. https://developers.kakao.com/
+            2. 내애플리케이션  / 플랫폼 - web( http://127.0.0.1:5500 )
+               JavaScript 키	
+            3. https://apis.map.kakao.com/
+            4. HTML / CSS / JS
+        </pre> 
+        <!-- HTML : 지도를 표시할 div 입니다 -->
+        <div id="map"  class="map m1" style="width:100%;height:350px;"></div>
+
+        <script type="text/javascript" 
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5c13b16b5b2c90b55b40e806d7ded44a"></script>
+        <script>
+            let map;
+        window.addEventListener('load' , function(){
+            var mapContainer = document.querySelector('.m1'), // 지도를 표시할 div 
+            // {key:value, key:value} 
+            mapOption = { 
+                center: new kakao.maps.LatLng(37.513131, 127.0582827), 
+                // 지도의 중심좌표
+                level: 4,
+                // 지도의 확대 레벨
+                
+
+            };
+            // 지도를 표시할 div와  지도 옵션으로 - 지도를 생성합니다
+            map = new kakao.maps.Map(mapContainer, mapOption);
+        }); 
+
+        document.querySelector("#map").addEventListener("click", function(){
+            console.log(map.getCenter());
+        });
+
+        </script>   
+    </div> 
+
+    <!--            -->
+    <!--            -->
+    <!--            -->
+
+    <div class="basic">  
+        <h4>2. KAKAO MAP-MARKER - 기본사용법</h4> 
+        <pre>
+            1. MARKER 
+            2. https://apis.map.kakao.com/web/sample/markerWithInfoWindow/
+
+        </pre> 
+        <div id="map2"  class="map m2" style="width:100%;height:350px;"></div>
+        <script>
+        window.addEventListener('load' , function(){
+            var mapContainer = document.querySelector('.m2'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(37.513131, 127.0582827), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+            
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+            /////////////////////////////////////////////////////////////////////////
+            // 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(37.513131, 127.0582827); 
+            
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+            
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+            /////////////////////////////////////////////////////////////////////////
+            
+            var iwContent = '<div style="padding:5px;">Hello World! <br><a href="https://map.kakao.com/link/map/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                iwPosition = new kakao.maps.LatLng(37.513131, 127.0582827); //인포윈도우 표시 위치입니다
+            
+            // 인포윈도우를 생성합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                position : iwPosition, 
+                content : iwContent 
+            });
+              
+            // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+            infowindow.open(map, marker); 
+            /////////////////////////////////////////////////////////////////////////
+        });     
+        </script>
+    </div>     
+    
+    <!--                -->
+    <!--                -->
+    <!--                -->  
+    <div class="basic"> 
+        <h4>3. KAKAO MAP-MARKER - METHOD  + MAP</h4> 
+        <pre>
+            1. 버튼클릭할때마다 경로 바뀌기
+            2. 경로확인
+              경로1 : 37.4020631,127.1064348
+              경로2 : 37.5008166,127.0258413
+              경로3 : 37.5124202,127.099486
+            check1) data-role   내가 원하는 속성만들기 /  data-*원하는속성="값"
+            check2) getAttribute / setAttribute
+        </pre>  
+
+        <input type="button" class="btn btn-danger  b1" 
+               value="PATH1-판교"       title=""
+               data-lat="37.4020631"   data-lng="127.1064348">
+        <input type="button" class="btn btn-warning b2" 
+                value="PATH2-강남"
+                data-lat="37.5008166"   data-lng="127.0258413" >
+        <input type="button" class="btn btn-info    b3" 
+                value="PATH3" mydata="jin"
+                data-lat="37.5124202"   data-lng="127.099486" >		
+        <div id="map3"   class="map m3" style="width:100%;height:350px;"></div>
+         <script>
+
+            window.addEventListener('load' , function(){
+
+                // console.log(document.querySelector(".btn-info").getAttribute("mydata"));
+
+                mapChange(37.4020631, 127.1064348);  //## 맨처음 초기화
+                //1.  대상찾아오기 (버튼, 맵)
+                let btns    = document.querySelectorAll('.btn');  //console.log(btns);
+                //let mapshow = document.querySelector('.m3'); 
+                
+                //2.  function- #map3  (.m3) 의 맵경로 바뀜 - 좌표넘겨주기
+                btns.forEach(item =>{
+                    //mapChange(lat, lng)
+                    //각버튼의 위도경도 찾아서넘기기
+                    item.addEventListener('click',function(){
+                         mapChange( item.getAttribute( 'data-lat' ), 
+                                    item.getAttribute( 'data-lng' ));
+
+
+
+                    });    
+                });
+            });
+            function mapChange(lat, lng){  
+                var mapContainer = document.querySelector('.m3'), 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(lat, lng), // ##
+                    level: 3,
+                    
+                };
+                
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+                var markerPosition  = new kakao.maps.LatLng(lat, lng);   //##
+                 
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+                
+                 
+                marker.setMap(map);
+                
+                var iwContent = '<div style="padding:5px;">Hello World! <br><a href="https://map.kakao.com/link/map/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                    iwPosition = new kakao.maps.LatLng(lat, lng); //##
+                 
+                var infowindow = new kakao.maps.InfoWindow({
+                    position : iwPosition, 
+                    content : iwContent 
+                });
+                infowindow.open(map, marker); 
+            } 
+
+            console.log(  document.querySelector('.b1').value ); 
+            console.log(  document.querySelector('.b1').dataLat ); //undefined
+            console.log(  document.querySelector('.b1').getAttribute('data-lat') );
+            console.log(  document.querySelector('.b1').getAttribute('data-lng') );
+       
+            //0.분석 -  버튼을 클릭할때마다 map의 경로가 바뀐다.
+            //이벤트대상  :  버튼 
+            //이벤트      : 클랙
+            //이벤트핸들러 : #map3  (.m3) 의 맵경로 바뀜
+        </script>
+
+        <script>
+
+            function score(kor,eng,math){
+                this.kor =kor;
+                this.eng = eng;
+                this.math = math;
+                this.total = kor+eng+math;
+                this.avg = this.total/3;
+
+                this.calTot = function(){ return this.total};
+                this.calAvg = function(){ return this.avg};
+
+            }
+
+            let ion = new score(100,100,99);
+
+            let iron_son = ion;
+
+            let iron_son2 = Object.create(ion);
+
+            iron_son2.myfn = function(){
+                console.log("근하하하하하");
+            }
+
+            console.log( ion.valueOf());
+            //프로토타입 - 상속받은 멤버들이 정의 된 곳
+            console.log( ion.hasOwnProperty());
+
+            console.log("hi");
+            console.log("그냥 객체 대입함"+iron_son);
+            console.log(iron_son2);
+            console.log(iron_son.__proto__);
+            console.log(iron_son2.__proto__);
+
+            function Animal(first, last, age, gender){
+                this.name = {first, last};
+                this.age = age;
+                this.gender = gender;
+
+            }
+
+            Animal.prototype.hi =function(){
+                return "Hi!" + this.name.first;
+            }
+
+            let cat = new Animal('HONG','Gil Dong',3,'F');
+
+            
+            
+        </script>
+
+
+    </div>    
+</body>
+</html>

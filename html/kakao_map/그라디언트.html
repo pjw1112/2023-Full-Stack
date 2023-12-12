@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Gradient Background</title>
+    <style>
+        #rainbow-box {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            transition: background 0.5s ease;
+        }
+        #rainbow-box:hover {
+            animation: gradientChange 5s linear infinite;
+        }
+        @keyframes gradientChange {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="rainbow-box"></div>
+</body>
+</html>
