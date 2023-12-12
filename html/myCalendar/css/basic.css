@@ -23,7 +23,6 @@ a:hover {
     transform: rotate(180deg);
 }
 
-
 .br {
     height: 35px;
 }
@@ -33,6 +32,7 @@ body {
     font-family: 'MaruBuriLight';
     color: rgb(104, 104, 104);
     font-weight: bold;
+    position: relative;
 }
 
 li {
@@ -65,6 +65,16 @@ li {
     font-size: 25px;
     padding: 5px;
     opacity: 0.8;
+}
+
+.logo_join{
+    opacity: 0.8;
+    width : 200px;
+    margin-bottom: 3px;
+}
+
+.form-group-first{
+    margin-bottom: 35px;
 
 }
 
@@ -76,6 +86,11 @@ li {
     float: left;
     margin-right: 20px;
     font-size: 16px;
+    color: rgb(104, 104, 104);
+}
+
+.naverhat {
+    width: 30px;
 }
 
 .body {
@@ -197,12 +212,12 @@ li {
     color: rgb(253, 145, 145);
 }
 
-.calendar_body {
+#calendar_body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     display: grid;
-
+    padding-right: 5px;
 
 }
 
@@ -238,7 +253,7 @@ li {
     font-weight: bold;
     display: grid;
     grid-template-rows: 1.5fr 1.5fr 7fr;
-    height: 270px;
+    /* height: 270px; */
 
 }
 
@@ -304,11 +319,11 @@ li {
     outline-offset: -8px;
 }
 
-.year_in_today{
-    background-color: rgb(120, 116, 250)!important;
-    border-radius: 10px!important;
-    color: white!important;
-    font-size: 50px!important;
+.year_in_today {
+    background-color: rgb(120, 116, 250) !important;
+    border-radius: 10px !important;
+    color: white !important;
+    /* font-size: 50px!important; */
 }
 
 .daybox:hover {
@@ -318,22 +333,194 @@ li {
 .year_view_day_box {
     font-size: 14px;
     text-align: center;
-    line-height: 28px;
-    
+    /* line-height: 28px; */
+
 }
-.holiday{
+
+.holiday {
     color: rgb(253, 145, 145);
     background-color: rgb(255, 233, 233);
     /* border-radius: 99px; */
 }
-.month_in_today span{
+
+.month_in_today span {
     color: rgb(120, 116, 250);
 }
-.naver{
+
+.naver {
     display: inline-block;
     color: rgb(36, 209, 36);
-    padding-top: 20px;
+    padding-top: 10px;
+
 }
-.naver:active{
+
+.naver:active {
     transform: scale(0.95);
 }
+
+
+
+
+
+.view_like_year {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.view_like_month {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    padding: 0px;
+}
+
+.view_like_week {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    padding: 0px;
+}
+
+.view_like_day {
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    padding: 0px;
+}
+
+
+
+
+
+.login_box {
+    width: 500px;
+    height: 450px;
+    /* box-shadow: 0 0 50px white; 가로, 세로, 흐림 정도, 그림자 색 설정 */
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+}
+
+.join_box {
+    width: 500px;
+    height: 700px;
+    /* box-shadow: 0 0 50px white; 가로, 세로, 흐림 정도, 그림자 색 설정 */
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+}
+
+.login_box_inner {
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+
+.form-group * {
+    font-weight: bold;
+}
+
+#naver_login_button {
+    margin-top: 15px;
+}
+
+.check_form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.success{
+color: rgb(56, 255, 56);
+margin-bottom: 0;
+}
+
+.fail{
+    color: rgb(252, 87, 16);
+    margin-bottom: 0;
+}
+
+.check_form{
+    position: relative;
+}
+.check_success{
+    position: absolute;
+    color: rgb(56, 255, 56);
+    top: 30px;
+    right: 7px;
+    font-size: 20px;
+}
+.check_fail{
+    position: absolute;
+    color: rgb(252, 87, 16);
+    top: 30px;
+    right: 7px;
+    font-size: 20px;
+}
+
+.login_box{
+    display: none;
+}
+
+.join_box{
+    display: none;
+}
+
+
+.find_id_pass{
+    display: flex;
+    
+}
+.find_id_pass span{
+    flex-grow: 1;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+.find_id {
+    width: 500px;
+    height: 500px;
+    padding : 50px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+    display: none;
+}
+.find_id .subject{
+ font-size: 20px;
+ margin-bottom: 20px;
+}    
+
+.find_id .description{
+    margin-bottom: 50px;
+}
+
+

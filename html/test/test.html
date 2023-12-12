@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="ko">
 
 <head>
@@ -59,3 +60,55 @@
 </body>
 
 </html>
+=======
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touch Slide Example</title>
+  <style>
+    /* 슬라이드할 요소의 스타일을 지정합니다. */
+    #slideElement {
+      width: 100%;
+      height: 200px;
+      background-color: lightblue;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="slideElement">Slide me!</div>
+
+  <script>
+    var touchStartX = 0;
+    var touchEndX = 0;
+
+    var slideElement = document.getElementById("slideElement");
+
+    slideElement.addEventListener("touchstart", function(event) {
+      touchStartX = event.touches[0].clientX;
+    });
+
+    slideElement.addEventListener("touchmove", function(event) {
+      touchEndX = event.touches[0].clientX;
+    });
+
+    slideElement.addEventListener("touchend", function() {
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      var swipeDistance = touchEndX - touchStartX;
+
+      if (swipeDistance > 50) {
+        alert("Swipe right!");
+      } else if (swipeDistance < -50) {
+        alert("Swipe left!");
+      }
+    }
+  </script>
+
+</body>
+</html>
+>>>>>>> 41b5738d6bc724c1639e2dc30a0961ada84be4c8

@@ -34,7 +34,13 @@
 
 @media all and (max-width: 1279px) {}
 
-@media all and (max-width: 1023px) {}
+@media all and (max-width: 1023px) {
+    .view_like_year {
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+
+
+}
 
 @media all and (max-width: 900px) {
     .side{
@@ -45,11 +51,32 @@
 
 
 @media all and (max-width:767px) {
-    
+    .view_like_year {
+        grid-template-columns: 1fr 1fr;
+     }
+     .thisMonth_daybox {
+        font-size: 12px;
+     }
+     .month_in_today span {
+        font-size: 12px;
+     }
 }
 
 @media all and (max-width:479px) {
-    
-
+    .thisMonth_daybox {
+        font-size: 10px;
+     }
+     .month_in_today span {
+        font-size: 10px;
+     }
+     .logo a img{
+        width : 200px;
+     }
+     .logo{
+        padding : 0;
+     }
+     .header{
+        padding : 0 3px;
+     }
 
 }

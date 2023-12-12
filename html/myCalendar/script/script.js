@@ -1,6 +1,6 @@
 let month_display = document.querySelector(".month_display");
 let list_column = document.querySelector(".list_column");
-let calendar_body = document.querySelector(".calendar_body");
+let calendar_body = document.querySelector("#calendar_body");
 let left_arrow = document.querySelector(".left_arrow");
 let right_arrow = document.querySelector(".right_arrow");
 let view_type_dom = document.querySelectorAll(".view_type");
@@ -85,7 +85,7 @@ left_arrow.addEventListener("click", () => {
 
 
 document.addEventListener("keydown", (e) => {
-  console.log(e.key);
+  
   if (e.key == "ArrowRight") {
     switch (view_type) {
       case "년별":
@@ -184,7 +184,27 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
+
+
+
+
+
+
+
+
+
 // 이벤트 리스너 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+
+
+
+
 
 //메인 view 구현
 function load() {
@@ -249,23 +269,23 @@ function load() {
 
 }
 
-
-
 }
+
+
+
 //캘린더를 년 형태로 출력해주는 함수
 function view_like_year(year) {
   month_display.innerText = year + "년 ";
 
-  calendar_body.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
-  calendar_body.style.gridGap = "25px";
-  calendar_body.style.padding = "20px";
-  calendar_body.style.paddingRight = "5px";
+  calendar_body.classList.remove(...calendar_body.classList);
+  calendar_body.classList.add("view_like_year");
   let today_temp = new Date().toLocaleDateString("default", {
     weekday: "long",
     year: "numeric",
     month: "numeric",
     day: "numeric",
   });
+
   for (let i = 0; i < 12; i++) {
     let daysInMonth = new Date(year, i + 1, 0).getDate(); //n월의 총 일 수
     let firstDayInt = new Date(year, i, 1).getDay(); //n월이 시작하는 요일 int값
@@ -331,13 +351,17 @@ function view_like_year(year) {
   }
 }
 
+
+
+
+
+
 //캘린더를 월 형태로 출력해주는 함수
 function view_like_month(week, month, year, month_str) {
-  
-  calendar_body.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr 1fr 1fr";
-  calendar_body.style.gridGap = "1px";
-  calendar_body.style.padding = "0px";
-  calendar_body.style.paddingRight = "5px";
+  // console.log(...calendar_body.classList);
+  calendar_body.classList.remove(...calendar_body.classList);
+  calendar_body.classList.add("view_like_month");
+
   let today_temp = new Date().toLocaleDateString("default", {
     weekday: "long",
     year: "numeric",
@@ -393,7 +417,7 @@ function view_like_month(week, month, year, month_str) {
     }
     if(dateString==today_temp){
       item.classList.add("month_in_today");
-      item.innerHTML+="<span>&nbsp&nbsp&nbsp&nbsp오늘 ♬</span>"
+      item.innerHTML+="<span>&nbsp오늘 ♬</span>"
     }
 
     calendar_body.appendChild(item);
@@ -421,13 +445,19 @@ function view_like_month(week, month, year, month_str) {
   month_display.innerText = year + "년 " + month_str;
 }
 
+
+
+
+
+
+
+
 //캘린더를 주 형태로 출력해주는 함수
 function view_like_week(day, week, month, year, month_str) {
 
-  calendar_body.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr 1fr 1fr";
-  calendar_body.style.gridGap = "1px";
-  calendar_body.style.padding = "0px";
-  calendar_body.style.paddingRight = "5px";
+  calendar_body.classList.remove(...calendar_body.classList);
+  calendar_body.classList.add("view_like_week");
+
   let today_temp = new Date().toLocaleDateString("default", {
     weekday: "long",
     year: "numeric",
@@ -550,10 +580,9 @@ function view_like_week(day, week, month, year, month_str) {
 //캘린더를 일 형태로 출력해주는 함수
 function view_like_day(day, week, month, year, month_str) {
 
-  calendar_body.style.gridTemplateColumns = "1fr";
-  calendar_body.style.padding = "0px";
-  calendar_body.style.paddingRight = "5px";
-  
+  calendar_body.classList.remove(...calendar_body.classList);
+  calendar_body.classList.add("view_like_day");
+
   let today_temp = new Date().toLocaleDateString("default", {
     weekday: "long",
     year: "numeric",
