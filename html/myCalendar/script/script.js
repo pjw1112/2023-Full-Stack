@@ -29,8 +29,6 @@ view_type_dom.forEach((e, i) => {
   });
 });
 
-
-
 right_arrow.addEventListener("click", () => {
   switch (view_type) {
     case "년별":
@@ -79,108 +77,108 @@ left_arrow.addEventListener("click", () => {
   }
 });
 
-
-
-
-
-
 document.addEventListener("keydown", (e) => {
-  
-  if (e.key == "ArrowRight") {
-    switch (view_type) {
-      case "년별":
-        nav2++;
-        load();
-        break;
+  let black_display = window
+    .getComputedStyle(document.querySelector(".black"))
+    .getPropertyValue("display");
+  if (black_display == "none") {
+    if (e.key == "ArrowRight") {
+      switch (view_type) {
+        case "년별":
+          nav2++;
+          load();
+          break;
 
-      case "월별":
-        nav4++;
-        load();
-        break;
+        case "월별":
+          nav4++;
+          load();
+          break;
 
-      case "주별":
-        nav4++;
-        load();
-        break;
+        case "주별":
+          nav4++;
+          load();
+          break;
 
-      case "일별":
-        nav4++;
-        load();
-        break;
-    }
-  } else if (e.key == "ArrowLeft") {
-    switch (view_type) {
-      case "년별":
-        nav2--;
-        load();
-        break;
+        case "일별":
+          nav4++;
+          load();
+          break;
+      }
+    } else if (e.key == "ArrowLeft") {
+      switch (view_type) {
+        case "년별":
+          nav2--;
+          load();
+          break;
 
-      case "월별":
-        nav4--;
-        load();
-        break;
+        case "월별":
+          nav4--;
+          load();
+          break;
 
-      case "주별":
-        nav4--;
-        load();
-        break;
+        case "주별":
+          nav4--;
+          load();
+          break;
 
-      case "일별":
-        nav4--;
-        load();
-        break;
-    }
-  } else if (e.key == "ArrowUp") {
-    switch (view_type) {
-      case "년별":
-        break;
+        case "일별":
+          nav4--;
+          load();
+          break;
+      }
+    } else if (e.key == "ArrowUp") {
+      switch (view_type) {
+        case "년별":
+          break;
 
-      case "월별":
-        nav3--;
-        load();
-        break;
+        case "월별":
+          nav3--;
+          load();
+          break;
 
-      case "주별":
-        nav3--;
-        load();
-        break;
+        case "주별":
+          nav3--;
+          load();
+          break;
 
-      case "일별":
-        nav3--;
-        load();
-        break;
-    }
-  } else if (e.key == "ArrowDown") {
-    switch (view_type) {
-      case "년별":
-        break;
+        case "일별":
+          nav3--;
+          load();
+          break;
+      }
+    } else if (e.key == "ArrowDown") {
+      switch (view_type) {
+        case "년별":
+          break;
 
-      case "월별":
-        nav3++;
-        load();
-        break;
+        case "월별":
+          nav3++;
+          load();
+          break;
 
-      case "주별":
-        nav3++;
-        load();
-        break;
+        case "주별":
+          nav3++;
+          load();
+          break;
 
-      case "일별":
-        nav3++;
-        load();
-        break;
-    }
-  } else if (e.key == "Escape") {
-    let i = new Date();
-    dt = new Date(i.getFullYear(), i.getMonth(), i.getDate());
-    load();
-  }
-
-  if (1 <= parseInt(e.key) && parseInt(e.key) <= 4) {
-    if (view_type != view_type_list[parseInt(e.key) - 1]) {
-      view_type = view_type_list[parseInt(e.key) - 1];
-      dropdown_toggle.innerText = view_type_list[parseInt(e.key) - 1] + " 보기";
+        case "일별":
+          nav3++;
+          load();
+          break;
+      }
+    } else if (e.key == "Escape") {
+      let i = new Date();
+      dt = new Date(i.getFullYear(), i.getMonth(), i.getDate());
       load();
+    }
+
+    if (1 <= parseInt(e.key) && parseInt(e.key) <= 4) {
+      if (view_type != view_type_list[parseInt(e.key) - 1]) {
+        view_type = view_type_list[parseInt(e.key) - 1];
+        dropdown_toggle.innerText =
+          view_type_list[parseInt(e.key) - 1] + " 보기";
+        load();
+      }
     }
   }
 });
@@ -188,16 +186,7 @@ document.addEventListener("keydown", (e) => {
 
 
 
-
-
-
-
-
-
 // 이벤트 리스너 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-
 
 
 
@@ -215,20 +204,18 @@ function load() {
   //2. 년,월,주,일 이동 변수 더해주고 변수 초기화
   dt.setMonth(dt.getMonth() + nav);
   dt.setFullYear(dt.getFullYear() + nav2);
-  dt.setDate(dt.getDate()+(7*nav3)+nav4);
+  dt.setDate(dt.getDate() + 7 * nav3 + nav4);
   nav = 0;
   nav2 = 0;
   nav3 = 0;
   nav4 = 0;
-  
+
   //3. 확정된 년, 월 기준으로 필요한 변수 계산
   let month = dt.getMonth(); //월 (int)
   let month_str = dt.toLocaleString("default", { month: "long" }); //월 (String)
   let year = dt.getFullYear(); //년
   let week = new Date(year, month, 1).getDay(); //요일 (int)
   let day = dt.getDate();
-
- 
 
   //4. 현재 뷰타입에 따라 캘린더 구현
   switch (view_type) {
@@ -249,29 +236,37 @@ function load() {
       break;
   }
 
-  if(view_type!="일별"){
+  if (view_type != "일별") {
+    calendar_body.childNodes.forEach((e) => {
+      if (
+        e.id == dt.toLocaleDateString("default", {
+          weekday: "long",
+          year: "numeric",
+          month: "numeric",
+          day: "numeric",
+        })
+      ) {
+        e.classList.add("select");
+      } else {
+        e.classList.remove("select");
+      }
+    });
+  }
 
- 
+  let dayboxs = document.querySelectorAll(".daybox");
 
-  calendar_body.childNodes.forEach(e=> {
-    if(e.id==dt.toLocaleDateString("default", {
-      weekday: "long",
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-    })){
-      e.classList.add("select");
-    }else{
-      e.classList.remove("select");
-    }
+  // 각 요소에 대해 클릭 이벤트를 추가합니다.
+  dayboxs.forEach((e) => {
+    e.addEventListener("click", (box) => {
+      insert_schedule.style.display="block";
+      background_black.style.display="block";
 
+    });
   });
 
+
+
 }
-
-}
-
-
 
 //캘린더를 년 형태로 출력해주는 함수
 function view_like_year(year) {
@@ -320,41 +315,32 @@ function view_like_year(year) {
     month_box.appendChild(last_box);
 
     for (let j = 0; j < daysInMonth; j++) {
-      let dt_temp = new Date(year, i, j+1);
+      let dt_temp = new Date(year, i, j + 1);
       let dateString = dt_temp.toLocaleDateString("default", {
-      weekday: "long",
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-    });
+        weekday: "long",
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+      });
       let item = document.createElement("div");
-      item.id=dateString;
+      item.id = dateString;
       item.classList.add("year_view_day_box");
       item.classList.add("daybox");
       item.innerText = j + 1;
-    if(dt_temp.getDay()==0 || dt_temp.getDay()==6 ){
-      item.classList.add("holiday");
-    }
+      if (dt_temp.getDay() == 0 || dt_temp.getDay() == 6) {
+        item.classList.add("holiday");
+      }
 
-
-
-
-    if(dateString==today_temp){
-      item.classList.add("year_in_today");
-    }
+      if (dateString == today_temp) {
+        item.classList.add("year_in_today");
+      }
 
       last_box.appendChild(item);
     }
 
     calendar_body.appendChild(month_box);
-
   }
 }
-
-
-
-
-
 
 //캘린더를 월 형태로 출력해주는 함수
 function view_like_month(week, month, year, month_str) {
@@ -392,7 +378,7 @@ function view_like_month(week, month, year, month_str) {
     item.classList.add("daybox");
     item.id = dateString;
     item.innerText = daysInBeforeMonth - (week - i - 1);
-    
+
     calendar_body.appendChild(item);
   }
 
@@ -412,12 +398,12 @@ function view_like_month(week, month, year, month_str) {
     item.classList.add("daybox");
     item.id = dateString;
     item.innerText = i + 1;
-    if(dt_temp.getDay()==0 || dt_temp.getDay()==6 ){
+    if (dt_temp.getDay() == 0 || dt_temp.getDay() == 6) {
       item.classList.add("holiday");
     }
-    if(dateString==today_temp){
+    if (dateString == today_temp) {
       item.classList.add("month_in_today");
-      item.innerHTML+="<span>&nbsp오늘 ♬</span>"
+      item.innerHTML += "<span>&nbsp오늘 ♬</span>";
     }
 
     calendar_body.appendChild(item);
@@ -445,16 +431,8 @@ function view_like_month(week, month, year, month_str) {
   month_display.innerText = year + "년 " + month_str;
 }
 
-
-
-
-
-
-
-
 //캘린더를 주 형태로 출력해주는 함수
 function view_like_week(day, week, month, year, month_str) {
-
   calendar_body.classList.remove(...calendar_body.classList);
   calendar_body.classList.add("view_like_week");
 
@@ -509,15 +487,13 @@ function view_like_week(day, week, month, year, month_str) {
     item.id = dateString;
     item.innerText = i + 1;
 
-    if(dt_temp.getDay()==0 || dt_temp.getDay()==6 ){
+    if (dt_temp.getDay() == 0 || dt_temp.getDay() == 6) {
       item.classList.add("holiday");
     }
-    if(dateString==today_temp){
+    if (dateString == today_temp) {
       item.classList.add("month_in_today");
-      item.innerHTML+="<span>&nbsp&nbsp&nbsp&nbsp오늘 ♬</span>"
+      item.innerHTML += "<span>&nbsp&nbsp&nbsp&nbsp오늘 ♬</span>";
     }
-
-
 
     calendar_body.appendChild(item);
   }
@@ -542,44 +518,36 @@ function view_like_week(day, week, month, year, month_str) {
   }
 
   //월 전체를 앞의 코드에서 다 구현한 뒤 특정 주차를 제외하고 나머지 데이 박스들을 전부 삭제
-  let total_week = Math.floor((week + new Date(year, month + 1, 0).getDate()) / 7);
-  let this_week = Math.floor( (week + new Date(year, month, day).getDate()-1) / 7);
-  
-  calendar_body.childNodes.forEach((e,i) => {
-    if(Math.floor(i/7)!=this_week ){
+  let total_week = Math.floor(
+    (week + new Date(year, month + 1, 0).getDate()) / 7
+  );
+  let this_week = Math.floor(
+    (week + new Date(year, month, day).getDate() - 1) / 7
+  );
+
+  calendar_body.childNodes.forEach((e, i) => {
+    if (Math.floor(i / 7) != this_week) {
       e.classList.add("remove");
     }
   });
-  
-  for(let i=0;i<42;i++){
-    if(calendar_body.firstChild.classList.contains("remove")){
+
+  for (let i = 0; i < 42; i++) {
+    if (calendar_body.firstChild.classList.contains("remove")) {
       calendar_body.firstChild.remove();
     }
   }
-  for(let i=0;i<42;i++){
-    if(calendar_body.lastChild.classList.contains("remove")){
+  for (let i = 0; i < 42; i++) {
+    if (calendar_body.lastChild.classList.contains("remove")) {
       calendar_body.lastChild.remove();
     }
   }
- 
-  month_display.innerText = year + "년 " + month_str+" "+(this_week+1)+"주차";
 
+  month_display.innerText =
+    year + "년 " + month_str + " " + (this_week + 1) + "주차";
 }
-
-
-
-
-
-
-
-
-
-
-
 
 //캘린더를 일 형태로 출력해주는 함수
 function view_like_day(day, week, month, year, month_str) {
-
   calendar_body.classList.remove(...calendar_body.classList);
   calendar_body.classList.add("view_like_day");
 
@@ -597,8 +565,11 @@ function view_like_day(day, week, month, year, month_str) {
   });
   let item = document.createElement("div");
   item.classList.add("week");
-  item.innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp"+week_str[new Date(year,month,day).getDay()]+"요일";
-  item.style.textAlign="left";
+  item.innerHTML =
+    "&nbsp&nbsp&nbsp&nbsp&nbsp" +
+    week_str[new Date(year, month, day).getDay()] +
+    "요일";
+  item.style.textAlign = "left";
   list_column.appendChild(item);
 
   let item2 = document.createElement("div");
@@ -610,17 +581,12 @@ function view_like_day(day, week, month, year, month_str) {
   // if(dt_temp.getDay()==0 || dt_temp.getDay()==6 ){
   //   item2.classList.add("holiday");
   // }
-  if(dateString==today_temp){
+  if (dateString == today_temp) {
     item2.classList.add("month_in_today");
-    item2.innerHTML+="<span>&nbsp&nbsp&nbsp&nbsp오늘 ♬</span>"
+    item2.innerHTML += "<span>&nbsp&nbsp&nbsp&nbsp오늘 ♬</span>";
   }
-
-
 
   calendar_body.appendChild(item2);
 
-
-
-  month_display.innerText = year + "년 " + month_str+" "+day+"일";
-
+  month_display.innerText = year + "년 " + month_str + " " + day + "일";
 }

@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+textarea{
+    resize: none;
+}
 a {
     text-decoration: none;
     color: rgb(104, 104, 104);
@@ -432,7 +434,7 @@ li {
     left: 0;
     top: 0;
     z-index: 10;
-    display: none;
+    display: block;
 }
 
 .form-group * {
@@ -514,13 +516,48 @@ margin-bottom: 0;
     z-index: 100;
     display: none;
 }
-.find_id .subject{
+.subject{
  font-size: 20px;
- margin-bottom: 20px;
+ margin-bottom: 10px;
 }    
 
-.find_id .description{
+.description{
     margin-bottom: 50px;
 }
+
+.insert_schedule{
+    width: 500px;
+    height: 600px;
+    padding : 50px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+    display: block; 
+}
+
+.insert_schedule_write_form{
+    height : 100px;
+}
+
+.insert_schedule_end{
+    /* border: 1px solid red; */
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.insert_schedule_end input{
+   margin-left: 10px;
+}
+
+
+
+
+
+
 
 

@@ -1,8 +1,8 @@
-let id_form = document.querySelector("#id");
-let pass_form = document.querySelector("#pass");
-let pass2_form = document.querySelector("#pass2");
-let email_form = document.querySelector("#email");
-let birth_form = document.querySelector("#birth");
+let id_form = document.querySelector("#id_join");
+let pass_form = document.querySelector("#pass_join");
+let pass2_form = document.querySelector("#pass2_join");
+let email_form = document.querySelector("#email_join");
+let birth_form = document.querySelector("#birth_join");
 
 let id_form_label_Check = document.querySelector(".id_check .check_message");
 let pass_form_label_Check = document.querySelector(".pass_check .check_message");
@@ -16,7 +16,12 @@ let login_box = document.querySelector(".login_box");
 let join_click = document.querySelector(".join_click");
 let join_box = document.querySelector(".join_box");
 
+let find_id = document.querySelector(".find_id");
+let insert_schedule = document.querySelector(".insert_schedule");
+
 let background_black = document.querySelector(".black");
+let all_cancels = document.querySelectorAll(".cancel");
+
 
 let id_ok = false;
 let pass_ok = false;
@@ -24,24 +29,37 @@ let pass2_ok = false;
 let email_ok = false;
 
 
+
 login_click.addEventListener("click" , () => {
-  login_box.style.display="initial"
-  background_black.style.display="initial"
+  login_box.style.display="initial";
+  background_black.style.display="initial";
   
 });
 
 join_click.addEventListener("click" , () => {
-  join_box.style.display="initial"
-  background_black.style.display="initial"
+  join_box.style.display="initial";
+  background_black.style.display="initial";
   
 });
 
 background_black.addEventListener("click" , () => {
-  login_box.style.display="none"
-  join_box.style.display="none"
-  background_black.style.display="none"
+  cancel ();
 });
 
+all_cancels.forEach((e) => {
+  e.addEventListener("click", (box) => {
+    cancel ();
+  });
+});
+
+function cancel (){
+  login_box.style.display="none";
+  join_box.style.display="none";
+  find_id.style.display="none";
+  insert_schedule.style.display="none";
+
+  background_black.style.display="none";
+};
 
 
 //ID 조건 확인
@@ -216,8 +234,8 @@ find_id_button.addEventListener("click" , function(){
   background_black.style.display="initial"
 });
 
-let find_pass_button = document.querySelector(".find_pass_button");
-find_pass_button.addEventListener("click" , function(){
-  document.querySelector(".find_id").style.display="initial"
-  background_black.style.display="initial"
-});
+// let find_pass_button = document.querySelector(".find_pass_button");
+// find_pass_button.addEventListener("click" , function(){
+//   document.querySelector(".find_id").style.display="initial"
+//   background_black.style.display="initial"
+// });

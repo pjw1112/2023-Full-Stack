@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/media_query.css">
     <script src="https://kit.fontawesome.com/5081dee0c3.js" crossorigin="anonymous"></script>
-    <script src="script/script.js" defer></script>
     <script src="script/join_form_script.js" defer></script>
+    <script src="script/script.js" defer></script>
     <title>My Calendar</title>
 </head>
 
@@ -131,31 +131,31 @@
     <!-- default display none -->
     <div class="login_box">
         <div class="login_box_inner">
-            <form action="서블릿" id="login_form" method="post">
+            <form action="서블릿" method="post">
 
 
                 <div class="form-group">
                     <label for="id_login">아이디 </label>
-                    <input type="text" id="id_login" name="id" class="form-control" />
+                    <input type="text" id="id_login" name="id_login" class="form-control" />
                 </div>
 
                 <div class="form-group">
                     <label for="pass_login">비밀번호 </label>
-                    <input type="text" id="pass_login" name="pass" class="form-control" />
+                    <input type="text" id="pass_login" name="pass_login" class="form-control" />
                 </div>
 
                 <div class="form-group">
-                    <input type="checkbox" id="remember_login" name="remember" />
+                    <input type="checkbox" id="remember_login" name="remember_login" />
                     <label for="remember_login">로그인 유지하기</label>
                 </div>
                 <br>
                 <div class="form-group">
-                    <input type="submit" value="로그인" id="submit_login" class="btn btn-danger btn-block ">
+                    <input type="submit" value="로그인" class="btn btn-danger btn-block ">
                     <a href="#" id="naver_login_button" class="btn btn-success btn-block ">네이버로 로그인</a>
                 </div>
                 <div class="form-group find_id_pass">
-                    <span class="find_id_button"><a href="">아이디 찾기</a></span>
-                    <span class="find_pass_button"><a href="">비밀번호 찾기</a></span>
+                    <span class="find_id_button"><a href="#">아이디 찾기</a></span>
+                    <span class="find_pass_button"><a href="#">비밀번호 찾기</a></span>
                 </div>
 
                 </fieldset>
@@ -167,7 +167,7 @@
     <!-- default display none -->
     <div class="join_box">
         <div class="login_box_inner">
-            <form action="#" id="join_form" method="post">
+            <form action="#" method="post">
                 <fieldset>
                     <div class="form-group-first">
                         <div class="logo_join"><img src="images/logo.png" class="logo_join"></div>
@@ -176,46 +176,46 @@
 
                     <div class="form-group">
                         <div class="id_check check_form">
-                            <label for="id">아이디 </label>
-                            <label for="id" class="check_message"></label>
+                            <label for="id_join">아이디 </label>
+                            <label for="id_join" class="check_message"></label>
                         </div>
-                        <input type="text" id="id" name="id" class="form-control" />
+                        <input type="text" id="id_join" name="id_join" class="form-control" />
                     </div>
 
                     <div class="form-group">
                         <div class="pass_check check_form">
-                            <label for="pass">비밀번호 </label>
-                            <label for="pass" class="check_message"></label>
+                            <label for="pass_join">비밀번호 </label>
+                            <label for="pass_join" class="check_message"></label>
                         </div>
-                        <input type="password" id="pass" name="pass" class="form-control" />
+                        <input type="password" id="pass_join" name="pass_join" class="form-control" />
                     </div>
 
                     <div class="form-group">
                         <div class="pass2_check check_form">
-                            <label for="pass2">비밀번호 확인 </label>
-                            <label for="pass2" class="check_message"></label>
+                            <label for="pass2_join">비밀번호 확인 </label>
+                            <label for="pass2_join" class="check_message"></label>
                         </div>
-                        <input type="password" id="pass2" name="pass2" class="form-control" />
+                        <input type="password" id="pass2_join" name="pass2_join" class="form-control" />
                     </div>
 
                     <div class="form-group">
                         <div class="email_check check_form">
-                            <label for="email">이메일 </label>
-                            <label for="email" class="check_message"></label>
+                            <label for="email_join">이메일 </label>
+                            <label for="email_join" class="check_message"></label>
                         </div>
-                        <input type="text" id="email" name="email" class="form-control" />
+                        <input type="text" id="email_join" name="email_join" class="form-control" />
                     </div>
 
                     <div class="form-group">
                         <div class="birth_check check_form">
-                            <label for="birth">생일 (선택) </label>
-                            <label for="birth" class="check_message"></label>
+                            <label for="birth_join">생일 (선택) </label>
+                            <label for="birth_join class=" check_message"></label>
                         </div>
-                        <input type="date" id="birth" name="birth" class="form-control" />
+                        <input type="date" id="birth_join" name="birth_join" class="form-control" />
                     </div>
                     <br><br>
                     <div class="form-group">
-                        <input type="submit" value="회원가입" id="submit" class="btn btn-danger btn-block ">
+                        <input type="submit" value="회원가입" class="btn btn-danger btn-block ">
                     </div>
 
                 </fieldset>
@@ -240,8 +240,8 @@
                     <div class="form-group">
                         <input type="submit" value="인증메일 보내기" class="btn btn-info btn-block ">
                     </div>
-
                 </fieldset>
+
             </form>
             <br>
             <form action="#" method="post">
@@ -253,7 +253,6 @@
                     <div class="form-group">
                         <input type="submit" value="인증번호 확인" class="btn btn-success btn-block ">
                     </div>
-
                 </fieldset>
             </form>
         </div>
@@ -263,6 +262,35 @@
 
 
 
+    <!-- default display none -->
+    <div class="insert_schedule">
+        <div class="subject">일정 추가</div>
+        <div class="description">일정 내용과 시작 ~ 종료 시간을 설정해주세요</div>
+        <div class="content">
+            <form action="#" method="post">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="content">일정</label>
+                        <textarea rows="5" id="content" name="content" class="form-control insert_schedule_write_form"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">시작 시간</label>
+                        <input type="datetime-local" id="start_time" name="start_time" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="content">종료 시간</label>
+                        <input type="datetime-local" id="end_time" name="end_time" class="form-control" />
+                    </div>
+                    <div class="form-group insert_schedule_end">
+                        <input type="submit" value="저장" class="btn btn-info">
+                        <input type="reset" value="취소" class="btn btn-danger cancel">
+                        
+                        
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 
 
     <div class="black">
